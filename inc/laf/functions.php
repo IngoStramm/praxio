@@ -189,3 +189,11 @@ add_action( 'init', function() {
 	pll_register_string( 'prx', 'Leia Mais' );
 	pll_register_string( 'prx', 'Pesquisa por:' );
 });
+
+function prx_return_0_to_100() {
+	$return = [];
+	for ( $i = 0; $i <= 100 ; $i++ ) { 
+		$return[] = $i;
+	}
+	return $return;
+}

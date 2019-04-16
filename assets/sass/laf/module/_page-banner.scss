@@ -1,0 +1,5 @@
+.page-banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	@include bg-size( cover );
+}

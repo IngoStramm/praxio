@@ -87,7 +87,7 @@ function hide_editor() {
 		$pll_id = pll_get_post( $frontpage_id );
 
 		
-		$templates = array( 'front-page.php');
+		$templates = array( 'front-page.php', 'fale-conosco-page.php' );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
 			remove_post_type_support('page', 'editor');
@@ -100,3 +100,4 @@ function prx_allow_html( $original_value, $args, $cmb2_field ) {
 
 require_once 'theme-options.php';
 require_once 'front-page.php';
+require_once 'fale-conosco.php';

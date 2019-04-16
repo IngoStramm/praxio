@@ -1,0 +1,19 @@
+.fale-conosco {
+	.fale-conosco-banner {
+		display: block;
+		margin: auto;
+		padding: 0;
+		h4,
+		h1 {
+			font-weight: 600;
+			color: $branco;
+		}
+		h4 {
+			font-size: 32px;
+		}
+		h1 {
+			font-size: 72px;
+			@include text-stroke( $branco, 2 );
+		}
+	}
+}
