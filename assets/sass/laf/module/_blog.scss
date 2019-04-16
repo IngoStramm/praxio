@@ -1,0 +1,9 @@
+.blog-section {
+	.blog-title {
+		display: block;
+		margin: 0 auto 40px;
+		font-size: 74px;
+		font-weight: 600;
+		@include text-stroke( $cinza-2, 1 );
+	}
+}

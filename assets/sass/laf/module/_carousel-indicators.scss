@@ -1,0 +1,45 @@
+.carousel-indicators {
+	li {
+		background-color: $cinza-1;
+		border-color: $cinza-1;
+		margin-right: 15px;
+		width: 12px;
+		height: 12px;
+		@include trans-all(25/100);
+		&:hover,
+		&:focus,
+		&:focus:hover {
+			background-color: $verm-2;
+			border-color: $verm-2;
+			cursor: pointer;
+		}
+		&.active {
+			position: relative;
+			background-color: $verm-2;
+			border-color: $verm-2;
+			margin-right: 15px;
+			.demi-circle {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 25px;
+				height: 25px;
+				border-top: solid 2px $verm-2;
+				border-left: solid 2px $verm-2;
+				@include radius(20px);
+				-moz-transform: rotate(45deg) translate(-72.5%, 0);
+				-o-transform: rotate(45deg) translate(-72.5%, 0);
+				-ms-transform: rotate(45deg) translate(-72.5%, 0);
+				-webkit-transform: rotate(45deg) translate(-72.5%, 0);
+				transform: rotate(45deg) translate(-72.5%, 0);
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

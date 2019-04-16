@@ -1,0 +1,42 @@
+.blog-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	@include bg-size(cover);
+	.blog-line-1 {
+		font-size: 30px;
+		font-weight: 600;
+		color: $branco;
+	}
+	.blog-line-2 {
+		font-size: 122px;
+		font-weight: 600;
+		color: $branco;
+		@include text-stroke( $branco, 2 );
+	}
+}
+.blog-header-searchform {
+	.input-group {
+		display: table;
+		width: 100%;
+		.form-control {
+			color: $branco;
+			font-size: 15px;
+			font-weight: 600;
+			text-transform: uppercase;
+			width: 100%;
+			background-color: transparent;
+			border: 1px solid $branco;
+			border-right: none;
+			@include radius( 0 );
+		}
+	}
+	.btn { 
+		&.btn-default {
+			color: $verm-2;
+			border-left: none;
+			border-color: $branco !important;
+			background-color: transparent !important;
+			@include radius( 0 );
+		}
+	}
+}

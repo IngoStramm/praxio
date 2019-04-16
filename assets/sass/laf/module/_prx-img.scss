@@ -1,0 +1,33 @@
+.prx-img {
+	margin: auto;
+	padding: 0 40px 40px;
+	position: relative;
+	overflow: hidden;
+	color: $branco;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include bg-size(cover);
+	@include radius(75px, 0, 0, 0);
+	.prx-img-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		max-width: 100%;
+		z-index: 1;
+	}
+	.prx-img-title {
+		font-size: 28px;
+		font-weight: 600;
+		position: relative;
+		z-index: 9;
+	}
+	.prx-img-txt {
+		font-size: 16px;
+		position: relative;
+		z-index: 9;
+	}
+}

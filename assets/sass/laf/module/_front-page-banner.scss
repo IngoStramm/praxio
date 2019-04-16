@@ -1,0 +1,37 @@
+.front-page-banner {
+	color: $branco;
+	h3 {
+		margin: 0;
+		font-size: 40px;
+		font-weight: 200;
+	}
+	h2 {
+		margin: 0;
+		font-size: 80px;
+		font-weight: 600;
+		@include text-stroke( $branco, 2 );
+	}
+	
+}
+
+@media (min-width: 768px) {
+	
+	.front-page-banner {
+		.carousel-indicators {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			bottom: auto;
+			left: auto;
+			width: auto;
+			margin: auto -25% auto;
+			@include translate( 0, -50%);
+			li {
+				display: block;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+}

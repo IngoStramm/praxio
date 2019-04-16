@@ -1,0 +1,10 @@
+.prx-more-link {
+	font-weight: 600;
+	color: $verm-2;
+	&:active,
+	&:hover,
+	&:focus,
+	&:hover:focus {
+		color: $verm-2;
+	}
+}

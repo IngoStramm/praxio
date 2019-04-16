@@ -1,0 +1,116 @@
+.prx-tabs {
+	.nav-tabs {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+		border: none;
+		> li {
+			a {
+				display: block;
+				padding: 0 20px;
+				.prx-tabs-figure {
+					display: block;
+					position: relative;
+					margin: 0 auto 10px;
+					width: 100%;
+					height: 60px;
+					min-width: 70px;
+					.prx-tabs-icon {
+						display: block;
+						margin: auto;
+						max-width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+					}
+				}
+				.prx-nav-tabs-title {
+					display: block;
+					margin: auto;
+					padding: 0;
+					font-size: 11px;
+					text-align: center;
+					text-transform: uppercase;
+					color: $verm-3;
+					font-weight: 600;
+				}
+			}
+			&.active,
+			&:hover,
+			&:focus,
+			&:hover:focus {
+				a {
+					position: relative;
+					background-color: $branco;
+					border-color: transparent;
+					@include radius( 0, 40px, 0, 40px );
+				}
+			}
+		}
+	}
+	.tab-content {
+		color: $cinza-2;
+		font-size: 17px;
+		p {
+			font: inherit;
+			color: inherit;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+
+	.prx-tabs {
+		.nav-tabs {
+			border: none;
+			> li {
+				&.active,
+				&:hover,
+				&:focus,
+				&:hover:focus {
+					a {
+						position: relative;
+						background-color: $branco;
+						border-color: transparent;
+						@include radius( 0, 40px, 0, 40px );
+						@include box-shadow(3px, 0, 0, 0, $cinza-1);
+						&:before {
+							display: block;
+							content: '';
+							position: absolute;
+							top: 0;
+							right: 100%;
+							width: 60px;
+							height: 60px;
+							@include radius( 0, 40px, 0, 0 );
+							@include box-shadow(20px, -20px, 0, 0, $branco);
+						}
+						&:after {
+							display: block;
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 100%;
+							width: 60px;
+							height: 60px;
+							@include radius( 0, 0, 0, 40px );
+							@include box-shadow(-20px, 20px, 0, 0, $branco);
+							-webkit-box-shadow: -20px 20px 0 0 $branco;
+							-moz-box-shadow: -20px 20px 0 0 $branco;
+							box-shadow: -3px 0px 0 0 $cinza-1, -20px 20px 0 0 $branco;
+							margin-left: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

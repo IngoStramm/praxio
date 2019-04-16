@@ -1,0 +1,21 @@
+.prx-carousel {
+	.prx-carousel-block-txt {
+		display: block;
+		margin: auto;
+		padding: 20px 40px;
+		background-color: $verm-2;
+		color: $branco;
+		font-size: 16px;
+		@include radius( 0, 0, 75px, 0 );
+	}
+	.carousel-indicators {
+		display: block;
+		margin: 20px auto 20px;
+		position: relative;
+		text-align: center;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
+}

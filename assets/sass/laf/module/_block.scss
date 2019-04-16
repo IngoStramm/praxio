@@ -1,0 +1,6 @@
+.block {
+	display: block;
+	&.block-cinza {
+		background-color: $cinza-3;
+	}
+}

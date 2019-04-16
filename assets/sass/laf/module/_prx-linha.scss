@@ -1,0 +1,30 @@
+.prx-linha {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	&.prx-linha-t {
+		border-top: 2px solid $verm-2;
+	}
+	&.prx-linha-r {
+		border-right: 2px solid $verm-2;
+	}
+	&.prx-linha-b {
+		border-bottom: 2px solid $verm-2;
+	}
+	&.prx-linha-l {
+		border-left: 2px solid $verm-2;
+	}
+	&.prx-linha-radius-1 {
+		@include radius(75px, 0, 0, 0);
+	}
+	&.prx-linha-radius-2 {
+		@include radius(0, 75px, 0, 0);
+	}
+	&.prx-linha-radius-3 {
+		@include radius(0, 0, 75px, 0);
+	}
+	&.prx-linha-radius-4 {
+		@include radius(0, 0, 0, 75px);
+	}
+}

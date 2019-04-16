@@ -1,0 +1,25 @@
+/* Fontes */
+
+/* Bubblegum Sans */
+@mixin passionone {
+	font-family: 'Passion One', cursive;
+}
+
+/* Montserrat */
+@mixin raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Font weigth */
+@mixin fw($w: 'regular', $i: '') {
+	@if $w == 'extralight' {
+		$w: "200";
+	} @else if $w == 'regular' {
+		$w: "400";
+	} @else if $w == 'medium' {
+		$w: "500";
+	} @else if $w == 'bold' {
+		$w: "700";
+	}
+	font-weight: #{$w} #{$i};
+}

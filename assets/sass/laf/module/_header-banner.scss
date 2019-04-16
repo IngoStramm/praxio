@@ -1,0 +1,16 @@
+.header-banner {
+	.item {
+		background-position: center;
+		background-repeat: no-repeat;
+		@include bg-size(cover);
+	}
+}
+
+
+@media (min-width: 768px) {
+	.header-banner {
+		.item {
+			padding-top: 120px;
+		}
+	}
+}

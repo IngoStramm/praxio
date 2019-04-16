@@ -1,0 +1,107 @@
+.section {
+	.section-title {
+		color: $cinza-2;
+		font-size: 32px;
+		&.section-title-red {
+			margin: 0;
+			padding: 0;
+			color: $verm-2;
+			font-size: 50px;
+		}
+	}
+	.section-subtitle {
+		margin: 0;
+		padding: 0;
+		color: $cinza-2;
+		font-size: 21px;
+	}
+	.section-subtitle-stroked {
+		margin: 0;
+		padding: 0;
+		color: $cinza-2;
+		font-size: 44px;
+		font-weight: 600;
+		@include text-stroke( $cinza-2, 1 );
+	}
+	.section-text {
+		color: $cinza-2;
+		font-size: 17px;
+		p {
+			color: inherit;
+			font-size: inherit;
+		}
+		&.section-text-red {
+			color: $verm-2;
+			font-size: 38px;
+			font-weight: 600;
+		}
+	}
+	&.section-3 {
+		color: $branco;
+		.section-3-banner {
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: auto;
+			padding: 100px 40px;
+			@include bg-size(cover);
+			@include radius( 0, 0, 80px, 0);
+			.section-3-title {
+				font-size: 28px;
+				font-weight: 600;
+			}
+			.section-3-text {
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+	&.section-5 {
+		.section-5-block {
+			position: relative;
+			margin: auto;
+			padding: 80px 0 160px;
+			max-width: 1460px;
+			@include radius( 0, 0, 0, 80px);
+		}
+		.section-5-title {
+			font-size: 80px;
+			font-weight: 600;
+			@include text-stroke( $cinza-1, 2 );
+		}
+		.section-5-call {
+			font-size: 32px;
+			color: $verm-2;
+		}
+		.section-5-txt {
+			font-size: 18px;
+			color: $cinza-2;
+		}
+		.section-5-banner {
+			display: block;
+			position: relative;
+			top: -120px;
+			z-index: 9;
+			margin: auto;
+			padding: 120px 40px;
+			background-repeat: no-repeat;
+			background-position: center;
+			@include bg-size(cover);
+		}
+		.section-5-banner-txt {
+			font-size: 24px;
+			color: $branco;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.section {
+		.section-5 {
+			.section-5-title {
+				font-size: 140px;
+			}
+		}
+	}
+
+}

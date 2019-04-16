@@ -1,0 +1,128 @@
+.navbar-default.prx-main-menu {
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 14px;
+	color: $branco;
+	text-transform: uppercase;
+
+	.navbar-nav > li > a {
+		color: inherit;
+	}
+
+	.navbar-nav > .active > a, 
+	.navbar-nav > .active > a:hover, 
+	.navbar-nav > .active > a:focus,
+	.navbar-nav > #menu-item-home.active > a, 
+	.navbar-nav > #menu-item-home.active > a:hover, 
+	.navbar-nav > #menu-item-home.active > a:focus {
+		background-color: transparent;
+		color: $verm-1;
+	}
+
+	.navbar-nav .menu-item-boxed {
+		background-color: $verm-1;
+		color: $branco;
+		border-bottom: 1px solid $branco;
+		&:last-child {
+			border-bottom: none;
+		}
+		&.active {
+			background-color: $preto;
+		}
+		&.active > a,
+		&.active > a:hover,
+		&.active > a:focus {
+			color: $branco;
+		}
+	}
+	.lang-item {
+		color: $cinza-1;
+	}
+	.current-lang {
+		color: $branco;
+	}
+	#menu-item-home {
+		display: none;
+	}
+	.prx-logo {
+		max-height: 30px;
+		width: auto;
+		max-width: 100%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 768px) {
+
+.navbar-default.prx-main-menu {
+	width: 750px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	@include translate( -50%, 0 );
+	z-index: 99999;
+	text-align: center;
+	font-size: 12px;
+	.navbar-nav .menu-item {
+		margin: 0 5px;
+	}
+
+	.navbar-nav {
+		float: none;
+		clear: both;
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			a {
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+		}
+	}
+
+	.navbar-nav .menu-item-boxed {
+		border-bottom: none;
+		a {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+		#menu-item-home {
+			display: block;
+		}
+		.prx-logo {
+			max-height: 40px;
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.navbar-default.prx-main-menu {
+		width: 970px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.navbar-default.prx-main-menu {
+		width: 1170px;
+	}
+	
+}

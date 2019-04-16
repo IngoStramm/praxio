@@ -1,0 +1,29 @@
+.pagination-wrap {
+	ul {
+		&.page-numbers {
+			> li {
+				> span {
+					&.current {
+						background-color: $verm-2;
+					}
+				}
+				> a {
+					&:active,
+					&:hover,
+					&:focus,
+					&:hover:focus {
+						color: $branco;
+						background-color: $verde-1;
+					}
+				}
+				&:first-child,
+				&:last-child {
+					> a,
+					> span {
+						@include radius(0);
+					}
+				}
+			}
+		}
+	}
+}
