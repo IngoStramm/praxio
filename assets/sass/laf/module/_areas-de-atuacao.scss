@@ -1,0 +1,99 @@
+.areas-de-atuacao {
+	.areas-de-atuacao-banner {
+		.areas-de-atuacao-banner-line-1 {
+			font-size: 100px;
+			line-height: 100px;
+			font-weight: 600;
+			@include text-stroke( $branco, 2 );
+		}
+		.areas-de-atuacao-banner-line-2 {
+			font-size: 60px;
+			line-height: 60px;
+			font-weight: 600;
+			color: $branco;
+		}
+		.areas-de-atuacao-banner-line-3 {
+			color: $branco;
+			font-size: 23px;
+		}
+		.areas-de-atuacao-banner-text {
+			color: $branco;
+			font-size: 23px;
+			strong {
+				font-weight: 600;
+			}
+		}
+		.areas-de-atuacao-banner-btn {
+			padding-left: 60px;
+			padding-right: 60px;
+			font-size: 16px;
+		}
+	}
+
+	.areas-de-atuacao-areas {
+		.areas-de-atuacao-areas-area {
+			display: block;
+			margin: 0 auto;
+			.areas-de-atuacao-areas-area-banner {
+				display: block;
+				margin: auto;
+				padding: 80px;
+				background-repeat: no-repeat;
+				background-position: center;
+				@include bg-size( cover );
+				@include radius( 0, 0, 75px, 0 );
+			}
+			.areas-de-atuacao-areas-area-banner-title {
+				color: $branco;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 36px;
+			}
+			.areas-de-atuacao-areas-area-text {
+				font-size: 19px;
+				color: $cinza-2;
+				ul {
+					padding: 0;
+					list-style: none;
+					li {
+						position: relative;
+						&:before {
+							content: '>  ';
+							color: $verm-2;
+							font-size: 28px;
+						}
+					}
+				}
+			}
+			.areas-de-atuacao-areas-area-btn {
+				color: $cinza-2;
+				border-color: $cinza-2;
+				font-size: 12px;
+				line-height: 12px;
+				&:active,
+				&:hover,
+				&:focus,
+				&:focus:hover {
+					background-color: $cinza-2;
+					color: $branco;
+				}
+			}
+		}
+	}
+	.areas-de-atuacao-cta {
+		display: block;
+		margin: auto;
+		padding: 80px 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include bg-size( cover );
+		.areas-de-atuacao-cta-text {
+			color: $branco;
+			font-size: 25px;	
+		}
+		.areas-de-atuacao-cta-btn {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+}
