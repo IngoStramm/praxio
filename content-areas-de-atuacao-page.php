@@ -36,7 +36,7 @@
 
 					<div class="clearfix m-t-80"></div>
 					
-					<div class="col-lg-4 col-md-6 col-lg-offset-2">
+					<div class="col-lg-4 col-md-6 col-lg-offset-1">
 
 						<h1 class="areas-de-atuacao-banner-line-1"><?php echo wp_kses_decode_entities( $areas_de_atuacao_banner_linha_1 ); ?></h1>
 						<h3 class="areas-de-atuacao-banner-line-2"><?php echo wp_kses_decode_entities( $areas_de_atuacao_banner_linha_2 ); ?></h3>
@@ -48,7 +48,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6 col-lg-offset-1">
 
 						<div class="prx-linha prx-linha-l prx-linha-radius-4 hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
 
