@@ -148,3 +148,22 @@
 	-webkit-text-stroke-width: #{$w}px;
 	-webkit-text-stroke-color: #{$cor};
 }
+
+@mixin placeholder-color( $cor ) {
+	&::-webkit-input-placeholder {
+		/* WebKit, Blink, Edge */
+		color: $cor;
+	}
+	&:-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		color: $cor;
+	}
+	&::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		color: $cor;
+	}
+	&::-ms-input-placeholder {
+		/* Internet Explorer 10-11 */
+		color: $cor;
+	}
+}

@@ -39,10 +39,14 @@
 					</div>
 					<!-- /.col-md-4 -->
 
+					<div class="clearfix m-b-20 visible-xs visible-sm"></div>
+
 					<div class="col-md-4">
 						<div class="fale-conosco-form"><?php echo do_shortcode( $fale_conosco_banner_cf7 ); ?></div>
 					</div>
 					<!-- /.col-md-4 -->
+
+					<div class="clearfix m-b-80"></div>
 				</div>
 				<!-- /.row -->
 			</div>
@@ -62,23 +66,29 @@
 
 		<div class="fale-conosco-section-1">		
 
+					<div class="clearfix m-t-80"></div>
+
 			<div class="container">
 				<div class="row">
 
 					<div class="col-md-6">
-						<?php echo $utils->nl2p( $fale_conosco_section_1_text ); ?>
+						<div class="fale-conosco-section-1-text"><?php echo $utils->nl2p( $fale_conosco_section_1_text ); ?></div>
 					</div>
 					<!-- /.col-md-6 -->
 
+					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
+
 					<div class="col-md-6">
-						<?php echo wp_kses_decode_entities( $fale_conosco_section_1_title ); ?>
+						<div class="fale-conosco-section-1-title"><?php echo wp_kses_decode_entities( $fale_conosco_section_1_title ); ?></div>
 					</div>
 					<!-- /.col-md-6 -->
-					
+										
 				</div>
 				<!-- /.row -->
 			</div>
 			<!-- /.container -->
+					
+			<div class="clearfix m-t-80"></div>
 
 		</div>
 		<!-- /.fale-conosco-section-1 -->
@@ -95,15 +105,17 @@
 
 	<?php if( $fale_conosco_section_2_show ) : ?>
 
-		<div class="fale-conosco-section-2" style="background-image: url(<?php echo $fale_conosco_section_2_img; ?>);">		
+		<div class="fale-conosco-section-2 text-center" style="background-image: url(<?php echo $fale_conosco_section_2_img; ?>);">		
+			<div class="clearfix p-t-80"></div>
 
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-md-offset-3">
-						<h1><?php echo wp_kses_decode_entities( $fale_conosco_section_2_title ); ?></h1>
-						<span class="fale-conosco-section-2-pc"><?php echo $fale_conosco_section_2_pc; ?> %</span>
-						<span class="fale-conosco-section-2-text"><?php echo $utils->nl2p( $fale_conosco_section_2_text ); ?></span>
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="fale-conosco-section-2-title"><?php echo wp_kses_decode_entities( $fale_conosco_section_2_title ); ?></h1>
+						<div class="clearfix m-b-20"></div>
+						<span class="fale-conosco-section-2-pc"><?php echo $fale_conosco_section_2_pc; ?>%</span>
+						<span class="fale-conosco-section-2-text"><?php echo wp_kses_decode_entities( $fale_conosco_section_2_text ); ?></span>
 					</div>
 					<!-- /.col-md-6 -->
 					
@@ -111,6 +123,8 @@
 				<!-- /.row -->
 			</div>
 			<!-- /.container -->
+
+			<div class="clearfix p-b-80"></div>
 
 		</div>
 		<!-- /.fale-conosco-section-2 -->
@@ -121,6 +135,7 @@
 		$fale_conosco_section_3_show = get_post_meta( $post_id, 'fale_conosco_section_3_show', true );
 		$fale_conosco_section_3_title = get_post_meta( $post_id, 'fale_conosco_section_3_title', true );
 		$fale_conosco_section_3_text = get_post_meta( $post_id, 'fale_conosco_section_3_text', true );
+		$fale_conosco_section_3_btn_txt = get_post_meta( $post_id, 'fale_conosco_section_3_btn_txt', true );
 		$fale_conosco_section_3_pc = get_post_meta( $post_id, 'fale_conosco_section_3_pc', true );
 		$fale_conosco_section_3_img = get_post_meta( $post_id, 'fale_conosco_section_3_img', true );
 		$fale_conosco_section_3_img_title = get_post_meta( $post_id, 'fale_conosco_section_3_img_title', true );
@@ -129,23 +144,33 @@
 
 	<?php if( $fale_conosco_section_3_show ) : ?>
 
-		<div class="fale-conosco-section-3">		
+		<div class="fale-conosco-section-3">
+
+		<div class="clearfix m-t-80"></div>		
 
 			<div class="container">
 				<div class="row">
 
 					<div class="col-md-6">
 						<h1 class="fale-conosco-section-3-title"><?php echo $fale_conosco_section_3_title; ?></h1>
+						<div class="clearfix m-b-40"></div>
 						<div class="fale-conosco-section-3-text"><?php echo $utils->nl2p( $fale_conosco_section_3_text ); ?></div>
-						<a href="<?php echo $fale_conosco_section_3_text_url; ?>" class="prx-btn fale-conosco-section-3-btn"><?php echo $fale_conosco_section_3_btn_txt; ?></a>
+						<div class="clearfix m-b-40"></div>
+						<div class="text-center">
+							<a href="<?php echo $fale_conosco_section_3_text_url; ?>" class="prx-btn prx-btn-inline fale-conosco-section-3-btn"><?php echo $fale_conosco_section_3_btn_txt; ?></a>
+						</div>
 					</div>
 					<!-- /.col-md-6 -->
+
+					<div class="clearfix m-b-80 visible-xs visible-sm"></div>
 					
 					<div class="col-md-6">
-						<img src="<?php echo $fale_conosco_section_3_img; ?>" class="img-responsive center-block">
-						<h3 class="fale-conosco-section-3-title"><?php echo $fale_conosco_section_3_img_title; ?></h3>
-						<div class="fale-conosco-section-3-img-title"><?php echo $fale_conosco_section_3_img_title; ?></div>
-						<div class="fale-conosco-section-3-img-text"><?php echo $fale_conosco_section_3_img_text; ?></div>
+						<img src="<?php echo $fale_conosco_section_3_img; ?>" class="img-responsive center-block fale-conosco-section-3-img">
+						<div class="fale-conosco-section-3-block-cinza">
+							<h3 class="fale-conosco-section-3-img-title"><?php echo $fale_conosco_section_3_img_title; ?></h3>
+							<div class="fale-conosco-section-3-img-text"><?php echo $utils->nl2p( $fale_conosco_section_3_img_text ); ?></div>
+						</div>
+						<!-- /.fale-conosco-section-3-block-cinza -->
 					</div>
 					<!-- /.col-md-6 -->
 					
@@ -154,9 +179,13 @@
 			</div>
 			<!-- /.container -->
 
+			<div class="clearfix m-b-80"></div>
+
 		</div>
 		<!-- /.fale-conosco-section-3 -->
 
 	<?php endif; ?>
 
 </article><!-- #post-## -->
+
+<div class="clearfix m-b-40"></div>

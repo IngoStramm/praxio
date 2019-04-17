@@ -28,6 +28,7 @@
 			border: 1px solid $branco;
 			border-right: none;
 			@include radius( 0 );
+			@include placeholder-color( $branco );
 		}
 	}
 	.btn { 
