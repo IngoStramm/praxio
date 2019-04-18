@@ -87,7 +87,7 @@ function hide_editor() {
 		$pll_id = pll_get_post( $frontpage_id );
 
 		
-		$templates = array( 'front-page.php', 'fale-conosco-page.php', 'areas-de-atuacao-page.php' );
+		$templates = array( 'front-page.php', 'fale-conosco-page.php', 'areas-de-atuacao-page.php', 'sobre-page.php' );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
 			remove_post_type_support('page', 'editor');
@@ -102,3 +102,4 @@ require_once 'theme-options.php';
 require_once 'front-page.php';
 require_once 'fale-conosco.php';
 require_once 'areas-de-atuacao.php';
+require_once 'sobre.php';

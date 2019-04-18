@@ -2,4 +2,29 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	@include bg-size( cover );
+	.page-banner-titulo {
+		font-size: 78px;
+		line-height: 80px;
+		font-weight: 600;
+		color: $branco;
+		@include text-stroke( $branco, 2 );
+	}
+	.page-banner-subtitulo {
+		font-size: 30px;
+		line-height: 32px;
+		font-weight: 600;		
+		color: $branco;
+	}
+	.page-banner-texto {
+		font-size: 21px;
+		line-height: 24px;
+		font-weight: 400;
+		color: $branco;
+	}
+	.page-banner-btn {
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 400;
+		color: $branco;
+	}
 }

@@ -1,0 +1,31 @@
+.custom-ul {
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+				
+		}
+	}
+	&.custom-ul-arrow-1 {
+		ul {
+			li {
+				&:before {
+					content: '> ';
+					font-size: 28px;
+				}
+			}
+		}
+	}
+	&.custom-ul-arrow-2 {
+		ul {
+			li {
+				&:before {
+					content: '&#9658;';
+					font-size: 28px;
+				}
+			}
+		}
+	}
+}

@@ -50,9 +50,7 @@
 
 					<div class="col-lg-4 col-md-6 col-lg-offset-1">
 
-						<div class="prx-linha prx-linha-l prx-linha-radius-4 hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
-
-							<div class="prx-linha prx-linha-b prx-linha-radius-4" style="position: absolute; bottom: 0; left: 0; right: 0;"></div>
+						<div class="prx-linha prx-linha-l prx-linha-radius-4 prx-linha-b hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
 
 						</div>
 						<!-- /.prx-linha -->
@@ -62,6 +60,7 @@
 						<div class="clearfix m-t-80"></div>
 
 						<a href="<?php echo $areas_de_atuacao_banner_btn_url; ?>" class="areas-de-atuacao-banner-btn prx-btn prx-btn-inline" style="position: relative;">
+							
 							<?php echo $areas_de_atuacao_banner_btn_txt ?>
 							<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
 						</a>
