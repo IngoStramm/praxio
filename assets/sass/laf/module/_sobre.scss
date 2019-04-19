@@ -258,10 +258,11 @@
 			top: 0;
 			bottom: -80px;
 			right: 0;
-			left: -999999px;
+			left: -1920px;
 			z-index: 0;
 			background-repeat: no-repeat;
 			background-position: center right;
+			@include bg-size(cover);
 			@include radius( 0, 0, 50px, 0 );
 		}
 		.sobre-section-6-abas {

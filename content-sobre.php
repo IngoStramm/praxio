@@ -516,7 +516,6 @@
 						</ul>
 						<!-- /.nav nav-pills -->
 
-						<div class="clearfix p-b-80"></div>
 						
 					</div>
 					<!-- /.col-md-5 -->
