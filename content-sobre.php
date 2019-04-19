@@ -431,7 +431,7 @@
 
 	<?php if( $sobre_section_5_show ) : ?>
 
-		<div class="sobre-section-5">
+		<div class="sobre-section-5 ov-h">
 			
 			<div class="clearfix m-t-80"></div>
 
@@ -453,9 +453,17 @@
 
 					<div class="clearfix m-b-40"></div>
 
-					<div class="col-md-4 col-md-offset-6">
+					<div class="col-md-5 col-md-offset-6">
+
+						<div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; top: 0; left: 100%; width: 9999px;">
+
+							<div class="prx-linha prx-linha-r" style="position: absolute; top: 100%; right: 100%; width: 0;"></div>
+
+						</div>
 
 						<div class="sobre-section-5-text"><?php echo $utils->nl2p( $sobre_section_5_text ); ?></div>
+
+						<div class="clearfix m-b-80"></div>
 						
 					</div>
 					<!-- /.col-md-4 col-md-offset-6 -->
@@ -465,8 +473,6 @@
 
 			</div>
 			<!-- /.container -->
-
-			<div class="clearfix m-b-80"></div>
 
 		</div>
 		<!-- /.sobre-section-5 -->
@@ -521,8 +527,6 @@
 					<!-- /.col-md-5 -->
 					
 					<div class="col-md-5">
-
-						<div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; bottom: 100%; left: 100%; width: 9999px;"></div>
 
 						<div class="clearfix p-t-80"></div>
 
