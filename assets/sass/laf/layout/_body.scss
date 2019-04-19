@@ -1,3 +1,14 @@
 body {
 	font-family: 'Mukta', sans-serif;
+	&.admin-bar {
+		margin-top: 46px;
+	}
+}
+
+@media ( min-width: 781px ) {
+	body {
+		&.admin-bar {
+			margin-top: 32px;
+		}
+	}
 }

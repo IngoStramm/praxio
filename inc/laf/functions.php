@@ -188,6 +188,10 @@ function prx_modify_excerpt_more() {
 add_action( 'init', function() {
 	pll_register_string( 'prx', 'Leia Mais' );
 	pll_register_string( 'prx', 'Pesquisa por:' );
+	pll_register_string( 'prx', 'Profissionais' );
+	pll_register_string( 'prx', 'Mi' );
+	pll_register_string( 'prx', 'Funcionários' );
+	pll_register_string( 'prx', 'Contratos' );
 });
 
 function prx_return_0_to_100() {

@@ -153,7 +153,7 @@ function sobre_page_register_metabox() {
 
 	$cmb_section_2->add_field( array(
 		'name'       => esc_html__( 'Título', 'cmb2' ),
-		'id'         => $prefix . 'img',
+		'id'         => $prefix . 'title',
 		'type'       => 'text',
 		'sanitization_cb' => 'prx_allow_html',
 	) );

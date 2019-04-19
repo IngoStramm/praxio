@@ -1,0 +1,438 @@
+.sobre {
+	.sobre_section-1-linha-1 {
+		font-size: 29px;
+		line-height: 32px;
+		color: $verm-2;
+	}
+	.sobre_section-1-linha-2 {
+		font-size: 80px;
+		line-height: 82px;
+		font-weight: 600;
+		@include text-stroke( $cinza-1, 2 );
+	}
+	.sobre-section-1-text {
+		font-size: 19px;
+		line-height: 22px;
+		color: $cinza-2;
+	}
+	.sobre-section-1-img-title {
+		font-size: 29px;
+		line-height: 32px;
+		color: $verm-2;
+	}
+	.sobre-section-1-img-text {
+		color: $cinza-2;
+		font-size: 16px;
+		/*line-height: 18px;*/
+	}
+	.sobre-section-1-block {
+		padding: 40px;
+		background-color: $cinza-1;
+		@include radius( 0, 0, 0, 50px );
+	}
+
+	.sobre-section-2 {
+		.sobre-section-2-title {
+			display: block;
+			margin: auto;
+			padding: 10px 20px;
+			background-color: $verm-2;
+			color: $branco;
+			font-size: 29px;
+		}
+		.sobre-section-2-marca {
+			.sobre-section-2-marca-figure {
+				display: block;
+				position: relative;
+				margin: auto;
+				padding: 0;
+				width: 100%;
+				overflow: hidden;
+				.sobre-section-2-marca-figure-img {
+					display: block;
+					margin: auto;
+					max-width: 100%;
+				}
+			}
+			.sobre-section-2-marca-text {
+				font-size: 16px;
+				color: $cinza-2;
+			}
+			.sobre-section-2-marca-url {
+				position: relative;
+				font-size: 17px;
+				color: $verm-2;
+				font-weight: 600;
+				&:active,
+				&:hover,
+				&:focus,
+				&:hover:focus {
+					color: $verde-1;
+				}
+			}
+		}
+	}
+	.sobre-section-3 {
+		.sobre-section-3-linha-1 {
+			font-size: 29px;
+			line-height: 32px;
+			color: $verm-2;
+		}
+		.sobre-section-3-linha-2 {
+			font-size: 78px;
+			line-height: 82px;
+			font-weight: 600;
+			color: $cinza-2;
+			@include text-stroke( $cinza-2, 2 );
+		}
+		.sobre-section-3-ufs {
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			font-size: 19px;				
+			li {
+				display: block;
+				padding: 0;
+				margin: 0 auto 5px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				span {
+					display: inline-block;
+					vertical-align: middle;
+					padding: 2px 8px;
+					color: $verm-2;
+					background: $cinza-1;	
+				}
+			}
+		}
+		.sobre-section-3-img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.sobre-section-4 {
+		background-repeat: no-repeat;
+		background-position: center;
+		@include bg-size( cover );
+		color: $branco;
+		@include radius( 0, 0, 175px, 0 );
+		.sobre-section-4-title {
+			font-size: 39px;
+			line-height: 42px;
+			font-weight: 600;
+			strong {
+				color: $verm-2;
+			}
+		}
+		.sobre-section-4-text {
+			font-size: 18px;
+		}
+		.sobre-section-4-anos {
+			.sobre-section-4-anos-item {
+				display: block;
+				margin: 0 auto 40px;
+				padding: 0;
+				li {
+					position: relative;
+					display: block;
+					margin: 0 auto 40px;
+					padding: 6px 10px;
+					border: 1px solid $branco;
+					font-size: 19px;
+					font-weight: 600;
+					text-align: center;
+					text-transform: uppercase;
+					&:after {
+						content: '>';
+						display: block;
+						color: $verm-2;
+						position: absolute;
+						top: 100%;
+						right: 50%;
+						margin: 0 -15px 0 0;
+						font-size: 30px;
+						font-weight: 200;
+						@include rotate(90);
+					}
+					&:first-child {
+						color: $verm-2;
+						border-color: $verm-2;
+						&:after {
+							color: $verm-1;
+						}
+					}
+					&:last-child {
+						margin-bottom: 80px;
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.sobre-section-4-linha-1 {
+			font-size: 190px;
+			line-height: 220px;
+			font-weight: 600;
+			text-align: center;
+			color: $verm-2;
+			@include text-stroke( $verm-2, 3 );
+		}
+		.sobre-section-4-linha-2 {
+			font-size: 38px;
+			font-weight: 600;
+			text-align: center;
+		}
+		.sobre-section-4-profissionais {
+			.sobre-section-4-profissionais-item {
+				display: block;
+				margin: 0 auto 20px;
+				.sobre-section-4-profissionais-item-qtd {
+					margin: 0;
+					font-size: 66px;
+					line-height: 68px;
+					font-weight: 600;
+					text-align: center;
+					color: $verm-2;
+					@include text-stroke( $verm-2, 2 );
+					span {
+						display: block;
+						margin: 0;
+					}
+					.sobre-section-4-profissionais-item-qtd-title {
+						font-size: 16px;
+						line-height: 18px;
+						text-transform: lowercase;
+						font-weight: 600;
+						@include reset-text-stroke( $verm-2 );
+					}
+				}
+				.sobre-section-4-profissionais-item-text {
+					position: relative;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: uppercase;
+					text-align: center;
+					ul {
+						display: block;
+						margin: 0;
+						padding: 0;
+						list-style: none;
+					}
+				}
+			}
+		}
+	}
+	.sobre-section-5 {
+		.sobre-section-5-linha-1 {
+			font-size: 64px;
+			line-height: 66px;
+			font-weight: 600;
+			@include text-stroke( $cinza-1, 2 );
+			.sobre-section-5-linha-2 {
+				display: block;
+				margin: 0 auto 0;
+				font-size: 28px;
+				line-height: 30px;
+				font-weight: 400;
+				text-align: center;
+				color: $verm-2;
+				@include reset-text-stroke( $verm-2 );
+			}
+		}
+		.sobre-section-5-text {
+			font-size: 22px;
+			color: $cinza-2;
+		}
+	}
+	.sobre-section-6 {
+		position: relative;
+		background-color: $cinza-1;
+		color: $branco;
+		background-repeat: no-repeat;
+		background-position: center right;
+		@include bg-size(cover);
+		.sobre-section-6-img {
+			position: absolute;
+			top: 0;
+			bottom: -80px;
+			right: 0;
+			left: -999999px;
+			z-index: 0;
+			background-repeat: no-repeat;
+			background-position: center right;
+			@include radius( 0, 0, 50px, 0 );
+		}
+		.sobre-section-6-abas {
+			display: block;
+			margin: 0;
+			padding: 0 15px;
+			list-style: none;
+			.sobre-section-6-aba-item {
+				display: block;
+				margin: 0 0 20px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.sobre-section-6-aba-btn {
+					padding: 10px 20px;
+					font-size: 18px;
+					&:active,
+					&:hover,
+					&:focus,
+					&:hover:focus {
+						color: $verm-2;
+					}
+				}
+			}
+		}
+		.sobre-section-6-tab-content {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.sobre-section-6-aba-linha-1 {
+			font-size: 24px;
+			font-weight: 600;
+		}
+		.sobre-section-6-aba-linha-2 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+
+	.sobre {
+		.sobre-section-2 {
+			.sobre-section-2-marca {
+				.sobre-section-2-marca-url {
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						margin: 0 24px 0 0;
+						right: 100%;
+						bottom: 5px;
+						width: 18px;
+						height: 18px;
+						background: $branco;
+						border-top: $verm-2 solid 2px;
+						border-right: $verm-2 solid 2px;
+						z-index: 9;
+						@include rotate(45);
+					}
+				}
+			}
+		}
+		.sobre-section-4 {
+			display: block;
+			.sobre-section-4-linha-1,
+			.sobre-section-4-linha-2 {
+				text-align: left;
+			}
+			.sobre-section-4-anos {
+				.sobre-section-4-anos-item {
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 20px;
+					li {
+						margin: 0 40px 0 0;
+						&.sobre-section-4-anos-item-1 {
+							width: 120px;
+						}
+						&.sobre-section-4-anos-item-2 {
+							width: 140px;
+						}
+						&.sobre-section-4-anos-item-3 {
+							width: 220px;
+						}
+						&.sobre-section-4-anos-item-4 {
+							width: 210px;
+						}
+						&:after {
+							top: -3px;
+							margin: auto auto auto 15px;
+							left: 100%;
+							@include rotate(0);
+						}
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
+			}
+			.sobre-section-4-profissionais {
+				.sobre-section-4-profissionais-item {
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0 auto 30px;
+					justify-content: start;
+					align-items: stretch;
+					.sobre-section-4-profissionais-item-qtd {
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						flex-grow: 1;
+						width: 45%;
+						min-width: 160px;
+					}
+					.sobre-section-4-profissionais-item-text {
+						display: -webkit-flex;
+						display: -moz-flex;
+						display: -ms-flex;
+						display: -o-flex;
+						display: flex;
+						-ms-align-items: center;
+						align-items: center;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						flex-grow: 1;
+						width: 55%;
+						text-align: left;
+					}
+				}
+			}
+		}
+		.sobre-section-5 {
+			.sobre-section-5-linha-1 {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				width: auto;
+				margin: auto;
+				font-size: 120px;
+				line-height: 122px;
+				text-align: center;
+				.sobre-section-5-linha-2 {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.sobre {
+		.sobre-section-6 {
+			background-image: none !important;
+		}
+	}
+
+}

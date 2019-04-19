@@ -25,6 +25,12 @@
 		font-size: 16px;
 		line-height: 16px;
 		font-weight: 400;
-		color: $branco;
+		&:active,
+		&:hover,
+		&:focus,
+		&:hover:focus {
+			background-color: $branco;
+			color: $verde-1;			
+		}
 	}
 }

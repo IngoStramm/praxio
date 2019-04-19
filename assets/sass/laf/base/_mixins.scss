@@ -149,6 +149,12 @@
 	-webkit-text-stroke-color: #{$cor};
 }
 
+@mixin reset-text-stroke( $cor ) {
+	-webkit-text-fill-color: #{$cor};
+	-webkit-text-stroke-width: 0;
+	-webkit-text-stroke-color: transparent;
+}
+
 @mixin placeholder-color( $cor ) {
 	&::-webkit-input-placeholder {
 		/* WebKit, Blink, Edge */
