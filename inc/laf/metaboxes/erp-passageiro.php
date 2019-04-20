@@ -224,6 +224,44 @@ function erp_passageiro_page_register_metabox() {
         )
     ) );
 
+    /**
+     * SECTION 3
+     */
+    $prefix = 'erp_passageiro_section_3_';
+
+    $cmb_section_3 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => esc_html__( 'Seção #3', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_3->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #3?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_3->add_field( array(
+        'name'       => esc_html__( 'Título', 'cmb2' ),
+        'id'         => $prefix . 'title',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+    $cmb_section_3->add_field( array(
+        'name'       => esc_html__( 'Título 2', 'cmb2' ),
+        'id'         => $prefix . 'title_2',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_3->add_field( array(
+        'name'       => esc_html__( 'Texto', 'cmb2' ),
+        'id'         => $prefix . 'text',
+        'type'       => 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
 }
 
 function laf_show_if_erp_passageiro() {

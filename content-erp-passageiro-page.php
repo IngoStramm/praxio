@@ -257,4 +257,45 @@
         <!-- /.section-2 section -->
         <?php endif; ?>
 
+        <?php
+        $erp_passageiro_section_3_show = get_post_meta( $post_id, 'erp_passageiro_section_3_show', true );
+        $erp_passageiro_section_3_title = get_post_meta( $post_id, 'erp_passageiro_section_3_title', true );
+        $erp_passageiro_section_3_title_2 = get_post_meta( $post_id, 'erp_passageiro_section_3_title_2', true );
+        $erp_passageiro_section_3_text = get_post_meta( $post_id, 'erp_passageiro_section_3_text', true );
+        ?>
+
+        <?php if( $erp_passageiro_section_3_show ) : ?>
+
+            <div class="erp-passageiro-section-3">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="erp-passageiro-section-3-title">
+                                <?php echo wp_kses_decode_entities( $erp_passageiro_section_3_title ); ?>
+                                <br>
+                                <?php echo wp_kses_decode_entities( $erp_passageiro_section_3_title_2 ); ?>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+
+                        <div class="clearfix m-b-40 visible-xs visible-sm"></div>
+
+                        <div class="col-md-6">
+                            <div class="erp-passageiro-section-3-text"><?php echo $utils->nl2p( $erp_passageiro_section_3_text ); ?></div>
+                        </div>
+                        <!-- /.col-md-6 -->
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+
+                <div class="clearfix m-t-80"></div>
+
+            </div>
+            <!-- /.erp-passageiro-section-1 -->
+
+        <?php endif; ?>
+
 </article><!-- #post-## -->
