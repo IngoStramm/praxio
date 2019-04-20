@@ -56,7 +56,15 @@ function erp_passageiro_page_register_metabox() {
 		'id'         => $prefix . 'text',
 		'type'       => 'textarea',
 		'sanitization_cb' => 'prx_allow_html',
-	) );
+	));
+
+    $cmb_banner->add_field( array(
+        'name'       => esc_html__( 'Lista', 'cmb2' ),
+        'id'         => $prefix . 'ul_list',
+        'type'       => 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+    ));
+
 	$cmb_banner->add_field( array(
 		'name'       => esc_html__( 'Texto do botão', 'cmb2' ),
 		'id'         => $prefix . 'btn_txt',

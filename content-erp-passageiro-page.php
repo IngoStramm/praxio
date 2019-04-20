@@ -17,6 +17,7 @@
 	$erp_passageiro_banner_linha_2 = get_post_meta( $post_id, 'erp_passageiro_banner_linha_2', true );
 	$erp_passageiro_banner_linha_3 = get_post_meta( $post_id, 'erp_passageiro_banner_linha_3', true );
 	$erp_passageiro_banner_text = get_post_meta( $post_id, 'erp_passageiro_banner_text', true );
+	$erp_passageiro_banner_ul_list = get_post_meta( $post_id, 'erp_passageiro_banner_ul_list', true );
 	$erp_passageiro_banner_btn_url = get_post_meta( $post_id, 'erp_passageiro_banner_btn_url', true );
 	$erp_passageiro_banner_btn_txt = get_post_meta( $post_id, 'erp_passageiro_banner_btn_txt', true );
 ?>
@@ -58,6 +59,8 @@
 						<!-- /.prx-linha -->
 
 						<div class="areas-de-atuacao-banner-text"><?php echo $utils->nl2p( $erp_passageiro_banner_text ); ?></div>
+
+                        <div class="areas-de-atuacao-banner-ul-list list-ul list-ul-arrow-2 list-ul-font-white m-t-30"><?php echo $utils->nl2p( $erp_passageiro_banner_ul_list ); ?></div>
 
 						<div class="clearfix m-t-80"></div>
 

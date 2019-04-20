@@ -91,7 +91,7 @@ function hide_editor() {
             'fale-conosco-page.php',
             'areas-de-atuacao-page.php',
             'sobre-page.php',
-            'erp-passageiro.php'
+            'erp-passageiro-page.php'
         );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
