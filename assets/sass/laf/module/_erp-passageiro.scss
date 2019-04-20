@@ -1,0 +1,184 @@
+.erp-passageiro {
+  .erp-passageiro-banner {
+    .erp-passageiro-banner-line-1 {
+      font-size: 100px;
+      line-height: 100px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #FFFFFF;
+    }
+    .erp-passageiro-banner-line-2 {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .erp-passageiro-banner-line-3 {
+      color: #FFFFFF;
+      font-size: 23px;
+    }
+    .erp-passageiro-banner-text {
+      color: #FFFFFF;
+      font-size: 23px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    .erp-passageiro-banner-btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 16px;
+    }
+  }
+
+  .erp-passageiro-section-1 {
+    .erp-passageiro-section-1-text {
+      font-size: 22px;
+      color: #929497;
+    }
+    .erp-passageiro-section-1-title {
+      font-size: 160px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #929497;
+      line-height: 130px;
+    }
+  }
+
+  .erp-passageiro-section-2 {
+    .section-subtitle {
+      margin: 0;
+      padding: 0;
+      color: #ff1a3b;
+      font-size: 32px;
+    }
+
+    .prx-tabs {
+      .nav-tabs {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        border: none;
+        > li {
+          a {
+            display: block;
+            padding: 0 20px;
+            .prx-tabs-figure {
+              display: block;
+              position: relative;
+              margin: 0 auto 10px;
+              width: 100%;
+              height: 60px;
+              min-width: 70px;
+              .prx-tabs-icon {
+                display: block;
+                margin: auto;
+                max-width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+              }
+            }
+            .prx-nav-tabs-title {
+              display: block;
+              margin: auto;
+              padding: 0;
+              font-size: 11px;
+              text-align: center;
+              text-transform: uppercase;
+              color: #ff1a3b;
+              font-weight: 600;
+            }
+            #erp_passageiro_section_2_tabs_icon_tab {display: block;}
+            #erp_passageiro_section_2_tabs_icon_tab_active {display: none;}
+          }
+          &.active,
+          &:hover,
+          &:focus,
+          &:hover:focus {
+            .prx-nav-tabs-title {
+              color: #FFFFFF;
+            }
+            a {
+              position: relative;
+              background-color: #ff1a3b;
+              border-color: transparent;
+            }
+            #erp_passageiro_section_2_tabs_icon_tab {display: none;}
+            #erp_passageiro_section_2_tabs_icon_tab_active {display: block;}
+          }
+        }
+      }
+      .tab-content {
+        color: #FFFFFF;
+        background: #ff1a3b;
+        padding: 50px;
+        -webkit-border-radius: 0 0 75px 0;
+        -moz-border-radius: 0 0 75px 0;
+        border-radius: 0 0 75px 0;
+        font-size: 17px;
+        p {
+          font: inherit;
+          color: inherit;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .prx-tabs {
+        .nav-tabs {
+          border: none;
+          > li {
+            &.active,
+            &:hover,
+            &:focus,
+            &:hover:focus {
+              a {
+                position: relative;
+                background-color: #ff1a3b;
+                border-color: transparent;
+                &:before {
+                  display: block;
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 100%;
+                  width: 60px;
+                  height: 60px;
+                }
+                &:after {
+                  display: block;
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 100%;
+                  width: 60px;
+                  height: 60px;
+                  -webkit-box-shadow: -20px 20px 0 0 #ff1a3b;
+                  -moz-box-shadow: -20px 20px 0 0 #ff1a3b;
+                  box-shadow: -3px 0px 0 0 #D8D8D8, -20px 20px 0 0 #ff1a3b;
+                  margin-left: 4px;
+                }
+                &:before {
+                  box-shadow: 20px -20px 0 0 #ff1a3b;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}

@@ -23,11 +23,11 @@
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'areas-de-atuacao' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'erp-passageiro' ); ?>>
 
 	<?php if( $erp_passageiro_banner_show ) : ?>
 
-		<div class="page-banner areas-de-atuacao-banner" style="background-image: url(<?php echo $erp_passageiro_banner_img; ?>);">
+		<div class="page-banner erp-passageiro-banner" style="background-image: url(<?php echo $erp_passageiro_banner_img; ?>);">
 
 
 			<div class="container">
@@ -39,10 +39,10 @@
 					
 					<div class="col-lg-4 col-md-6 col-lg-offset-1">
 
-						<h1 class="areas-de-atuacao-banner-line-1"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_1 ); ?></h1>
-						<h3 class="areas-de-atuacao-banner-line-2"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_2 ); ?></h3>
+						<h1 class="erp-passageiro-banner-line-1"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_1 ); ?></h1>
+						<h3 class="erp-passageiro-banner-line-2"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_2 ); ?></h3>
 						<div class="clearfix m-b-20"></div>
-						<div class="areas-de-atuacao-banner-line-3"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_3 ); ?></div>
+						<div class="erp-passageiro-banner-line-3"><?php echo wp_kses_decode_entities( $erp_passageiro_banner_linha_3 ); ?></div>
 						
 					</div>
 					<!-- /.col-lg-4 -->
@@ -58,13 +58,13 @@
 						</div>
 						<!-- /.prx-linha -->
 
-						<div class="areas-de-atuacao-banner-text"><?php echo $utils->nl2p( $erp_passageiro_banner_text ); ?></div>
+						<div class="erp-passageiro-banner-text"><?php echo $utils->nl2p( $erp_passageiro_banner_text ); ?></div>
 
-                        <div class="areas-de-atuacao-banner-ul-list list-ul list-ul-arrow-2 list-ul-font-white m-t-30"><?php echo $utils->nl2p( $erp_passageiro_banner_ul_list ); ?></div>
+                        <div class="erp-passageiro-banner-ul-list list-ul list-ul-arrow-2 list-ul-font-white m-t-30"><?php echo $utils->nl2p( $erp_passageiro_banner_ul_list ); ?></div>
 
 						<div class="clearfix m-t-80"></div>
 
-						<a href="<?php echo $erp_passageiro_banner_btn_url; ?>" class="areas-de-atuacao-banner-btn prx-btn prx-btn-inline" style="position: relative;">
+						<a href="<?php echo $erp_passageiro_banner_btn_url; ?>" class="erp-passageiro-banner-btn prx-btn prx-btn-inline" style="position: relative;">
 							<?php echo $erp_passageiro_banner_btn_txt ?>
 							<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
 						</a>
@@ -82,122 +82,179 @@
 		<!-- /.page-banner -->
 	<?php endif; ?>
 
-	<?php
-		$erp_passageiro_areas_show = get_post_meta( $post_id, 'erp_passageiro_areas_show', true );
-		$erp_passageiro_areas_area = get_post_meta( $post_id, 'erp_passageiro_areas_area', true );
-		$erp_passageiro_cta_show = get_post_meta( $post_id, 'erp_passageiro_cta_show', true );
-	?>
+    <?php
+    $erp_passageiro_section_1_show = get_post_meta( $post_id, 'erp_passageiro_section_1_show', true );
+    $erp_passageiro_section_1_text = get_post_meta( $post_id, 'erp_passageiro_section_1_text', true );
+    $erp_passageiro_section_1_title = get_post_meta( $post_id, 'erp_passageiro_section_1_title', true );
+    ?>
 
-	<?php if( $erp_passageiro_areas_show ) : ?>
+    <?php if( $erp_passageiro_section_1_show ) : ?>
 
-		<div class="areas-de-atuacao-areas">		
+        <div class="erp-passageiro-section-1">
 
-			<div class="clearfix m-t-80"></div>
+            <div class="clearfix m-t-80"></div>
 
-			<?php $i = 0; ?>
+            <div class="container">
+                <div class="row">
 
-			<?php foreach( $erp_passageiro_areas_area as $area ) : ?>
+                    <div class="col-md-5 col-lg-offset-1">
+                        <div class="erp-passageiro-section-1-text"><?php echo $utils->nl2p( $erp_passageiro_section_1_text ); ?></div>
+                    </div>
+                    <!-- /.col-md-6 -->
 
-				<?php //$utils->debug( $area ) ; ?>
-				
-				<div class="container">
-					<div class="row">
+                    <div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-						<div class="col-md-12">
-							
-							<div class="areas-de-atuacao-areas-area">
-								
-								<div class="areas-de-atuacao-areas-area-banner" style="background-image: url(<?php echo $area[ 'erp_passageiro_areas_img' ]; ?>);">
-									
-									<div class="row">
-										<div class="col-md-4 text-center">
+                    <div class="col-md-6">
+                        <div class="erp-passageiro-section-1-title"><?php echo wp_kses_decode_entities( $erp_passageiro_section_1_title ); ?></div>
+                    </div>
+                    <!-- /.col-md-6 -->
 
-											<img src="<?php echo $area[ 'erp_passageiro_areas_icon' ]; ?>" alt="<?php echo $area[ 'erp_passageiro_areas_title' ]; ?>" class="img-responsive center-block areas-de-atuacao-areas-area-banner-icon">
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
 
-											<div class="clearfix m-b-40"></div>
+            <div class="clearfix m-t-80"></div>
 
-											<h3 class="areas-de-atuacao-areas-area-banner-title"><?php echo $area[ 'erp_passageiro_areas_title' ]; ?></h3>
-											
-										</div>
-										<!-- /.col-md-4 -->
-									</div>
-									<!-- /.row -->
-								</div>
-								<!-- /.areas-de-atuacao-areas-area-banner -->
+        </div>
+        <!-- /.erp-passageiro-section-1 -->
 
-								<div class="clearfix m-b-40"></div>
+    <?php endif; ?>
 
-								<div class="row">
-									<div class="col-md-8 col-md-offset-3">
+    <?php
+    $show_section_2 = get_post_meta( $post_id, 'erp_passageiro_section_2_show', true );
+    $erp_passageiro_section_2_text_1 = get_post_meta( $post_id, 'erp_passageiro_section_2_text_1', true );
+    $erp_passageiro_section_2_tabs_slide = get_post_meta( $post_id, 'erp_passageiro_section_2_tabs_slide', true );
+    ?>
 
-										<div class="prx-linha prx-linha-l prx-linha-radius-4 hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
+    <?php if( $show_section_2 ) : ?>
+    <div class="erp-passageiro-section-2 section">
 
-											<div class="prx-linha prx-linha-b prx-linha-radius-4" style="position: absolute; bottom: 0; left: 0; right: 0;"></div>
+        <div class="block block-cinza" style="overflow: hidden;">
 
-										</div>
-										<!-- /.prx-linha -->
+            <div class="clearfix visible-xs visible-sm m-t-80"></div>
 
+            <div class="container">
+                <div class="row">
 
-										<div class="areas-de-atuacao-areas-area-text"><?php echo $utils->nl2p( $area[ 'erp_passageiro_areas_text' ] ) ; ?></div>
+                    <div class="row-height">
 
-										<div class="clearfix m-b-20"></div>
+                        <div class="col-md-5 col-md-height col-md-middle">
 
-										<a href="<?php echo $area[ 'erp_passageiro_areas_btn_url' ]; ?>" class="areas-de-atuacao-areas-area-btn prx-btn prx-btn-inline"><?php echo $area[ 'erp_passageiro_areas_btn_txt' ]; ?></a>
-										
-									</div>
-									<!-- /.col-md-8 col-md-offset-3 -->
-								</div>
-								<!-- /.row -->
+                            <div style="position: absolute; top: -250px; height: 1000px; left: -45px;"></div>
 
-							</div>
-							<!-- /.areas-de-atuacao-areas-area -->
-						</div>
-						<!-- /.col-md-12 -->
+                            <div class="row">
+                                <div class="col-md-9 col-md-offset-1 text-center">
 
-						<div class="col-md-6">
-							<div class="areas-de-atuacao-areas-text"><?php echo $utils->nl2p( $erp_passageiro_section_1_text ); ?></div>
-						</div>
-						<!-- /.col-md-6 -->
+                                    <h3 class="section-subtitle"><?php echo $erp_passageiro_section_2_text_1; ?></h3>
 
-						<div class="clearfix m-b-40 visible-xs visible-sm"></div>
+                                </div>
+                                <!-- /.col-md-8 col-md-offset-2 -->
+                            </div>
+                            <!-- /.row -->
 
-						<div class="col-md-6">
-							<div class="areas-de-atuacao-areas-title"><?php echo wp_kses_decode_entities( $erp_passageiro_section_1_title ); ?></div>
-						</div>
-						<!-- /.col-md-6 -->
-											
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
+                        </div>
+                        <!-- /.col-md-5 -->
 
-				<?php if( $i < count( $erp_passageiro_areas_area ) ) : ?>
+                        <div class="clearfix visible-xs visible-sm m-t-20"></div>
 
-					<div class="cleafix m-b-80"></div>
+                        <div class="col-md-7 col-md-height col-md-middle">
 
-				<?php endif; ?>
+                            <div class="prx-tabs">
 
-				<?php if( $i == 1 && $erp_passageiro_cta_show ) : ?>
+                                <ul class="nav nav-tabs">
+                                    <?php $i = 0; ?>
+                                    <?php foreach( $erp_passageiro_section_2_tabs_slide as $tab ) : ?>
 
-					<?php include_once( 'inc/laf/parts/areas-de-atuacao-cta.php' ); ?>
+                                        <li<?php echo $i == 0 ? ' class="active"' : '' ?>>
 
-					<div class="clearfix m-b-80"></div>
+                                            <a data-toggle="tab" href="#menu-<?php echo $i + 1; ?>">
 
-				<?php endif; ?>
+                                                <div class="clearfix m-t-30"></div>
 
-				<?php $i++; ?>
+                                                <figure class="prx-tabs-figure">
+                                                    <img id="erp_passageiro_section_2_tabs_icon_tab" src="<?php echo $tab[ 'erp_passageiro_section_2_tabs_icon_tab' ]; ?>" class="prx-tabs-icon">
+                                                    <img id="erp_passageiro_section_2_tabs_icon_tab_active" src="<?php echo $tab[ 'erp_passageiro_section_2_tabs_icon_tab_active' ]; ?>" class="prx-tabs-icon">
+                                                </figure>
+                                                <!-- /.prx-tabs-figure -->
+                                                <div class="prx-nav-tabs-title"><?php echo $tab[ 'erp_passageiro_section_2_tabs_title_tab' ]; ?></div>
 
-			<?php endforeach ?>
+                                                <div class="clearfix m-t-30"></div>
 
-		</div>
-		<!-- /.areas-de-atuacao-areas -->
+                                            </a>
 
-	<?php endif; ?>
+                                        </li>
 
-	<?php if( $i < 1 && $erp_passageiro_cta_show ) : ?>
+                                        <?php // $utils->debug( $tab ); ?>
 
-		<?php include_once( 'inc/laf/parts/erp-passageiro-cta.php' ); ?>
+                                        <?php $i++; ?>
 
-	<?php endif; ?>
+                                    <?php endforeach; ?>
+                                </ul>
+
+                            </div>
+                            <!-- /.prx-tabs -->
+
+                        </div>
+                        <!-- /.col-md-7 -->
+
+                    </div>
+                    <!-- /.row-height -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+            <div class="clearfix visible-xs visible-sm m-b-80"></div>
+
+        </div>
+        <!-- /.block block-cinza -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="row-height">
+
+                    <div class="col-md-12 col-md-height col-md-middle">
+
+                        <div class="prx-tabs">
+
+                            <div class="tab-content">
+
+                                <?php $i = 0; ?>
+                                <?php foreach( $erp_passageiro_section_2_tabs_slide as $tab ) : ?>
+
+                                    <div id="menu-<?php echo $i + 1; ?>" class="tab-pane fade in<?php echo $i == 0 ? ' active' : '' ?>">
+                                        <h2 class="p-b-15"><strong><?php echo $utils->nl2p( $tab[ 'erp_passageiro_section_2_tabs_title_text_tab' ] ); ?></strong></h2>
+                                        <?php echo $utils->nl2p( $tab[ 'erp_passageiro_section_2_tabs_text_tab' ] ); ?>
+                                    </div>
+                                    <!-- ./tab-pane -->
+
+                                    <?php $i++; ?>
+
+                                <?php endforeach; ?>
+
+                            </div>
+                            <!-- /.tab-content -->
+
+                        </div>
+                        <!-- ./prx-tabs -->
+
+                        <div class="cleafix m-b-80"></div>
+
+                    </div>
+                    <!-- /.col-md-4 -->
+
+                    <!-- ./row-height -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.section-2 section -->
+        <?php endif; ?>
 
 </article><!-- #post-## -->
