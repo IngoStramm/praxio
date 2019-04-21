@@ -262,6 +262,104 @@ function erp_passageiro_page_register_metabox() {
         'sanitization_cb' => 'prx_allow_html',
     ) );
 
+    /**
+     * SESSION 4
+     */
+    $prefix = 'erp_passageiro_section_4_';
+
+    $cmb_section_4 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => __( 'Seção #4', 'laf' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_4->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #4?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_4->add_field( array(
+        'name' 				=> __( 'Plano de fundo', 'laf' ),
+        'id'   				=> $prefix . 'img',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+        )
+    ) );
+
+    $cmb_section_4->add_field( array(
+        'name'       => esc_html__( 'Abas', 'cmb2' ),
+        'id'         => $prefix . 'abas_title',
+        'type'       => 'title',
+    ) );
+
+    $group_field_id = $cmb_section_4->add_field( array(
+        'id'          => $prefix . 'aba',
+        'type'        => 'group',
+        'options'     => array(
+            'group_title'   => esc_html__( 'Aba {#}', 'cmb2' ), // {#} gets replaced by row number
+            'add_button'    => esc_html__( 'Adicionar nova Aba', 'cmb2' ),
+            'remove_button' => esc_html__( 'Remover Aba', 'cmb2' ),
+            'sortable'      => true, // beta
+            // 'closed'     => true, // true to have the groups closed by default
+        ),
+    ) );
+
+    $cmb_section_4->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Título do botão', 'laf' ),
+        'id'   				=> $prefix . 'title_button',
+        'type' 				=> 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_4->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Ícone do botão', 'laf' ),
+        'desc'				=> __( 'Ícone do botão inativo (32x32px ou proporcional).', 'laf' ),
+        'id'   				=> $prefix . 'icon_tab',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+            // 'required'		=> ''
+        )
+    ) );
+
+    $cmb_section_4->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Ícone do botão (Ativo)', 'laf' ),
+        'desc'				=> __( 'Ícone do botão ativo (32x32px ou proporcional).', 'laf' ),
+        'id'   				=> $prefix . 'icon_tab_active',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+            // 'required'		=> ''
+        )
+    ) );
+
+    $cmb_section_4->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Título do Texto', 'laf' ),
+        'desc'				=> __( 'Normalmente a primeira linha do conteúdo', 'laf' ),
+        'id'   				=> $prefix . 'linha_1',
+        'type' 				=> 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_4->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Conteúdo do Texto', 'laf' ),
+        'desc'				=> __( 'Conteúdo formadado. Pode ser texto ou listas UL/LI', 'laf' ),
+        'id'   				=> $prefix . 'linha_2',
+        'type' 				=> 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
 }
 
 function laf_show_if_erp_passageiro() {

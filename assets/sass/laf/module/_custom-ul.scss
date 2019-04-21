@@ -11,9 +11,15 @@
 	&.list-ul-arrow-1 {
 		ul {
 			li {
+				padding: 3px 0;
 				&:before {
 					content: '> ';
-					font-size: 28px;
+					font-size: 35px;
+					color: #ff1a3b;
+					position: absolute;
+					top: -13px;
+					left: -20px;
+					padding-right: 5px;
 				}
 			}
 		}
