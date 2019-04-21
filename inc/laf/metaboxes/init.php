@@ -91,7 +91,8 @@ function hide_editor() {
             'fale-conosco-page.php',
             'areas-de-atuacao-page.php',
             'sobre-page.php',
-            'erp-passageiro-page.php'
+            'erp-passageiro-page.php',
+            'erp-logistica-page.php'
         );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
@@ -109,3 +110,4 @@ require_once 'fale-conosco.php';
 require_once 'areas-de-atuacao.php';
 require_once 'sobre.php';
 require_once 'erp-passageiro.php';
+require_once 'erp-logistica.php';
