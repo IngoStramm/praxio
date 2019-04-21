@@ -300,6 +300,52 @@
     }
   }
 
+  .erp-passageiro-section-5 {
+    .section-head {
+      text-transform: uppercase;
+      letter-spacing: 14px;
+      color: #ff213f;
+      font-size: 26px;
+      padding-bottom: 10px;
+    }
+    .prx-carousel-block-txt {
+      -webkit-border-radius: 0 0 0 75px;
+      -moz-border-radius: 0 0 0 75px;
+      border-radius: 0 0 0 75px;
+    }
+    .box-list {
+      margin-left: 28px;
+      border-bottom: 2px solid #ff213f;
+      border-left: 2px solid #ff213f;
+      -webkit-border-radius: 0 0 0 75px;
+      -moz-border-radius: 0 0 0 75px;
+      border-radius: 0 0 0 75px;
+      .content-icon {
+        float:left;
+        background: #fff;
+        padding: 20px 0;
+        img {
+          width: 42px;
+        }
+      }
+      .box-content {
+        margin-left: -22px;
+      }
+      .text-box {
+        display: table;
+        padding: 20px 0 20px 30px;
+        .content-title {
+          font-size: 24px;
+          color: #ff213f;
+        }
+        .content-text {
+          padding-top: 10px;
+          font-size: 16px;
+          color: rgba(146, 148, 151, 255);
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {

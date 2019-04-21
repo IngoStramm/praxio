@@ -400,9 +400,100 @@
                 </div>
                 <!-- /.container -->
 
+                <div class="clearfix m-b-80"></div>
+
             </div>
             <!-- /.erp-passageiro-section-4 -->
 
+        <?php endif; ?>
+
+        <?php
+        /**
+         * SESSION 5
+         */
+        $erp_passageiro_section_5_show = get_post_meta( $post_id, 'erp_passageiro_section_5_show', true );
+        $erp_passageiro_section_5_title = get_post_meta( $post_id, 'erp_passageiro_section_5_title', true );
+        $erp_passageiro_section_5_slide = get_post_meta( $post_id, 'erp_passageiro_section_5_slider_slide', true );
+        $erp_passageiro_section_5_list = get_post_meta( $post_id, 'erp_passageiro_section_5_list_list', true );
+        ?>
+
+        <?php if( $erp_passageiro_section_5_show ) : ?>
+            <div class="erp-passageiro-section-5">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <h2 class="section-head"><?php echo $utils->nl2p( $erp_passageiro_section_5_title ); ?></h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="prx-linha prx-linha-b">
+                                <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs" style="position: absolute;top: 0;left: 100%;height: 160px;width: 60px;"></div>
+                            </div>
+
+                            <div class="clearfix m-b-60"></div>
+
+                            <div id="front-page-carousel-2" class="carousel prx-carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <?php $i = 0; ?>
+                                    <?php foreach( $erp_passageiro_section_5_slide as $slide ) : ?>
+
+                                        <div class="item<?php echo $i > 0 ? '' : ' active' ?>">
+                                            <?php // $utils->debug( $slide ); ?>
+
+                                            <img class="img-responsive center-block" src="<?php echo $slide[ 'erp_passageiro_section_5_slider_img' ]; ?>" alt="<?php echo $slide[ 'erp_passageiro_section_5_slider_text' ]; ?>" style="width: 100%;">
+
+                                            <div class="prx-carousel-block-txt"><?php echo $utils->nl2p( $slide[ 'erp_passageiro_section_5_slider_text' ] ); ?></div>
+
+                                        </div>
+                                        <!-- ./item -->
+                                        <?php $i++; ?>
+                                    <?php endforeach; ?>
+
+                                </div>
+
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <?php $i = 0; ?>
+                                    <?php foreach( $erp_passageiro_section_5_slide as $slide ) : ?>
+
+                                        <li data-target="#front-page-carousel-2" data-slide-to="<?php echo $i; ?>" <?php echo $i > 0 ? '' : 'class="active"' ?>><span class="demi-circle"></span></li>
+                                        <?php $i++; ?>
+
+                                    <?php endforeach; ?>
+                                </ol>
+
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+
+                        <div class="col-md-6">
+                            <div class="clearfix p-t-60"></div>
+                            <div class="box-list">
+
+                                <?php foreach( $erp_passageiro_section_5_list as $list ) : ?>
+                                    <div class="box-content">
+                                        <div class="content-icon"><img src="<?php echo $list['erp_passageiro_section_5_list_icon']; ?>" alt="<?php echo $list['erp_passageiro_section_5_list_title']; ?>"></div>
+                                        <div class="text-box">
+                                        <h3 class="content-title"><?php echo $list['erp_passageiro_section_5_list_title']; ?></h3>
+                                        <div class="content-text"><?php echo $list['erp_passageiro_section_5_list_text']; ?></div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                                <div class="clearfix p-b-60"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+                <div class="clearfix p-b-80"></div>
+            </div>
         <?php endif; ?>
 
 </article><!-- #post-## -->

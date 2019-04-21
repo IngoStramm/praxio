@@ -360,6 +360,140 @@ function erp_passageiro_page_register_metabox() {
         'type' 				=> 'textarea',
         'sanitization_cb' => 'prx_allow_html',
     ) );
+
+    /**
+     * SESSION 5
+     */
+    $prefix = 'erp_passageiro_section_5_';
+
+    $cmb_section_5 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => esc_html__( 'Seção #5', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_5->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #5?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_5->add_field( array(
+        'name'       => esc_html__( 'Título Principal', 'cmb2' ),
+        'id'         => $prefix . 'title',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    /**
+     * SESSION 5 SLIDER
+     */
+    $prefix = 'erp_passageiro_section_5_slider_';
+
+    $cmb_section_5_slider = new_cmb2_box( array(
+        'id'            => $prefix . 'banner',
+        'title'         => __( 'Slider Seção #5', 'laf' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $group_field_id = $cmb_section_5_slider->add_field( array(
+        'id'          => $prefix . 'slide',
+        'type'        => 'group',
+        'description' => esc_html__( 'Adicione os slides da Seção #5', 'cmb2' ),
+        'options'     => array(
+            'group_title'   => esc_html__( 'Slide {#}', 'cmb2' ), // {#} gets replaced by row number
+            'add_button'    => esc_html__( 'Adicionar', 'cmb2' ),
+            'remove_button' => esc_html__( 'Remover', 'cmb2' ),
+            'sortable'      => true, // beta
+            // 'closed'     => true, // true to have the groups closed by default
+        ),
+    ) );
+
+    $cmb_section_5_slider->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Texto', 'laf' ),
+        'id'   				=> $prefix . 'text',
+        'type' 				=> 'text',
+        'sanitization_cb' => 'prx_allow_html',
+        'attributes' 		=> array(
+            // 'required'		=> ''
+        )
+    ) );
+
+    $cmb_section_5_slider->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Imagem', 'laf' ),
+        // 'desc'				=> __( 'Imagem do banner principal', 'laf' ),
+        'id'   				=> $prefix . 'img',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+            // 'required'		=> ''
+        )
+    ) );
+
+    /**
+     * SESSION 5 LIST
+     */
+    $prefix = 'erp_passageiro_section_5_list_';
+
+    $cmb_section_5_list = new_cmb2_box( array(
+        'id'            => $prefix . 'list',
+        'title'         => __( 'Listas Seção #5', 'laf' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $group_field_id = $cmb_section_5_list->add_field( array(
+        'id'          => $prefix . 'list',
+        'type'        => 'group',
+        'description' => esc_html__( 'Adicione os itens da lista da Seção #5', 'cmb2' ),
+        'options'     => array(
+            'group_title'   => esc_html__( 'Item {#}', 'cmb2' ), // {#} gets replaced by row number
+            'add_button'    => esc_html__( 'Adicionar', 'cmb2' ),
+            'remove_button' => esc_html__( 'Remover', 'cmb2' ),
+            'sortable'      => true, // beta
+            // 'closed'     => true, // true to have the groups closed by default
+        ),
+    ) );
+
+    $cmb_section_5_list->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Ícone', 'laf' ),
+        // 'desc'				=> __( 'Imagem do banner principal', 'laf' ),
+        'id'   				=> $prefix . 'icon',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+            // 'required'		=> ''
+        )
+    ) );
+
+    $cmb_section_5_list->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Título', 'laf' ),
+        'id'   				=> $prefix . 'title',
+        'type' 				=> 'text',
+        'sanitization_cb' => 'prx_allow_html',
+        'attributes' 		=> array(
+            // 'required'		=> ''
+        )
+    ) );
+
+    $cmb_section_5_list->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Texto', 'laf' ),
+        'id'   				=> $prefix . 'text',
+        'type' 				=> 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+        'attributes' 		=> array(
+            // 'required'		=> ''
+        )
+    ) );
+
 }
 
 function laf_show_if_erp_passageiro() {
