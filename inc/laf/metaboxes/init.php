@@ -92,7 +92,8 @@ function hide_editor() {
             'areas-de-atuacao-page.php',
             'sobre-page.php',
             'erp-passageiro-page.php',
-            'erp-logistica-page.php'
+            'erp-logistica-page.php',
+            'ponto-virtual-page.php',
         );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
@@ -112,3 +113,4 @@ require_once 'sobre.php';
 require_once 'erp-passageiro.php';
 require_once 'erp-logistica.php';
 require_once 'venda-de-passagens.php';
+require_once 'ponto-virtual.php';
