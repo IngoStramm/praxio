@@ -1,0 +1,302 @@
+.erp-logistica {
+
+  .erp-logistica-banner {
+    .erp-logistica-banner-line-1 {
+      font-size: 100px;
+      line-height: 100px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #FFFFFF;
+    }
+    .erp-logistica-banner-line-2 {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .erp-logistica-banner-line-3 {
+      color: #FFFFFF;
+      font-size: 23px;
+    }
+    .erp-logistica-banner-text {
+      color: #FFFFFF;
+      font-size: 23px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    .erp-logistica-banner-btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 16px;
+    }
+    .erp-logistica-banner-ul-list {
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .erp-logistica-section-1 {
+    .erp-logistica-section-1-text {
+      font-size: 30px;
+      color: #929497;
+    }
+    .erp-logistica-section-1-title {
+      font-size: 120px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #929497;
+      line-height: 130px;
+    }
+  }
+
+  .erp-logistica-section-2 {
+    .section-title {
+      font-size: 50px;
+      text-align: center;
+      color: #ff1a3b;
+    }
+    .item-icon {
+      height: 85px;
+      padding: 0 20px 20px 0;
+    }
+    .item-title {
+      font-size: 24px;
+      color: rgba(146, 148, 151, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .item-image {
+      img {
+        width: 100%;
+        -webkit-border-radius: 0 0 0 60px;
+        -moz-border-radius: 0 0 0 60px;
+        border-radius: 0 0 0 60px;
+      }
+    }
+  }
+
+  .erp-logistica-section-3 {
+    .line-top {
+      width: 75%;
+    }
+    .line-right {
+      position: absolute;
+      top: 0;
+      right: -40%;
+      height: 160px;
+      width: 280px;
+    }
+
+    .section-title {
+      color: #ff1a3b;
+      font-size: 42px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .section-subtitle {
+      color: rgba(146, 148, 151, 255);
+    }
+
+    .erp-logistica-section-3-abas {
+      display: block;
+      margin: 0;
+      padding: 0 15px;
+      list-style: none;
+      .erp-logistica-section-3-aba-item {
+        &.active {border:none;}
+        border: solid 1px rgba(146, 148, 151, 255);
+        display: block;
+        margin: 0 0 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .erp-logistica-section-3-aba-btn {
+          padding: 10px 20px;
+          font-size: 18px;
+          color: rgba(146, 148, 151, 255);
+          &.active,
+          &:hover,
+          &:focus,
+          &:hover:focus {
+            color: #ff1a3b;
+          }
+        }
+      }
+      > li {
+        &.active,
+        &:hover,
+        &:focus,
+        &:hover:focus {
+          .erp-logistica-section-3-aba-btn {
+            color: #ff1a3b;
+          }
+          a {
+            /*position: relative;*/
+            background-color: #f0efef;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+    .erp-logistica-section-3-aba-linha-2 {
+      font-size: 24px;
+      color: #929497;
+      font-weight: lighter;
+      p {
+        margin: 0 0 0 0;
+      }
+    }
+    ul {
+      margin: 0 0 0 30px;
+      li {
+        &:before {
+          font-size: 50px;
+          color: #ff1a3b;
+          position: absolute;
+          top: -17px;
+          left: -30px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .erp-logistica-section-4 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+
+    .section-title {
+      color: #ffffff;
+      font-size: 42px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h4 {
+      color: #ff1a3b;
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+  }
+
+  .erp-logistica-section-5 {
+    .section-title {
+      color: #ff1a3b;
+      font-size: 42px;
+      font-weight: bold;
+      padding: 30px 0;
+    }
+    .subtitle {
+      color: rgba(146, 148, 151, 255);
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      -webkit-border-radius: 0 0 60px 0;
+      -moz-border-radius: 0 0 60px 0;
+      border-radius: 0 0 60px 0;
+      margin-bottom: 50px;
+    }
+    h4 {
+      color: #ff1a3b;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    p {
+      color: rgba(146, 148, 151, 255);
+      font-size: 16px;
+    }
+  }
+
+  .erp-logistica-section-6 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    text-align: center;
+    .section-title {
+      color: #ffffff;
+      font-size: 32px;
+      padding-bottom: 40px;
+    }
+    .erp-logistica-btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 16px;
+    }
+  }
+
+  .erp-logistica-section-7 {
+    .section-head {
+      text-transform: uppercase;
+      letter-spacing: 14px;
+      color: #ff213f;
+      font-size: 26px;
+      padding-bottom: 10px;
+    }
+    .prx-carousel-block-txt {
+      -webkit-border-radius: 0 0 0 75px;
+      -moz-border-radius: 0 0 0 75px;
+      border-radius: 0 0 0 75px;
+    }
+    .box-list {
+      margin-left: 28px;
+      border-bottom: 2px solid #ff213f;
+      border-left: 2px solid #ff213f;
+      -webkit-border-radius: 0 0 0 75px;
+      -moz-border-radius: 0 0 0 75px;
+      border-radius: 0 0 0 75px;
+      .content-icon {
+        float:left;
+        background: #fff;
+        padding: 20px 0;
+        img {
+          width: 42px;
+        }
+      }
+      .box-content {
+        margin-left: -22px;
+      }
+      .text-box {
+        display: table;
+        padding: 20px 0 20px 30px;
+        .content-title {
+          font-size: 24px;
+          color: #ff213f;
+        }
+        .content-text {
+          padding-top: 10px;
+          font-size: 16px;
+          color: rgba(146, 148, 151, 255);
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .erp-logistica {
+    .erp-logistica-section-1 {
+      .erp-logistica-section-1-title {
+        font-size: 80px;
+        line-height: 90px;
+      }
+    }
+  }
+}
