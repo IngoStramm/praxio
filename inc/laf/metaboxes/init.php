@@ -111,3 +111,4 @@ require_once 'areas-de-atuacao.php';
 require_once 'sobre.php';
 require_once 'erp-passageiro.php';
 require_once 'erp-logistica.php';
+require_once 'venda-de-passagens.php';
