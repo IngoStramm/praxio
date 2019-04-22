@@ -24,7 +24,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'erp-logistica' ); ?>>
     <?php if( $erp_logistica_banner_show ) : ?>
-
         <div class="page-banner erp-logistica-banner" style="background-image: url(<?php echo $erp_logistica_banner_img; ?>);">
 
             <div class="container">
