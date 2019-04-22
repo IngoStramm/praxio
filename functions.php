@@ -269,6 +269,14 @@ function odin_stylesheet_uri( $uri, $dir ) {
 add_filter( 'stylesheet_uri', 'odin_stylesheet_uri', 10, 2 );
 
 /**
+ * TEMPORÁRIO: Adiciona "custom_style.css" ao tema.
+ */
+function custom_style() {
+    wp_enqueue_style( 'temp-custom-style', get_template_directory_uri() . '/assets/css/custom_style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'custom_style' );
+
+/**
  * Query WooCommerce activation
  *
  * @since  2.2.6

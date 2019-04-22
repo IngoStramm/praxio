@@ -1,30 +1,49 @@
-.custom-ul {
+.list-ul {
 	ul {
 		display: block;
-		margin: 0;
+		margin: 0 0 0 20px;
 		padding: 0;
 		list-style: none;
 		li {
-				
+			position: relative;
 		}
 	}
-	&.custom-ul-arrow-1 {
+	&.list-ul-arrow-1 {
 		ul {
 			li {
+				padding: 3px 0;
 				&:before {
 					content: '> ';
-					font-size: 28px;
+					font-size: 35px;
+					color: #ff1a3b;
+					position: absolute;
+					top: -13px;
+					left: -20px;
+					padding-right: 5px;
 				}
 			}
 		}
 	}
-	&.custom-ul-arrow-2 {
+	&.list-ul-arrow-2 {
 		ul {
 			li {
 				&:before {
-					content: '&#9658;';
-					font-size: 28px;
+					content: "\25BA \0020";
+					font-size: 16px;
+					color: #ff1a3b;
+					position: absolute;
+					top: 0px;
+					left: -20px;
+					padding-right: 5px;
 				}
+			}
+		}
+	}
+	&.list-ul-font-white {
+		ul {
+			li {
+				color: #ffffff;
+				font-size: 16px;
 			}
 		}
 	}
