@@ -152,4 +152,34 @@
         <div class="p-t-50"></div>
     <?php endif; ?>
 
+    <?php
+    /**
+     * SESSION 3
+     */
+    $ponto_virtual_section_3_show = get_post_meta( $post_id, 'ponto_virtual_section_3_show', true );
+    $ponto_virtual_section_3_text = get_post_meta( $post_id, 'ponto_virtual_section_3_text', true );
+    ?>
+
+    <?php if( $ponto_virtual_section_3_show ) : ?>
+
+        <div class="ponto-virtual-section-3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="ponto-virtual-section-3-text"><?php echo $utils->nl2p( $ponto_virtual_section_3_text ); ?></div>
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+            <div class="clearfix m-t-80"></div>
+
+        </div>
+        <!-- /.erp-passageiro-section-1 -->
+
+    <?php endif; ?>
+    
 </article>
