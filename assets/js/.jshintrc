@@ -16,9 +16,11 @@
 	"browser": true,
 
 	"globals": {
+		"console": true,
 		"_": false,
 		"Backbone": false,
 		"jQuery": false,
-		"wp": false
+		"wp": false,
+		"google" : true
 	}
 }

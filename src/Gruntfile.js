@@ -36,26 +36,7 @@ module.exports = function( grunt ) {
 			dist: {
 				files: {
 					'<%= dirs.js %>/main.min.js': [
-						'<%= dirs.js %>/libs/*.js', // External libs/plugins
 						'<%= dirs.js %>/main.js'    // Custom JavaScript
-					]
-				}
-			},
-			bootstrap: {
-				files: {
-					'<%= dirs.js %>/libs/bootstrap.min.js': [
-						'<%= dirs.js %>/bootstrap/transition.js',
-						'<%= dirs.js %>/bootstrap/alert.js',
-						'<%= dirs.js %>/bootstrap/button.js',
-						'<%= dirs.js %>/bootstrap/carousel.js',
-						'<%= dirs.js %>/bootstrap/collapse.js',
-						'<%= dirs.js %>/bootstrap/dropdown.js',
-						'<%= dirs.js %>/bootstrap/modal.js',
-						'<%= dirs.js %>/bootstrap/tooltip.js',
-						'<%= dirs.js %>/bootstrap/popover.js',
-						'<%= dirs.js %>/bootstrap/scrollspy.js',
-						'<%= dirs.js %>/bootstrap/tab.js',
-						'<%= dirs.js %>/bootstrap/affix.js'
 					]
 				}
 			}
@@ -178,7 +159,6 @@ module.exports = function( grunt ) {
 					'../*.md',
 					'../.gitignore',
 					'../assets/js/**bootstrap',
-					'../assets/js/**libs',
 					'../assets/js/plugins.js',
 					'../assets/js/main.js',
 					'../*.zip',
@@ -200,7 +180,6 @@ module.exports = function( grunt ) {
 					'!../**.md',
 					'!<%= dirs.sass %>/**',
 					'!<%= dirs.js %>/bootstrap/**',
-					'!<%= dirs.js %>/libs/**',
 					'!../**.zip',
 					'<%= dirs.js %>/main.min.js'
 				],
@@ -276,28 +255,7 @@ module.exports = function( grunt ) {
 		clean: {
 			options: {
 				force: true
-			},
-			bootstrap_prepare: [
-				'<%= dirs.tmp %>',
-				'<%= dirs.sass %>/bootstrap/',
-				'<%= dirs.js %>/bootstrap/',
-				'<%= dirs.js %>/libs/bootstrap.min.js',
-				'<%= dirs.fonts %>/bootstrap/'
-			],
-			bootstrap: [
-				'<%= dirs.tmp %>'
-			],
-			woocommerce_prepare: [
-				'<%= dirs.tmp %>',
-				'<%= dirs.sass %>/woocommerce/',
-				'<%= dirs.fonts %>/woocommerce/',
-				'<%= dirs.images %>/woocommerce/'
-			],
-			woocommerce: [
-				'<%= dirs.sass %>/woocommerce/{activation,admin,chosen,dashboard,menu,prettyPhoto,reports-print,select2}**',
-				'<%= dirs.sass %>/woocommerce/*.css',
-				'<%= dirs.tmp %>'
-			]
+			}
 		},
 
 		replace: {
