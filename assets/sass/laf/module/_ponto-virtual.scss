@@ -1,0 +1,108 @@
+.ponto-virtual {
+  .ponto-virtual-banner {
+    .ponto-virtual-banner-line-1 {
+      font-size: 100px;
+      line-height: 100px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #FFFFFF;
+    }
+    .ponto-virtual-banner-line-2 {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .ponto-virtual-banner-line-3 {
+      color: #FFFFFF;
+      font-size: 23px;
+    }
+    .ponto-virtual-banner-text {
+      color: #FFFFFF;
+      font-size: 23px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    .ponto-virtual-banner-btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 16px;
+    }
+    .ponto-virtual-banner-ul-list {
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ponto-virtual-section-1 {
+    .section-title {
+      color: #929598;
+      font-size: 42px;
+      font-weight: bold;
+      padding: 30px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .number {
+      font-size: 75px;
+      line-height: 15px;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #929598;
+      float: left;
+    }
+    .separator {
+      width: 30px;
+      height: 30px;
+      border: solid 2px #ff1a3b;
+      border-left: none;
+      border-bottom: none;
+      border-radius: 0 20px 0 0;
+      position: relative;
+      left: 45px;
+      clear: both;
+      top: -15px;
+    }
+    p{
+      color: #929497;
+      font-size: 18px;
+      font-weight: lighter;
+    }
+  }
+
+  .ponto-virtual-section-2 {
+    .section-title {
+      color: #ff1a3b;
+      font-size: 42px;
+      font-weight: bold;
+      padding: 30px 0;
+    }
+    .subtitle {
+      color: rgba(146, 148, 151, 255);
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      -webkit-border-radius: 0 0 60px 0;
+      -moz-border-radius: 0 0 60px 0;
+      border-radius: 0 0 60px 0;
+      margin-bottom: 50px;
+    }
+    h4 {
+      color: #ff1a3b;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    p {
+      color: rgba(146, 148, 151, 255);
+      font-size: 16px;
+    }
+  }
+}
