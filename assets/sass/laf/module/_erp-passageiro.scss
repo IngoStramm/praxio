@@ -136,6 +136,22 @@
           font: inherit;
           color: inherit;
         }
+
+        ul {
+          li {
+            &:before {
+              content: "\25BA \0020";
+              font-size: 16px;
+              color: #ffffff;
+              position: absolute;
+              top: 2px;
+              left: -20px;
+              padding-right: 5px;
+            }
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
       }
     }
 
@@ -183,7 +199,6 @@
           }
         }
       }
-
     }
   }
 
@@ -350,6 +365,62 @@
           color: rgba(146, 148, 151, 255);
         }
       }
+    }
+  }
+
+  .erp-passageiro-section-6 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    text-align: center;
+    .section-title {
+      color: #ffffff;
+      font-size: 32px;
+      padding-bottom: 40px;
+    }
+    .erp-logistica-btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 16px;
+    }
+  }
+
+  .erp-passageiro-section-7 {
+    .section-title {
+      color: #ff1a3b;
+      font-size: 42px;
+      font-weight: bold;
+      padding: 30px 0;
+    }
+    .subtitle {
+      color: rgba(146, 148, 151, 255);
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      -webkit-border-radius: 0 0 60px 0;
+      -moz-border-radius: 0 0 60px 0;
+      border-radius: 0 0 60px 0;
+      margin-bottom: 50px;
+    }
+    h4 {
+      color: #ff1a3b;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    p {
+      color: rgba(146, 148, 151, 255);
+      font-size: 16px;
+    }
+  }
+
+  .erp-passageiro-section-8 {
+    .erp-passageiro-section-8-text {
+      color: #00adb3;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
     }
   }
 }

@@ -226,7 +226,7 @@
 
                         <div class="prx-tabs">
 
-                            <div class="tab-content">
+                            <div class="tab-content list-ul">
 
                                 <?php $i = 0; ?>
                                 <?php foreach( $erp_passageiro_section_2_tabs_slide as $tab ) : ?>
@@ -275,7 +275,7 @@
 
         <?php if( $erp_passageiro_section_3_show ) : ?>
 
-            <div class="erp-passageiro-section-3">
+            <div class="erp-passageiro-section-3 ov-h">
 
                 <div class="container">
                     <div class="row">
@@ -291,6 +291,9 @@
                         <div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
                         <div class="col-md-6">
+                            <div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; top: 0; left: 100%; width: 9999px;">
+                                <div class="prx-linha prx-linha-r" style="position: absolute; top: 100%; right: 100%; width: 0;"></div>
+                            </div>
                             <div class="erp-passageiro-section-3-text"><?php echo $utils->nl2p( $erp_passageiro_section_3_text ); ?></div>
                         </div>
                         <!-- /.col-md-6 -->
@@ -418,7 +421,7 @@
         ?>
 
         <?php if( $erp_passageiro_section_5_show ) : ?>
-            <div class="erp-passageiro-section-5">
+            <div class="erp-passageiro-section-5 ov-h">
 
                 <div class="container">
                     <div class="row">
@@ -430,6 +433,7 @@
                         <div class="col-md-5">
                             <div class="prx-linha prx-linha-b">
                                 <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs" style="position: absolute;top: 0;left: 100%;height: 160px;width: 60px;"></div>
+                                <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute; top: 0; right: 100%; width: 999px; margin-right: 30px;"></div>
                             </div>
 
                             <div class="clearfix m-b-60"></div>
@@ -473,6 +477,7 @@
 
                         <div class="col-md-6">
                             <div class="clearfix p-t-60"></div>
+                            <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute;bottom: 0px;left: 100%;width: 999px;margin-left: 20px;height: 0;"></div>
                             <div class="box-list">
 
                                 <?php foreach( $erp_passageiro_section_5_list as $list ) : ?>
@@ -494,6 +499,98 @@
                 <!-- /.container -->
                 <div class="clearfix p-b-80"></div>
             </div>
+        <?php endif; ?>
+
+        <?php
+        /**
+         * SESSION 6
+         */
+        $erp_passageiro_section_6_show = get_post_meta( $post_id, 'erp_passageiro_section_6_show', true );
+        $erp_passageiro_section_6_title = get_post_meta( $post_id, 'erp_passageiro_section_6_title', true );
+        $erp_passageiro_section_6_btn = get_post_meta( $post_id, 'erp_passageiro_section_6_text_button', true );
+        $erp_passageiro_section_6_url = get_post_meta( $post_id, 'erp_passageiro_section_6_button_url', true );
+        $erp_passageiro_section_6_bg = get_post_meta( $post_id, 'erp_passageiro_section_6_background', true );
+        ?>
+        <?php if( $erp_passageiro_section_6_show ) : ?>
+            <div class="erp-passageiro-section-6 p-b-60 p-t-50" style="background-image: url(<?php echo $erp_passageiro_section_6_bg; ?>);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2 class="section-title"><?php echo $erp_passageiro_section_6_title; ?></h2>
+                            <a href="<?php echo $erp_passageiro_section_6_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;">
+                                <?php echo $erp_passageiro_section_6_btn; ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-b-80"></div>
+        <?php endif; ?>
+
+        <?php
+        /**
+         * SESSION 7
+         */
+        $erp_passageiro_section_7_show = get_post_meta( $post_id, 'erp_passageiro_section_7_show', true );
+        $erp_passageiro_section_7_title = get_post_meta( $post_id, 'erp_passageiro_section_7_title', true );
+        $erp_passageiro_section_7_subtitle = get_post_meta( $post_id, 'erp_passageiro_section_7_subtitle', true );
+        $erp_passageiro_section_7_image = get_post_meta( $post_id, 'erp_passageiro_section_7_img', true );
+        $erp_passageiro_section_7_items = get_post_meta( $post_id, 'erp_passageiro_section_7_item', true );
+        ?>
+        <?php if( $erp_passageiro_section_7_show ) : ?>
+            <div class="erp-passageiro-section-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12"><h2 class="section-title"><?php echo $erp_passageiro_section_7_title; ?></h2></div>
+                    </div>
+                    <div class="row p-t-20">
+                        <div class="col-md-6">
+                            <h3 class="subtitle"><?php echo $erp_passageiro_section_7_subtitle; ?></h3>
+                            <img src="<?php echo $erp_passageiro_section_7_image; ?>" alt="<?php echo $erp_passageiro_section_7_subtitle; ?>">
+                        </div>
+                        <div class="col-md-6">
+                            <?php foreach( $erp_passageiro_section_7_items as $item ) : ?>
+                                <div>
+                                    <h4><?php echo $item['erp_passageiro_section_7_item_title']; ?></h4>
+                                    <p><?php echo $item['erp_passageiro_section_7_item_content']; ?></p>
+                                    <div class="p-b-20"></div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-t-50"></div>
+        <?php endif; ?>
+
+        <?php
+        /**
+         * SESSION 8
+         */
+        $erp_passageiro_section_8_show = get_post_meta( $post_id, 'erp_passageiro_section_8_show', true );
+        $erp_passageiro_section_8_text = get_post_meta( $post_id, 'erp_passageiro_section_8_text', true );
+        ?>
+
+        <?php if( $erp_passageiro_section_8_show ) : ?>
+
+            <div class="erp-passageiro-section-8">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="erp-passageiro-section-8-text"><?php echo $utils->nl2p( $erp_passageiro_section_8_text ); ?></div>
+                        </div>
+                        <!-- /.col-md-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+
+                <div class="clearfix m-t-80"></div>
+
+            </div>
+            <!-- /.erp-passageiro-section-1 -->
+
         <?php endif; ?>
 
 </article><!-- #post-## -->

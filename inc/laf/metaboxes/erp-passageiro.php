@@ -494,6 +494,164 @@ function erp_passageiro_page_register_metabox() {
         )
     ) );
 
+    /**
+     * SESSION 6
+     */
+    $prefix = 'erp_passageiro_section_6_';
+
+    $cmb_section_6 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => esc_html__( 'Seção #6', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_6->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #6?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_6->add_field( array(
+        'name'       => esc_html__( 'Título', 'cmb2' ),
+        'id'         => $prefix . 'title',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_6->add_field( array(
+        'name'       => esc_html__( 'Texto do Botão', 'cmb2' ),
+        'id'         => $prefix . 'text_button',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_6->add_field( array(
+        'name'       => esc_html__( 'Link do Botão', 'cmb2' ),
+        'id'         => $prefix . 'button_url',
+        'type'       => 'text',
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+        ),
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_6->add_field( array(
+        'name' 				=> __( 'Plano de Fundo', 'laf' ),
+        'id'   				=> $prefix . 'background',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+        )
+    ) );
+
+    /**
+     * SESSION 7
+     */
+    $prefix = 'erp_passageiro_section_7_';
+
+    $cmb_section_7 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => __( 'Seção #7', 'laf' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_7->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #7?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_7->add_field( array(
+        'name'       => esc_html__( 'Título', 'cmb2' ),
+        'id'         => $prefix . 'title',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_7->add_field( array(
+        'name'       => esc_html__( 'Subtítulo', 'cmb2' ),
+        'id'         => $prefix . 'subtitle',
+        'type'       => 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_7->add_field( array(
+        'name' 				=> __( 'Imagem', 'laf' ),
+        'id'   				=> $prefix . 'img',
+        'type' 				=> 'file',
+        'text'				=> array(
+            'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+        ),
+        'attributes' 		=> array(
+            'placeholder' 	=> 'http://',
+        )
+    ) );
+
+    $cmb_section_7->add_field( array(
+        'name'       => esc_html__( 'Itens', 'cmb2' ),
+        'desc'				=> __( 'Adicione os itens da Sessão 3 com seus respectivos conteúdos.', 'laf' ),
+        'id'         => $prefix . 'abas_title',
+        'type'       => 'title',
+    ) );
+
+    $group_field_id = $cmb_section_7->add_field( array(
+        'id'          => $prefix . 'item',
+        'type'        => 'group',
+        'options'     => array(
+            'group_title'   => esc_html__( 'Item {#}', 'cmb2' ), // {#} gets replaced by row number
+            'add_button'    => esc_html__( 'Adicionar novo Item', 'cmb2' ),
+            'remove_button' => esc_html__( 'Remover Item', 'cmb2' ),
+            'sortable'      => true, // beta
+            // 'closed'     => true, // true to have the groups closed by default
+        ),
+    ) );
+
+    $cmb_section_7->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Título do item', 'laf' ),
+        'desc'				=> __( 'Normalmente a primeira linha do conteúdo', 'laf' ),
+        'id'   				=> $prefix . 'item_title',
+        'type' 				=> 'text',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    $cmb_section_7->add_group_field( $group_field_id, array(
+        'name' 				=> __( 'Conteúdo do Texto', 'laf' ),
+        'desc'				=> __( 'Conteúdo formatado. Pode ser texto ou listas UL/LI', 'laf' ),
+        'id'   				=> $prefix . 'item_content',
+        'type' 				=> 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
+    /**
+     * SECTION 8
+     */
+    $prefix = 'erp_passageiro_section_8_';
+
+    $cmb_section_8 = new_cmb2_box( array(
+        'id'            => $prefix . 'metabox',
+        'title'         => esc_html__( 'Seção #8', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on_cb' => 'laf_show_if_erp_passageiro', // function should return a bool value
+    ) );
+
+    $cmb_section_8->add_field( array(
+        'name' => esc_html__( 'Exibir Seção #8?', 'cmb2' ),
+        'id'   => $prefix . 'show',
+        'type' => 'checkbox',
+    ) );
+
+    $cmb_section_8->add_field( array(
+        'name'       => esc_html__( 'Texto', 'cmb2' ),
+        'id'         => $prefix . 'text',
+        'type'       => 'textarea',
+        'sanitization_cb' => 'prx_allow_html',
+    ) );
+
 }
 
 function laf_show_if_erp_passageiro() {
