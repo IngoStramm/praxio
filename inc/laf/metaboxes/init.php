@@ -96,6 +96,7 @@ function hide_editor() {
             'erp-logistica-page.php',
             'bi-page.php',
             'ponto-virtual-page.php',
+            'embarcador-page.php',
         );
 		
 		if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
@@ -117,3 +118,4 @@ require_once 'erp-logistica.php';
 require_once 'bi.php';
 require_once 'venda-de-passagens.php';
 require_once 'ponto-virtual.php';
+require_once 'embarcador.php';

@@ -355,7 +355,7 @@ function erp_passageiro_page_register_metabox() {
 
     $cmb_section_4->add_group_field( $group_field_id, array(
         'name' 				=> __( 'Conteúdo do Texto', 'laf' ),
-        'desc'				=> __( 'Conteúdo formadado. Pode ser texto ou listas UL/LI', 'laf' ),
+        'desc'				=> __( 'Conteúdo formatado. Pode ser texto ou listas UL/LI', 'laf' ),
         'id'   				=> $prefix . 'linha_2',
         'type' 				=> 'textarea',
         'sanitization_cb' => 'prx_allow_html',
