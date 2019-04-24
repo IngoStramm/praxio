@@ -21,7 +21,7 @@
 
 		<div class="front-page-banner header-banner">
 			
-			<div id="front-page-banner" class="carousel slide" data-ride="carousel">
+			<div id="front-page-banner" class="carousel fix-height-wrapper slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<?php $i = 0; ?>
@@ -45,7 +45,7 @@
 
 									<div class="row-height">
 									
-										<div class="col-md-4 col-xs-height col-xs-middle">
+										<div class="col-md-4 col-md-height col-md-middle">
 
 											<div class="inside"></div>
 											
@@ -68,11 +68,14 @@
 
 										<div class="col-md-1 hidden-xs hidden-sm"></div>
 
-										<div class="col-md-7 col-xs-height col-xs-middle">
+										<div class="col-md-7 col-md-height col-md-middle">
 
+											
 											<div class="inside"></div>
+											
+											<div class="prx-linha prx-linha-b visible-xs visible-sm"></div>
 
-											<div class="prx-linha prx-linha-l prx-linha-b prx-linha-radius-4"></div>
+											<div class="prx-linha prx-linha-l prx-linha-b prx-linha-radius-4 hidden-xs hidden-sm fix-height-item"></div>
 											
 										</div>
 										<!-- /.col-md-7 -->

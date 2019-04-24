@@ -49,7 +49,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-lg-4 col-md-6 col-lg-offset-1">
+					<div class="col-lg-4 col-md-5 col-md-offset-1">
 
 						<div class="prx-linha prx-linha-l prx-linha-radius-4 prx-linha-b hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
 
@@ -95,28 +95,33 @@
 		<div class="venda-de-passagens-section-1">
 
 			<div class="clearfix m-t-80"></div>
+
+				<div class="venda-de-passagens-section-1-box-cinza">
 							
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-md-6">
-						
-						<h2 class="venda-de-passagens-section-1-title"><?php echo $venda_de_passagens_section_1_title; ?></h2>
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-md-6">
+								
+								<h2 class="venda-de-passagens-section-1-title"><?php echo $venda_de_passagens_section_1_title; ?></h2>
 
-					</div>
-					<!-- /.col-md-6 -->
+							</div>
+							<!-- /.col-md-6 -->
 
-					<div class="col-md-6">
-						
-						<div class="venda-de-passagens-section-1-text"><?php echo $utils->nl2p( $venda_de_passagens_section_1_text ); ?></div>
-						
+							<div class="col-md-6">
+								
+								<div class="venda-de-passagens-section-1-text"><?php echo $utils->nl2p( $venda_de_passagens_section_1_text ); ?></div>
+								
+							</div>
+							<!-- /.col-md-6 -->
+
+						</div>
+						<!-- /.row -->
 					</div>
-					<!-- /.col-md-6 -->
+					<!-- /.container -->
 
 				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
+				<!-- /.venda-de-passagens-section-1-box-cinza -->
 
 			<div class="clearfix m-b-80"></div>
 
@@ -165,7 +170,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 			
-					<div class="col-md-6">
+					<div class="col-md-5 col-md-offset-1">
 
 						<div class="venda-de-passagens-processos">
 						
@@ -192,7 +197,7 @@
 						<!-- /.venda-de-passagens-processos -->
 
 					</div>
-					<!-- /.col-md-6 -->
+					<!-- /.col-md-5 -->
 			
 				</div>
 				<!-- /.row -->
@@ -401,16 +406,16 @@
 
 					<div class="clearfix m-b-40"></div>
 
-					<div class="col-md-7">
+					<div class="col-md-6">
 						
 						<div class="venda-de-passagens-section-4-text"><?php echo $utils->nl2p( $venda_de_passagens_section_4_text ); ?></div>
 
 					</div>
-					<!-- /.col-md-7 -->
+					<!-- /.col-md-6 -->
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-md-5">
+					<div class="col-md-5 col-lg-4 col-md-offset-1">
 						
 						<img src="<?php echo $venda_de_passagens_section_4_img; ?>" class="venda-de-passagens-section-4-img">
 

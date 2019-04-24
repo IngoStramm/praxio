@@ -18,6 +18,29 @@ get_header(); ?>
 	<?php 
 		$utils = new Utils;
 		$curr_lang = pll_current_language( 'locale' );
+		$post_type = get_post_type();
+		switch ( $post_type ) {
+			case 'curso':
+				$tipo = 'curso';
+				break;
+			
+			case 'webinar':
+				$tipo = 'webinar';
+				break;
+			
+			case 'comunicado':
+				$tipo = 'comunicado';
+				break;
+			
+			case 'evento':
+				$tipo = 'evento';
+				break;
+			
+			default:
+				$tipo = 'blog';
+				break;
+		}
+		// $utils->debug( $tipo );
 	?>
 
 	<section class="blog-section">
@@ -37,7 +60,9 @@ get_header(); ?>
 						<?php if ( have_posts() ) : ?>
 
 							<?php if( is_home() || is_archive() || is_single() ) : ?>
-							<h1 class="blog-title"><?php echo $blog_title; ?></h1>
+							<?php if( $blog_title ) : ?>
+								<h1 class="blog-title"><?php echo $blog_title; ?></h1>
+							<?php endif; ?>
 							<?php endif; ?>
 
 								<?php $post_count = 0; ?>
@@ -73,7 +98,12 @@ get_header(); ?>
 				</div>
 				<!-- /.col-md-9 -->
 					
-				<?php get_sidebar(); ?>
+				<?php
+					if( $tipo == 'blog' )
+						get_sidebar();
+					else
+						get_sidebar( 'tipo' );
+					?>
 
 			</div>
 			<!-- /.row -->
