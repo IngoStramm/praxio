@@ -20,10 +20,24 @@ jQuery( function( $ ) {
 
 	var carousel_normalize = function() {
 
-		console.log('carousel_normalize');
-
 		$( '.carousel-normalize' ).each( function() {
 			var items = $( '.item', this );
+
+			items.css( 'min-height', 0 );
+
+			var maxHeight = Math.max.apply( null, 
+				items.map( function() {
+					return $( this ).outerHeight();
+				}).get() );
+			items.css( 'min-height', maxHeight + 'px' );
+		});
+	};
+
+	var normalize_elements = function( wrapper, element ) {
+
+		$( '.' + wrapper ).each( function() {
+
+			var items = $( '.' + element, this );
 
 			items.css( 'min-height', 0 );
 
@@ -58,12 +72,14 @@ jQuery( function( $ ) {
 
 		checkbox_toggle();
 		carousel_normalize();
+		normalize_elements( 'fix-height-wrapper', 'fix-height-item' );
 		
 	}); // $(document).ready
 
 	$( window ).resize( function() {
 
 		carousel_normalize();
+		normalize_elements( 'fix-height-wrapper', 'fix-height-item' );
 
 	});
 });
