@@ -254,7 +254,7 @@
                     <div class="col-md-12 text-center"><img src="<?php echo $erp_logistica_section_4_icon; ?>" alt="<?php echo $erp_logistica_section_4_title; ?>"></div>
                     <div class="col-md-12"><h2 class="section-title"><?php echo $erp_logistica_section_4_title; ?></h2></div>
                 </div>
-                <div class="row p-t-20">
+                <div class="row p-t-20 display-flex">
                     <?php foreach( $erp_logistica_section_4_items as $item ) : ?>
                     <div class="col-md-6">
                         <h4><?php echo $item['erp_logistica_section_4_itens_title']; ?></h4>

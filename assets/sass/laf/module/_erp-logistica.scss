@@ -1,5 +1,11 @@
 .erp-logistica {
 
+  /*FIX*/
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .erp-logistica-banner {
     .erp-logistica-banner-line-1 {
       font-size: 100px;
