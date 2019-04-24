@@ -153,7 +153,16 @@
 
 					<div class="col-md-6">
 						<h1 class="fale-conosco-section-3-title"><?php echo $fale_conosco_section_3_title; ?></h1>
-						<div class="clearfix m-b-40"></div>
+
+						<div class="clearfix m-b-20"></div>
+
+						<div class="prx-linha prx-linha-t" style="position: relative; height: 20px;">
+
+							<div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs" style="position: absolute; top: -2px; right: 100%; width: 40px; height: 300px;"></div>
+
+						</div>
+						<!-- /.prx-linha -->
+
 						<div class="fale-conosco-section-3-text"><?php echo $utils->nl2p( $fale_conosco_section_3_text ); ?></div>
 						<div class="clearfix m-b-40"></div>
 						<div class="text-center">
