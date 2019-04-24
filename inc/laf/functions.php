@@ -75,6 +75,54 @@ function footer_widgets_init() {
 
 	register_sidebar(
 		array(
+			'name' => __( 'Widget Area dos Cursos e Workshops', 'odin' ),
+			'id' => 'curso-widget',
+			'description' => __( 'Área de Widget dos Cursos e Workshops', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => __( 'Widget Area dos Webinars', 'odin' ),
+			'id' => 'webinar-widget',
+			'description' => __( 'Área de Widget dos Webinars', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => __( 'Widget Area dos E-mails e Comunicados', 'odin' ),
+			'id' => 'comunicado-widget',
+			'description' => __( 'Área de Widget dos E-mails e Comunicados', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => __( 'Widget Area dos Eventos', 'odin' ),
+			'id' => 'evento-widget',
+			'description' => __( 'Área de Widget dos Eventos', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
 			'name' => __( 'Widget Area #1 do Rodapé', 'odin' ),
 			'id' => 'footer-widget-1',
 			'description' => __( 'Área de Widget #1 do Rodapé', 'odin' ),

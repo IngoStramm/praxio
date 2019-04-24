@@ -1,5 +1,5 @@
 <?php
-// require_once 'produto.php';
-// require_once 'representante.php';
-// require_once 'endorse.php';
-// require_once 'faq.php';
+require_once 'curso.php';
+require_once 'webinar.php';
+require_once 'comunicado.php';
+require_once 'evento.php';

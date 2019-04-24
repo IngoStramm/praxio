@@ -1,4 +1,5 @@
 <?php
-// require_once 'instrumento.php';
-// require_once 'local.php';
-// require_once 'regiao.php';
+require_once 'curso-categoria.php';
+require_once 'webinar-categoria.php';
+require_once 'comunicado-categoria.php';
+require_once 'evento-categoria.php';

@@ -194,6 +194,137 @@ class Laf_Admin {
 			'attributes' => array('placeholder' => 'http://'),
 		) );
 
+
+
+		$cmb->add_field( array(
+			'name' => __( 'Cursos e Workshops (português)', 'laf' ),
+			'id'   => 'titulo_curso_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Cursos e Workshops Linha 1 (português)', 'laf' ),
+			'id'      => 'curso_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Cursos e Workshops Linha 2 (português)', 'laf' ),
+			'id'      => 'curso_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Cursos e Workshops', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'curso_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+		$cmb->add_field( array(
+			'name' => __( 'Webinars (português)', 'laf' ),
+			'id'   => 'titulo_webinar_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Webinars Linha 1 (português)', 'laf' ),
+			'id'      => 'webinar_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Webinars Linha 2 (português)', 'laf' ),
+			'id'      => 'webinar_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Webinars', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'webinar_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+		
+		$cmb->add_field( array(
+			'name' => __( 'E-mails e Comunicados (português)', 'laf' ),
+			'id'   => 'titulo_comunicado_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'E-mails e Comunicados Linha 1 (português)', 'laf' ),
+			'id'      => 'comunicado_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'E-mails e Comunicados Linha 2 (português)', 'laf' ),
+			'id'      => 'comunicado_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do E-mails e Comunicados', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'comunicado_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+		$cmb->add_field( array(
+			'name' => __( 'Eventos (português)', 'laf' ),
+			'id'   => 'titulo_evento_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Eventos Linha 1 (português)', 'laf' ),
+			'id'      => 'evento_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Eventos Linha 2 (português)', 'laf' ),
+			'id'      => 'evento_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Eventos', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'evento_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+
 		$cmb->add_field( array(
 			'name' => __( 'Rodapé (português)', 'laf' ),
 			'id'   => 'titulo_footer_pt_BR',
