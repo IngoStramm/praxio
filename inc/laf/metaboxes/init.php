@@ -81,7 +81,8 @@ function hide_editor() {
             'bi-page.php',
             'ponto-virtual-page.php',
             'venda-de-passagens-page.php',
-            'embarcador-page.php'
+            'embarcador-page.php',
+            'portal-cliente-page.php'
         );
 
         if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
@@ -103,3 +104,4 @@ require_once 'bi.php';
 require_once 'venda-de-passagens.php';
 require_once 'ponto-virtual.php';
 require_once 'embarcador.php';
+require_once 'portal-cliente.php';
