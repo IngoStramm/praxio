@@ -44,7 +44,9 @@
       flex-wrap: wrap;
     }
     .portal-cliente-section-1-img {
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
     .portal-cliente-content {
       background: #A3A3A3;
