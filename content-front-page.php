@@ -21,7 +21,7 @@
 
 		<div class="front-page-banner header-banner">
 			
-			<div id="front-page-banner" class="carousel slide" data-ride="carousel">
+			<div id="front-page-banner" class="carousel carousel-normalize slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<?php $i = 0; ?>
