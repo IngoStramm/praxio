@@ -25,13 +25,20 @@
 	}
 	.venda-de-passagens-section-1 {
 		color: $cinza-2;
-		.venda-de-passagens-section-1-title {
-			font-size: 36px;
-			line-height: 38px;
-			font-weight: 600;
-		}
-		.venda-de-passagens-section-1-text {
-			font-size: 18px;
+		.venda-de-passagens-section-1-box-cinza {
+			display: block;
+			margin: auto;
+			padding: 40px;
+			background-color: $cinza-1;
+			@include radius( 0, 0, 0, 75px );
+			.venda-de-passagens-section-1-title {
+				font-size: 36px;
+				line-height: 38px;
+				font-weight: 600;
+			}
+			.venda-de-passagens-section-1-text {
+				font-size: 18px;
+			}
 		}
 	}
 	.venda-de-passagens-section-2 {
@@ -160,8 +167,12 @@
 			color: $cinza-2;
 		}
 		.venda-de-passagens-section-4-text {
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 24px;
 			color: $cinza-2;
+			p {
+				margin-bottom: 15px;
+			}
 		}
 		.venda-de-passagens-section-4-img {
 			display: block;
@@ -218,6 +229,11 @@
 @media ( min-width: 1200px ) {
 
 	.venda-de-passagens {
+		.venda-de-passagens-section-1 {
+			.venda-de-passagens-section-1-box-cinza {
+				max-width: 1400px;
+			}
+		}
 		.venda-de-passagens-section-3 {
 			.venda-de-passagens-section-3-box-list {
 				.venda-de-passagens-section-3-box-list-content {
