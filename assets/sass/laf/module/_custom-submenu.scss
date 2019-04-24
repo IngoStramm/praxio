@@ -1,0 +1,13 @@
+.navbar-default .prx-main-menu {
+  .navbar-main-navigation {
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus,
+    .navbar-nav > #menu-item-home.active > a,
+    .navbar-nav > #menu-item-home.active > a:hover,
+    .navbar-nav > #menu-item-home.active > a:focus {
+      background-color: transparent;
+      color: #ff213f !important;
+    }
+  }
+}
