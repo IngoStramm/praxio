@@ -45,7 +45,7 @@
 
 									<div class="row-height">
 									
-										<div class="col-md-4 col-md-height col-md-middle">
+										<div class="col-md-6 col-md-height col-md-middle">
 
 											<div class="inside"></div>
 											
@@ -68,7 +68,7 @@
 
 										<div class="col-md-1 hidden-xs hidden-sm"></div>
 
-										<div class="col-md-7 col-md-height col-md-middle">
+										<div class="col-md-5 col-md-height col-md-middle">
 
 											
 											<div class="inside"></div>
