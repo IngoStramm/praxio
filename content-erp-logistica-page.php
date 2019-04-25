@@ -254,7 +254,7 @@
                     <div class="col-md-12 text-center"><img src="<?php echo $erp_logistica_section_4_icon; ?>" alt="<?php echo $erp_logistica_section_4_title; ?>"></div>
                     <div class="col-md-12"><h2 class="section-title"><?php echo $erp_logistica_section_4_title; ?></h2></div>
                 </div>
-                <div class="row p-t-20">
+                <div class="row p-t-20 display-flex">
                     <?php foreach( $erp_logistica_section_4_items as $item ) : ?>
                     <div class="col-md-6">
                         <h4><?php echo $item['erp_logistica_section_4_itens_title']; ?></h4>
@@ -341,7 +341,7 @@
     ?>
 
     <?php if( $erp_logistica_section_7_show ) : ?>
-        <div class="erp-logistica-section-7">
+        <div class="erp-logistica-section-7 ov-h">
 
             <div class="container">
                 <div class="row">
@@ -353,6 +353,7 @@
                     <div class="col-md-5">
                         <div class="prx-linha prx-linha-b">
                             <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs" style="position: absolute;top: 0;left: 100%;height: 160px;width: 60px;"></div>
+                            <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute; top: 0; right: 100%; width: 999px; margin-right: 30px;"></div>
                         </div>
 
                         <div class="clearfix m-b-60"></div>
@@ -396,6 +397,7 @@
 
                     <div class="col-md-6">
                         <div class="clearfix p-t-60"></div>
+                        <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute;bottom: 0px;left: 100%;width: 999px;margin-left: 20px;height: 0;"></div>
                         <div class="box-list">
 
                             <?php foreach( $erp_logistica_section_7_list as $list ) : ?>

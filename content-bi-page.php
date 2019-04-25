@@ -352,7 +352,7 @@
 		$bi_cta_img = get_post_meta( $post_id, 'bi_cta_img', true );
 		$bi_cta_text = get_post_meta( $post_id, 'bi_cta_text', true );
 		$bi_cta_btn_txt = get_post_meta( $post_id, 'bi_cta_btn_txt', true );
-		$bi_cta_text_url = get_post_meta( $post_id, 'bi_cta_text_url', true );
+		$bi_cta_text_url = get_post_meta( $post_id, 'bi_cta_btn_url', true );
 	?>
 
 	<?php if( $bi_cta_show ) : ?>

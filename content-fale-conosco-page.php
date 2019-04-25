@@ -136,7 +136,7 @@
 		$fale_conosco_section_3_title = get_post_meta( $post_id, 'fale_conosco_section_3_title', true );
 		$fale_conosco_section_3_text = get_post_meta( $post_id, 'fale_conosco_section_3_text', true );
 		$fale_conosco_section_3_btn_txt = get_post_meta( $post_id, 'fale_conosco_section_3_btn_txt', true );
-		$fale_conosco_section_3_pc = get_post_meta( $post_id, 'fale_conosco_section_3_pc', true );
+		$fale_conosco_section_3_btn_url = get_post_meta( $post_id, 'fale_conosco_section_3_btn_url', true );
 		$fale_conosco_section_3_img = get_post_meta( $post_id, 'fale_conosco_section_3_img', true );
 		$fale_conosco_section_3_img_title = get_post_meta( $post_id, 'fale_conosco_section_3_img_title', true );
 		$fale_conosco_section_3_img_text = get_post_meta( $post_id, 'fale_conosco_section_3_img_text', true );
@@ -166,7 +166,7 @@
 						<div class="fale-conosco-section-3-text"><?php echo $utils->nl2p( $fale_conosco_section_3_text ); ?></div>
 						<div class="clearfix m-b-40"></div>
 						<div class="text-center">
-							<a href="<?php echo $fale_conosco_section_3_text_url; ?>" class="prx-btn prx-btn-inline fale-conosco-section-3-btn"><?php echo $fale_conosco_section_3_btn_txt; ?></a>
+							<a href="<?php echo $fale_conosco_section_3_btn_url; ?>" class="prx-btn prx-btn-inline fale-conosco-section-3-btn"><?php echo $fale_conosco_section_3_btn_txt; ?></a>
 						</div>
 					</div>
 					<!-- /.col-md-6 -->

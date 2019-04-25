@@ -236,9 +236,12 @@ function odin_enqueue_scripts() {
 
 		// Main.
 		wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array( 'jquery' ), null, true );
+		
 	} else {
 		// Grunt main file with Bootstrap, FitVids and others libs.
+		wp_enqueue_script( 'popover', $template_url . '/assets/js/menu-popover.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array( 'jquery' ), null, true );
+	
 	}
 
 	// Grunt watch livereload in the browser.
