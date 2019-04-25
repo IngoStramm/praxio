@@ -94,7 +94,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-10 col-md-offset-1 b40-1">
                         <div class="erp-logistica-section-1-title"><?php echo wp_kses_decode_entities( $erp_logistica_section_1_title ); ?></div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <div class="block block-cinza">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-10 col-md-offset-1 b40-1">
                             <div class="clearfix p-t-30"></div>
                             <div class="erp-logistica-section-1-text"><?php echo $utils->nl2p( $erp_logistica_section_1_text ); ?></div>
                             <div class="clearfix p-t-20"></div>
@@ -137,14 +137,14 @@
         <div class="erp-logistica-section-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 b40-1">
                         <h2 class="section-title"><?php echo $erp_logistica_section_2_title; ?></h2>
                     </div>
                 </div>
                 <div class="clearfix m-t-50"></div>
                 <div class="row">
                     <?php foreach( $erp_logistica_section_2_itens as $item ) : ?>
-                    <div class="col-md-4">
+                    <div class="col-md-4 b40-1">
                         <img class="item-icon" src="<?php echo $item['erp_logistica_section_2_itens_icon']; ?>" alt="<?php echo $item['erp_logistica_section_2_itens_title']; ?>" align="left">
                         <h4 class="item-title"><?php echo $item['erp_logistica_section_2_itens_title']; ?></h4>
                         <div class="item-image"><img src="<?php echo $item['erp_logistica_section_2_itens_img']; ?>" alt="<?php echo $item['erp_logistica_section_2_itens_title']; ?>"></div>
@@ -167,10 +167,10 @@
     $erp_logistica_section_3_tabs = get_post_meta( $post_id, 'erp_logistica_section_3_tabs_tab', true );
     ?>
     <?php if( $erp_logistica_section_3_show ) : ?>
-    <div class="erp-logistica-section-3">
+    <div class="erp-logistica-section-3 ov-h">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 b40-1">
                     <div class="prx-linha prx-linha-b line-top">
                         <div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs line-left" style="position: absolute; top: 0; right: 100%; height: 160px; width: 60px;"></div>
                         <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs line-right"></div>
@@ -182,7 +182,7 @@
             </div>
             <div class="clearfix m-b-80"></div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 l40-1">
                     <ul class="erp-logistica-section-3-abas">
 
                         <?php $i = 0; ?>
@@ -204,7 +204,7 @@
                     <div class="m-b-40"></div>
                     <!-- /.nav nav-pills -->
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 r40-1">
 
                     <div class="tab-content erp-logistica-section-3-tab-content" style="position: relative; z-index: 9;">
 
@@ -251,12 +251,12 @@
         <div class="erp-logistica-section-4 p-t-50 p-b-50" style="background-image: url(<?php echo $erp_logistica_section_4_bg; ?>);">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center"><img src="<?php echo $erp_logistica_section_4_icon; ?>" alt="<?php echo $erp_logistica_section_4_title; ?>"></div>
+                    <div class="col-md-12 text-center b40-1"><img src="<?php echo $erp_logistica_section_4_icon; ?>" alt="<?php echo $erp_logistica_section_4_title; ?>"></div>
                     <div class="col-md-12"><h2 class="section-title"><?php echo $erp_logistica_section_4_title; ?></h2></div>
                 </div>
                 <div class="row p-t-20 display-flex">
                     <?php foreach( $erp_logistica_section_4_items as $item ) : ?>
-                    <div class="col-md-6">
+                    <div class="col-md-6 b40-1">
                         <h4><?php echo $item['erp_logistica_section_4_itens_title']; ?></h4>
                         <p><?php echo $item['erp_logistica_section_4_itens_content']; ?></p>
                         <div class="p-b-30"></div>
@@ -279,17 +279,17 @@
     $erp_logistica_section_5_items = get_post_meta( $post_id, 'erp_logistica_section_5_itens_item', true );
     ?>
     <?php if( $erp_logistica_section_5_show ) : ?>
-        <div class="erp-logistica-section-5">
+        <div class="erp-logistica-section-5 ov-h">
         <div class="container">
             <div class="row">
-                <div class="col-md-12"><h2 class="section-title"><?php echo $erp_logistica_section_5_title; ?></h2></div>
+                <div class="col-md-12 b40-1"><h2 class="section-title"><?php echo $erp_logistica_section_5_title; ?></h2></div>
             </div>
             <div class="row p-t-20">
-                <div class="col-md-6">
+                <div class="col-md-6 l40-1">
                     <h3 class="subtitle"><?php echo $erp_logistica_section_5_subtitle; ?></h3>
                     <img src="<?php echo $erp_logistica_section_5_image; ?>" alt="<?php echo $erp_logistica_section_5_subtitle; ?>">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 r40-1">
                 <?php foreach( $erp_logistica_section_5_items as $item ) : ?>
                     <div>
                         <h4><?php echo $item['erp_logistica_section_5_itens_title']; ?></h4>
@@ -318,7 +318,7 @@
         <div class="erp-logistica-section-6 p-b-60 p-t-50" style="background-image: url(<?php echo $erp_logistica_section_6_bg; ?>);">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-10 col-md-offset-1 b40-1">
                         <h2 class="section-title"><?php echo $erp_logistica_section_6_title; ?></h2>
                         <a href="<?php echo $erp_logistica_section_6_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;">
                             <?php echo $erp_logistica_section_6_btn; ?>
@@ -346,11 +346,11 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 b40-1">
                         <h2 class="section-head"><?php echo $utils->nl2p( $erp_logistica_section_7_title ); ?></h2>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-5 l40-1">
                         <div class="prx-linha prx-linha-b">
                             <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs" style="position: absolute;top: 0;left: 100%;height: 160px;width: 60px;"></div>
                             <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute; top: 0; right: 100%; width: 999px; margin-right: 30px;"></div>
@@ -395,7 +395,7 @@
                     </div>
                     <!-- /.col-md-6 -->
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 r40-1">
                         <div class="clearfix p-t-60"></div>
                         <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute;bottom: 0px;left: 100%;width: 999px;margin-left: 20px;height: 0;"></div>
                         <div class="box-list">

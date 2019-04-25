@@ -96,7 +96,7 @@
 
 	<?php if( $bi_section_1_show ) : ?>
 
-		<div class="bi-section-1">
+		<div class="bi-section-1 ov-h">
 
 			<div class="clearfix m-t-80"></div>
 			
@@ -105,16 +105,16 @@
 
 					<div class="col-md-12">
 
-						<h2 class="bi-title-section-1"><?php echo $bi_section_1_title; ?></h2>
+						<h2 class="bi-title-section-1 b40-1"><?php echo $bi_section_1_title; ?></h2>
 
 						<div class="clearfix m-b-40"></div>
 
 						<div class="checkbox prx-checkbox-toggle">
-							<label class="active prx-checkbox-toggle-label prx-checkbox-toggle-label-1"><?php echo $bi_section_1_title_option_1; ?></label>
+							<label class="active prx-checkbox-toggle-label prx-checkbox-toggle-label-1 l40-1"><?php echo $bi_section_1_title_option_1; ?></label>
 
 							<input id="bi-checkbox-toggle" type="checkbox" name="checkbox_toggle" checked data-toggle="toggle" data-on="<i class='fa fa-angle-left'></i>" data-off="<i class='fa fa-angle-right'></i>" data-onstyle="danger">
 
-							<label class="prx-checkbox-toggle-label prx-checkbox-toggle-label-2"><?php echo $bi_section_1_title_option_2; ?></label>
+							<label class="prx-checkbox-toggle-label prx-checkbox-toggle-label-2 r40-1"><?php echo $bi_section_1_title_option_2; ?></label>
 						</div>
 						<!-- /.checkbox -->
 
@@ -128,12 +128,12 @@
 
 			<div class="clearfix m-b-40"></div>
 
-			<div class="bi-box-cinza">
+			<div class="bi-box-cinza ov-h">
 				
 				<div class="container bi-tab-content" id="bi-tab-content-1">
 					<div class="row">
 						
-						<div class="col-md-6">
+						<div class="col-md-6 l40-1">
 							
 							<div class="bi-section-1-text-1"><?php echo $bi_section_1_text_1_option_1; ?></div>
 
@@ -142,7 +142,7 @@
 						<div class="clearfix m-b-20 visible-xs visible-sm"></div>
 
 						<!-- /.col-md-6 -->
-						<div class="col-md-6">
+						<div class="col-md-6 r40-1">
 							
 							<div class="bi-section-1-text-2 prx-lista prx-lista-seta-1"><?php echo $utils->nl2p( $bi_section_1_text_2_option_1 ); ?></div>
 
@@ -157,7 +157,7 @@
 				<div class="container bi-tab-content" id="bi-tab-content-2">
 					<div class="row">
 						
-						<div class="col-md-6">
+						<div class="col-md-6 l40-1">
 							
 							<div class="bi-section-1-text-1"><?php echo $bi_section_1_text_1_option_2; ?></div>
 
@@ -166,7 +166,7 @@
 						<div class="clearfix m-b-20 visible-xs visible-sm"></div>
 						
 						<!-- /.col-md-6 -->
-						<div class="col-md-6">
+						<div class="col-md-6 r40-1">
 							
 							<div class="bi-section-1-text-2 prx-lista prx-lista-seta-1"><?php echo $utils->nl2p( $bi_section_1_text_2_option_2 ); ?></div>
 
@@ -197,12 +197,12 @@
 
 	<?php if( $bi_section_2_show ) : ?>
 
-		<div class="bi-section-2">
+		<div class="bi-section-2 ov-h">
 
 			<div class="container">
 				<div class="row">
 			
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<h2 class="bi-section-2-title text-center"><?php echo $bi_section_2_title; ?></h2>
 			
@@ -211,7 +211,7 @@
 			
 					<div class="clearfix m-b-40"></div>
 					
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						
 						<div class="bi-section-2-text prx-lista prx-lista-seta-1"><?php echo $utils->nl2p( $bi_section_2_text ); ?></div>
 			
@@ -220,7 +220,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 			
-					<div class="col-md-6">
+					<div class="col-md-6 r40-1">
 						
 						<img src="<?php echo $bi_section_2_img; ?>" class="bi-section-2-img">
 			
@@ -254,7 +254,7 @@
 			<div class="container">
 				<div class="row">
 			
-					<div class="col-md-5">
+					<div class="col-md-5 l40-1">
 
 						<h2 class="bi-section-3-title p-b-20" style="position: relative;">
 
@@ -293,7 +293,7 @@
 						
 							<?php foreach ( $bi_section_3_area as $item ): ?>
 								
-								<div class="bi-vantagens-item">
+								<div class="bi-vantagens-item r40-1">
 
 									<h4 class="bi-vantagens-title" style="position: relative;">
 
@@ -361,7 +361,7 @@
 			
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-8 col-md-offset-2 b40-1">
 						
 						<div class="bi-cta-text"><?php echo $utils->nl2p( $bi_cta_text ); ?></div>
 
@@ -391,7 +391,7 @@
 
 	<?php if( $bi_section_4_show ) : ?>
 
-		<div class="bi-section-4">
+		<div class="bi-section-4 ov-h">
 
 			<div class="clearfix m-t-80"></div>
 
@@ -399,7 +399,7 @@
 
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<h2 class="bi-section-4-title text-center"><?php echo $bi_section_4_title; ?></h2>
 
@@ -408,7 +408,7 @@
 
 					<div class="clearfix m-b-40"></div>
 			
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						
 						<div class="bi-section-4-text"><?php echo $utils->nl2p( $bi_section_4_text ); ?></div>
 						
@@ -421,7 +421,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 			
-					<div class="col-md-6">
+					<div class="col-md-6 r40-1">
 
 						<div class="bi-processos">
 						

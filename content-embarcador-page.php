@@ -90,14 +90,14 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
 
     <?php if( $embarcador_section_1_show ) : ?>
 
-        <div class="embarcador-section-1">
+        <div class="embarcador-section-1 ov-h">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 l40-1">
                         <div class="embarcador-section-1-title"><?php echo wp_kses_decode_entities( $embarcador_section_1_title ); ?></div>
                         <div class="embarcador-section-1-subtitle"><?php echo wp_kses_decode_entities( $embarcador_section_1_subtitle ); ?></div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 r40-1">
                         <div class="embarcador-section-1-text"><?php echo $utils->nl2p( $embarcador_section_1_text ); ?></div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
         <div class="embarcador-section-2-header ov-h">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-11">
+                    <div class="col-md-11 b40-1">
                         <div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; top: 0; left: 100%; width: 9999px;">
                             <div class="prx-linha prx-linha-r" style="position: absolute; top: 100%; right: 100%; width: 0;"></div>
                         </div>
@@ -139,7 +139,7 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
             </div>
         </div>
 
-        <div class="embarcador-section-2">
+        <div class="embarcador-section-2 ov-h">
 
             <div class="container">
 
@@ -147,7 +147,7 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
 
                     <div class="embarcador-section-2-bg p-t-40" style="background-image: url(<?php echo $embarcador_section_2_img; ?>);">
 
-                        <div class="col-md-5 col-md-offset-1" style="z-index: 9;">
+                        <div class="col-md-5 col-md-offset-1 l40-1" style="z-index: 9;">
 
                             <ul class="embarcador-section-2-abas">
 
@@ -179,7 +179,7 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
                         </div>
                         <!-- /.col-md-5 -->
 
-                        <div class="col-md-5">
+                        <div class="col-md-5 r40-1">
 
                             <div class="tab-content embarcador-section-2-tab-content" style="position: relative; z-index: 9;">
 
@@ -231,17 +231,17 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
     $embarcador_section_3_items = get_post_meta( $post_id, 'embarcador_section_3_item', true );
     ?>
     <?php if( $embarcador_section_3_show ) : ?>
-        <div class="embarcador-section-3">
+        <div class="embarcador-section-3 ov-h">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"><h2 class="section-title"><?php echo $embarcador_section_3_title; ?></h2></div>
+                    <div class="col-md-12 b40-1"><h2 class="section-title"><?php echo $embarcador_section_3_title; ?></h2></div>
                 </div>
                 <div class="row p-t-20">
-                    <div class="col-md-6">
+                    <div class="col-md-6 l40-1">
                         <h3 class="subtitle"><?php echo $embarcador_section_3_subtitle; ?></h3>
                         <img src="<?php echo $embarcador_section_3_image; ?>" alt="<?php echo $embarcador_section_3_subtitle; ?>">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 r40-1">
                         <?php foreach( $embarcador_section_3_items as $item ) : ?>
                             <div>
                                 <h4><?php echo $item['embarcador_section_3_item_title']; ?></h4>
@@ -270,7 +270,7 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
         <div class="embarcador-section-4 p-b-60 p-t-50" style="background-image: url(<?php echo $embarcador_section_4_bg; ?>);">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-10 col-md-offset-1 b40-1">
                         <h2 class="section-title"><?php echo $embarcador_section_4_title; ?></h2>
                         <a href="<?php echo $embarcador_section_4_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;">
                             <?php echo $embarcador_section_4_btn; ?>
@@ -294,14 +294,14 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
 
     <?php if( $embarcador_section_5_show ) : ?>
 
-        <div class="embarcador-section-1">
+        <div class="embarcador-section-1 ov-h">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 l40-1">
                         <div class="embarcador-section-1-title"><?php echo wp_kses_decode_entities( $embarcador_section_5_title ); ?></div>
                         <div class="embarcador-section-1-subtitle"><?php echo wp_kses_decode_entities( $embarcador_section_5_subtitle ); ?></div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 r40-1">
                         <div class="embarcador-section-1-text"><?php echo $utils->nl2p( $embarcador_section_5_text ); ?></div>
                     </div>
                 </div>

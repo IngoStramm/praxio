@@ -92,7 +92,7 @@
 
 	<?php if( $venda_de_passagens_section_1_show ) : ?>
 
-		<div class="venda-de-passagens-section-1">
+		<div class="venda-de-passagens-section-1 ov-h">
 
 			<div class="clearfix m-t-80"></div>
 
@@ -101,14 +101,14 @@
 					<div class="container">
 						<div class="row">
 							
-							<div class="col-md-6">
+							<div class="col-md-6 l40-1">
 								
 								<h2 class="venda-de-passagens-section-1-title"><?php echo $venda_de_passagens_section_1_title; ?></h2>
 
 							</div>
 							<!-- /.col-md-6 -->
 
-							<div class="col-md-6">
+							<div class="col-md-6 r40-1">
 								
 								<div class="venda-de-passagens-section-1-text"><?php echo $utils->nl2p( $venda_de_passagens_section_1_text ); ?></div>
 								
@@ -140,7 +140,7 @@
 
 	<?php if( $venda_de_passagens_section_2_show ) : ?>
 
-		<div class="venda-de-passagens-section-2">
+		<div class="venda-de-passagens-section-2 ov-h">
 
 			<div class="clearfix m-t-40"></div>
 
@@ -148,7 +148,7 @@
 
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<h2 class="venda-de-passagens-section-2-title text-center"><?php echo $venda_de_passagens_section_2_title; ?></h2>
 
@@ -157,7 +157,7 @@
 
 					<div class="clearfix m-b-40"></div>
 			
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						
 						<div class="venda-de-passagens-section-2-text"><?php echo $utils->nl2p( $venda_de_passagens_section_2_text ); ?></div>
 						
@@ -170,7 +170,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 			
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-5 col-md-offset-1 r40-1">
 
 						<div class="venda-de-passagens-processos">
 						
@@ -227,7 +227,7 @@
 			
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-8 col-md-offset-2 b40-1">
 						
 						<div class="venda-de-passagens-cta-text"><?php echo $utils->nl2p( $venda_de_passagens_cta_text ); ?></div>
 
@@ -265,11 +265,11 @@
 	        <div class="container">
 	            <div class="row">
 
-	                <div class="col-md-12">
+	                <div class="col-md-12 b40-1">
 	                    <h2 class="section-head venda-de-passagens-section-3-title"><?php echo $utils->nl2p( $venda_de_passagens_section_3_title ); ?></h2>
 	                </div>
 
-	                <div class="col-md-5">
+	                <div class="col-md-5 l40-1">
 
 	                    <div class="prx-linha prx-linha-b">
 
@@ -320,7 +320,7 @@
 	                </div>
 	                <!-- /.col-md-6 -->
 
-	                <div class="col-md-5 col-md-offset-1">
+	                <div class="col-md-5 col-md-offset-1 r40-1">
 
 	                    <div class="clearfix p-t-60"></div>
 
@@ -390,14 +390,14 @@
 
 	<?php if( $venda_de_passagens_section_3_show ) : ?>
 
-		<div class="venda-de-passagens-section-4">
+		<div class="venda-de-passagens-section-4 ov-h">
 
 			<div class="clearfix m-t-40"></div>
 			
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<h2 class="venda-de-passagens-section-4-titulo-1 text-center"><?php echo $venda_de_passagens_section_4_title_1 ?></h2>
 
@@ -406,7 +406,7 @@
 
 					<div class="clearfix m-b-40"></div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						
 						<div class="venda-de-passagens-section-4-text"><?php echo $utils->nl2p( $venda_de_passagens_section_4_text ); ?></div>
 
@@ -415,7 +415,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-md-5 col-lg-4 col-md-offset-1">
+					<div class="col-md-5 col-lg-4 col-md-offset-1 r40-1">
 						
 						<img src="<?php echo $venda_de_passagens_section_4_img; ?>" class="venda-de-passagens-section-4-img">
 
@@ -424,7 +424,7 @@
 					
 					<div class="clearfix m-b-80"></div>
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<h2 class="venda-de-passagens-section-4-titulo-2 text-center"><?php echo $venda_de_passagens_section_4_title_2 ?></h2>
 

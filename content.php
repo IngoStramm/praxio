@@ -15,7 +15,7 @@
 	//$utils->debug( $post_count );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'prx-post' ) ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'prx-post', 'b40-1' ) ); ?>>
 	<header class="entry-header">
 
 		<?php 

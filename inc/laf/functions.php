@@ -43,6 +43,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_script( 'jquery-masked-input-script', get_stylesheet_directory_uri() . '/inc/laf/jquery-masked-input/jquery.maskedinput.min.js', array('jquery'), '1.4.1', true );
 	wp_enqueue_script( 'jquery-masked-input-masks', get_stylesheet_directory_uri() . '/inc/laf/jquery-masked-input/masks.js', array('jquery'), null, true );
 	wp_enqueue_script( 'bootstrap-toggle-script', get_stylesheet_directory_uri() . '/assets/lib/bootstrap-toggle-master/js/bootstrap-toggle.min.js', array('jquery'), null, true );
+	wp_enqueue_script( 'scrollreveal-script', get_stylesheet_directory_uri() . '/assets/lib/scrollreveal/scrollreveal.min.js', array('jquery'), null, true );
 	// wp_enqueue_script( 'js-parallax', get_stylesheet_directory_uri() . '/inc/laf/parallax.js-1.4.2/parallax.min.js', array('jquery'), null, true );
 	// wp_enqueue_script( 'isotope-script', get_stylesheet_directory_uri() . '/inc/laf/isotope/isotope.pkgd.min.js', array('jquery'), '3.0.2', true );
 	// wp_enqueue_script( 'royalslider-script', get_stylesheet_directory_uri() . '/inc/laf/royalslider/jquery.royalslider.min.js', array('jquery'), '9.5.7', true );

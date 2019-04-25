@@ -134,13 +134,13 @@
 	?>
 
 	<?php if( $show_section_1 ) : ?>
-		<div class="section-1 section">
+		<div class="section-1 section ov-h">
 			<div class="clearfix m-b-80"></div>		
 
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						<h2 class="section-title"><?php echo wp_kses_decode_entities( $front_page_section_1_title ); ?></h2>
 						<div class="clearfix m-t-40"></div>
 						<div class="prx-linha prx-linha-b">
@@ -154,7 +154,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-5 col-md-offset-1 r40-1">
 						<div class="prx-img" style="background-image: url(<?php echo $front_page_section_1_img ?>);">
 							<?php /* ?><img src="<?php echo $front_page_section_1_img ?>" class="prx-img-bg"><?php */ ?>
 							<div class="prx-img-txt">
@@ -213,7 +213,7 @@
 
 						<div class="row-height">
 
-							<div class="col-md-5 col-md-height col-md-middle">
+							<div class="col-md-5 col-md-height col-md-middle l40-1">
 
 								<div class="prx-linha prx-linha-l" style="position: absolute; top: -250px; height: 1000px; left: -45px;"></div>
 
@@ -233,7 +233,7 @@
 
 							<div class="clearfix visible-xs visible-sm m-t-20"></div>
 
-							<div class="col-md-7 col-md-height col-md-middle">
+							<div class="col-md-7 col-md-height col-md-middle r40-1">
 
 								<div class="prx-tabs">												
 
@@ -285,12 +285,12 @@
 			</div>
 			<!-- /.block block-cinza -->
 
-			<div class="container">
+			<div class="container ov-h">
 				<div class="row">
 
 					<div class="row-height">
 					
-						<div class="col-md-4 col-md-height col-md-middle col-md-push-6">
+						<div class="col-md-4 col-md-height col-md-middle col-md-push-6 l40-1">
 
 							<div class="cleafix m-t-80"></div>
 
@@ -321,7 +321,7 @@
 						</div>
 						<!-- /.col-md-4 -->
 
-						<div class="col-md-5 col-md-height col-md-middle col-md-pull-7 text-center">
+						<div class="col-md-5 col-md-height col-md-middle col-md-pull-7 text-center r40-1">
 
 							<div class="cleafix m-t-80"></div>
 
@@ -359,7 +359,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<div class="section-3-banner text-center" style="background-image: url(<?php echo $front_page_section_3_img; ?>);">
 
@@ -403,12 +403,12 @@
 	?>
 
 	<?php if( $show_section_4 ) : ?>
-		<div class="section-4 section">
+		<div class="section-4 section ov-h">
 			
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						<h2 class="section-title"><?php echo $utils->nl2p( $front_page_section_4_title ); ?></h2>
 						<div class="clearfix m-b-40"></div>
 						<div class="section-text"><?php echo $utils->nl2p( $front_page_section_4_text_1_linha_2 ); ?></div>
@@ -416,7 +416,7 @@
 					<!-- /.col-md-6 -->
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-5 col-md-offset-1 r40-1">
 						
 						<div id="front-page-carousel-2" class="carousel prx-carousel slide" data-ride="carousel">
 
@@ -479,11 +479,11 @@
 	?>
 
 	<?php if( $show_section_5 ) : ?>
-		<div class="section-5 section">
+		<div class="section-5 section ov-h">
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center">
+					<div class="col-md-12 text-center b40-1">
 						<h1 class="section-title section-5-title"><?php echo $front_page_section_5_title; ?></h1>
 					</div>
 					<!-- /.col-md-12 -->
@@ -492,17 +492,17 @@
 			</div>
 			<!-- /.container -->
 			
-			<div class="block block-cinza section-5-block">
+			<div class="block block-cinza section-5-block ov-h">
 
 				<div class="container">
 
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-md-5 l40-1">
 							<h3 class="section-call section-5-call"><?php echo $utils->nl2p( $front_page_section_5_call ); ?></h3>
 						</div>
 						<!-- /.col-md-5 -->
 						<div class="clearfix m-b-20 visible-xs visible-sm"></div>
-						<div class="col-md-6 col-md-offset-1">
+						<div class="col-md-6 col-md-offset-1 r40-1">
 							<div class="section-txt section-5-txt"><?php echo $utils->nl2p( $front_page_section_5_text ); ?></div>
 						</div>
 						<!-- /.col-md-6 -->
@@ -517,7 +517,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						<div class="section-5-banner" style="background-image: url(<?php echo $front_page_section_5_img; ?>);">
 
 							<div class="row">

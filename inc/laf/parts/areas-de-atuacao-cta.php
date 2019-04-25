@@ -9,7 +9,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-8 col-md-offset-2 b40-1">
 				
 				<h3 class="areas-de-atuacao-cta-text"><?php echo $areas_de_atuacao_cta_text; ?></h3>
 

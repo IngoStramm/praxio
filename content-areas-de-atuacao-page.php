@@ -96,7 +96,7 @@
 
 				<?php //$utils->debug( $area ) ; ?>
 				
-				<div class="container">
+				<div class="container ov-h">
 					<div class="row">
 
 						<div class="col-md-12">
@@ -106,7 +106,7 @@
 								<div class="areas-de-atuacao-areas-area-banner" style="background-image: url(<?php echo $area[ 'areas_de_atuacao_areas_img' ]; ?>);">
 									
 									<div class="row">
-										<div class="col-md-4 text-center">
+										<div class="col-md-4 text-center l40-1">
 
 											<img src="<?php echo $area[ 'areas_de_atuacao_areas_icon' ]; ?>" alt="<?php echo $area[ 'areas_de_atuacao_areas_title' ]; ?>" class="img-responsive center-block areas-de-atuacao-areas-area-banner-icon">
 
@@ -124,7 +124,7 @@
 								<div class="clearfix m-b-40"></div>
 
 								<div class="row">
-									<div class="col-md-8 col-md-offset-3">
+									<div class="col-md-8 col-md-offset-3 r40-1">
 
 										<div class="prx-linha prx-linha-l prx-linha-radius-4 hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;">
 

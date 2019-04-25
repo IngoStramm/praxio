@@ -30,11 +30,11 @@ $url_youtube = laf_get_option( 'url_youtube' );
 	</div><!-- #wrapper -->
 
 
-	<footer class="footer" role="contentinfo" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.jpg;">
+	<footer class="footer ov-h" role="contentinfo" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.jpg;">
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 b40-1">
 					<?php if( $linha_1 ): ?>
 						<h1 class="footer-linha-1"><?php echo $linha_1; ?></h1>
 					<?php endif; ?>
@@ -43,7 +43,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 				<div class="clearfix"></div>
 
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 b40-1">
 					<?php if( $linha_2 ): ?>
 						<h2 class="footer-linha-2"><?php echo $linha_2; ?></h1>
 					<?php endif; ?>
@@ -52,7 +52,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 					
 				<div class="clearfix"></div>
 
-				<div class="col-md-12">
+				<div class="col-md-12 b40-1">
 					<?php if( $linha_3 ): ?>
 						<h3 class="footer-linha-3"><?php echo $linha_3; ?></h1>
 					<?php endif; ?>
@@ -65,7 +65,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-6 l40-1">
 					<?php if( $txt_btn_1 && $url_btn_1 ) : ?>
 						<a href="<?php echo $url_btn_1; ?>" class="footer-btn footer-btn-reverse" target="_blank">
 							<?php echo $txt_btn_1; ?>
@@ -76,7 +76,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 				<div class="clearfix m-b-20 visible-xs"></div>
 
-				<div class="col-md-6">
+				<div class="col-md-6 r40-1">
 					<?php if( $txt_btn_2 && $url_btn_2 ) : ?>
 						<a href="<?php echo $url_btn_2; ?>" class="footer-btn" target="_blank">
 							<?php echo $txt_btn_2; ?>
@@ -92,21 +92,21 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 			<div class="row">
 				
-				<div class="col-md-3 col-sm-4">
+				<div class="col-md-3 col-sm-4 l40-1">
 					<?php if ( is_active_sidebar( 'footer-widget-1' ) ) : ?>
 						<?php dynamic_sidebar( 'footer-widget-1' ); ?>
 					<?php endif; ?>
 				</div>
 				<!-- /.col-md-3 col-sm-4 -->
 
-				<div class="col-md-3 col-sm-4">
+				<div class="col-md-3 col-sm-4 b40-1">
 					<?php if ( is_active_sidebar( 'footer-widget-2' ) ) : ?>
 						<?php dynamic_sidebar( 'footer-widget-2' ); ?>
 					<?php endif; ?>
 				</div>
 				<!-- /.col-md-3 col-sm-4 -->
 
-				<div class="col-md-3 col-sm-4">
+				<div class="col-md-3 col-sm-4 b40-1">
 					<?php if ( is_active_sidebar( 'footer-widget-3' ) ) : ?>
 						<?php dynamic_sidebar( 'footer-widget-3' ); ?>
 					<?php endif; ?>
@@ -115,7 +115,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 				<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 r40-1">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="<?php _e( 'Praxio', 'laf' ); ?>" class="img-responsive center-block">
 					<div class="clearfix m-b-20"></div>
 					<div class="footer-social-mida">

@@ -97,7 +97,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"><h2 class="section-title"><?php echo $ponto_virtual_section_1_title; ?></h2></div>
+                    <div class="col-md-12 b40-1"><h2 class="section-title"><?php echo $ponto_virtual_section_1_title; ?></h2></div>
                 </div>
                 <div class="row">
                     <?php foreach( $ponto_virtual_section_1_itens as $item ) : ?>
@@ -127,17 +127,17 @@
     $ponto_virtual_section_2_items = get_post_meta( $post_id, 'ponto_virtual_section_2_itens_item', true );
     ?>
     <?php if( $ponto_virtual_section_2_show ) : ?>
-        <div class="ponto-virtual-section-2">
+        <div class="ponto-virtual-section-2 ov-h">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"><h2 class="section-title"><?php echo $ponto_virtual_section_2_title; ?></h2></div>
+                    <div class="col-md-12 b40-1"><h2 class="section-title"><?php echo $ponto_virtual_section_2_title; ?></h2></div>
                 </div>
                 <div class="row p-t-20">
                     <div class="col-md-6">
                         <h3 class="subtitle"><?php echo $ponto_virtual_section_2_subtitle; ?></h3>
                         <img src="<?php echo $ponto_virtual_section_2_image; ?>" alt="<?php echo $ponto_virtual_section_2_subtitle; ?>">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 b40-1">
                         <?php foreach( $ponto_virtual_section_2_items as $item ) : ?>
                             <div>
                                 <h4><?php echo $item['ponto_virtual_section_2_itens_title']; ?></h4>
@@ -166,7 +166,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 b40-1">
                         <div class="ponto-virtual-section-3-text"><?php echo $utils->nl2p( $ponto_virtual_section_3_text ); ?></div>
                     </div>
                     <!-- /.col-md-12 -->

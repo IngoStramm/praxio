@@ -89,13 +89,13 @@
 	?>
 		<?php if( $sobre_section_1_show ) : ?>
 			
-			<div class="sobre-section-1">
+			<div class="sobre-section-1 ov-h">
 
 				<div class="clearfix m-t-80"></div>
 				
 				<div class="row">
 					
-					<div class="col-md-5 col-md-offset-1">
+					<div class="col-md-5 col-md-offset-1 l40-1">
 						
 						<h3 class="sobre_section-1-linha-1"><?php echo $sobre_section_1_linha_1; ?></h3>
 						<h1 class="sobre_section-1-linha-2"><?php echo $sobre_section_1_linha_2; ?></h1>
@@ -115,7 +115,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-md-5">
+					<div class="col-md-5 r40-1">
 						
 						<img src="<?php echo $sobre_section_1_img; ?>" alt="<?php echo $sobre_section_1_img_title; ?>" class="img-responsive center-block w-100p-i">
 
@@ -150,11 +150,11 @@
 	?>
 		<?php if( $sobre_section_2_show ) : ?>
 
-			<div class="sobre-section-2">
+			<div class="sobre-section-2 ov-h">
 
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						<h2 class="sobre-section-2-title text-center"><?php echo $sobre_section_2_title; ?></h2>
 					</div>
 					<!-- /.col-md-12 -->
@@ -176,7 +176,7 @@
 
 						<div class="row">
 						
-							<div class="col-lg-3 col-md-4 col-sm-5">
+							<div class="col-lg-3 col-md-4 col-sm-5 l40-1">
 								<figura class="sobre-section-2-marca-figure">
 									<img class="sobre-section-2-marca-figure-img" src="<?php echo $marca_img; ?>">
 								</figura>
@@ -187,7 +187,7 @@
 
 							<div class="clearfix m-b-20 visible-xs"></div>
 						
-							<div class="col-lg-9 col-md-8 col-sm-7">
+							<div class="col-lg-9 col-md-8 col-sm-7 r40-1">
 								<div class="sobre-section-2-marca-text">
 									
 									<div class="prx-linha prx-linha-l hidden-xs" style="position: absolute; top: 0; right: 100%; width: 20px;"></div>
@@ -230,13 +230,13 @@
 
 		<?php if( $sobre_section_3_show ) : ?>
 
-			<div class="sobre-section-3">
+			<div class="sobre-section-3 ov-h">
 
 				<div class="clearfix m-t-80"></div>
 
 				<div class="row">
 
-					<div class="col-sm-4 col-lg-5">
+					<div class="col-sm-4 col-lg-5 l40-1">
 
 						<h4 class="sobre-section-3-linha-1"><?php echo $sobre_section_3_linha_1; ?></h4>
 						<h2 class="sobre-section-3-linha-2"><?php echo $sobre_section_3_linha_2; ?></h2>
@@ -259,7 +259,7 @@
 
 					<div class="clearfix m-b-40 visible-xs"></div>
 
-					<div class="col-sm-6 col-lg-7">
+					<div class="col-sm-6 col-lg-7 r40-1">
 
 						<img src="<?php echo $sobre_section_3_img; ?>" class="sobre-section-3-img img-responsive center-block">
 						
@@ -293,7 +293,7 @@
 
 	<?php if( $sobre_section_4_show ) : ?>
 
-		<div class="sobre-section-4" style="background-image: url(<?php echo $sobre_section_4_img; ?>);">
+		<div class="sobre-section-4 ov-h" style="background-image: url(<?php echo $sobre_section_4_img; ?>);">
 
 			<div class="clearfix p-t-80"></div>
 			
@@ -301,7 +301,7 @@
 
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 
 						<h1 class="sobre-section-4-title text-center"><?php echo $sobre_section_4_title; ?></h1>
 
@@ -319,7 +319,7 @@
 
 				<div class="row">
 
-					<div class="col-md-12">
+					<div class="col-md-12 b40-1">
 						
 						<div class="sobre-section-4-anos">
 							
@@ -355,7 +355,7 @@
 
 				<div class="row">
 					
-					<div class="col-md-6">
+					<div class="col-md-6 l40-1">
 						
 						<h1 class="sobre-section-4-linha-1"><?php echo $sobre_section_4_linha_1; ?></h1>
 
@@ -366,7 +366,7 @@
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 r40-1">
 						
 						<div class="sobre-section-4-profissionais">
 							
@@ -439,7 +439,7 @@
 
 				<div class="row">
 					
-					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 b40-1">
 
 						<h1 class="sobre-section-5-linha-1 text-center">
 							<?php echo $sobre_section_5_linha_1; ?>
@@ -453,7 +453,7 @@
 
 					<div class="clearfix m-b-40"></div>
 
-					<div class="col-md-5 col-md-offset-6">
+					<div class="col-md-5 col-md-offset-6 b40-1">
 
 						<div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; top: 0; left: 100%; width: 9999px;">
 
@@ -492,13 +492,13 @@
 
 	<?php if( $sobre_section_6_show ) : ?>
 
-		<div class="sobre-section-6" style="background-image: url(<?php echo $sobre_section_6_img; ?>);">
+		<div class="sobre-section-6 ov-h" style="background-image: url(<?php echo $sobre_section_6_img; ?>);">
 			
 			<div class="container">
 
 				<div class="row">
 
-					<div class="col-md-5 col-md-offset-1" style="z-index: 9;">
+					<div class="col-md-5 col-md-offset-1 l40-1" style="z-index: 9;">
 
 						<div class="clearfix p-t-80"></div>
 
@@ -526,7 +526,7 @@
 					</div>
 					<!-- /.col-md-5 -->
 					
-					<div class="col-md-5">
+					<div class="col-md-5 r40-1">
 
 						<div class="clearfix p-t-80"></div>
 

@@ -93,21 +93,21 @@
 
     <?php if( $erp_passageiro_section_1_show ) : ?>
 
-        <div class="erp-passageiro-section-1">
+        <div class="erp-passageiro-section-1 ov-h">
 
             <div class="clearfix m-t-80"></div>
 
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-5 col-lg-offset-1">
+                    <div class="col-md-5 col-lg-offset-1 l40-1">
                         <div class="erp-passageiro-section-1-text"><?php echo $utils->nl2p( $erp_passageiro_section_1_text ); ?></div>
                     </div>
                     <!-- /.col-md-6 -->
 
                     <div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 r40-1">
                         <div class="erp-passageiro-section-1-title"><?php echo wp_kses_decode_entities( $erp_passageiro_section_1_title ); ?></div>
                     </div>
                     <!-- /.col-md-6 -->
@@ -134,7 +134,7 @@
     ?>
 
     <?php if( $show_section_2 ) : ?>
-    <div class="erp-passageiro-section-2 section">
+    <div class="erp-passageiro-section-2 section ov-h">
 
         <div class="block block-cinza" style="overflow: hidden;">
 
@@ -145,7 +145,7 @@
 
                     <div class="row-height">
 
-                        <div class="col-md-5 col-md-height col-md-middle">
+                        <div class="col-md-5 col-md-height col-md-middle l40-1">
 
                             <div style="position: absolute; top: -250px; height: 1000px; left: -45px;"></div>
 
@@ -164,7 +164,7 @@
 
                         <div class="clearfix visible-xs visible-sm m-t-20"></div>
 
-                        <div class="col-md-7 col-md-height col-md-middle">
+                        <div class="col-md-7 col-md-height col-md-middle r40-1">
 
                             <div class="prx-tabs">
 
@@ -222,7 +222,7 @@
 
                 <div class="row-height">
 
-                    <div class="col-md-12 col-md-height col-md-middle">
+                    <div class="col-md-12 col-md-height col-md-middle b40-1">
 
                         <div class="prx-tabs">
 
@@ -279,7 +279,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 l40-1">
                             <div class="erp-passageiro-section-3-title">
                                 <?php echo wp_kses_decode_entities( $erp_passageiro_section_3_title ); ?>
                                 <br>
@@ -290,7 +290,7 @@
 
                         <div class="clearfix m-b-40 visible-xs visible-sm"></div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 r40-1">
                             <div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs hidden-sm" style="position: absolute; top: 0; left: 100%; width: 9999px;">
                                 <div class="prx-linha prx-linha-r" style="position: absolute; top: 100%; right: 100%; width: 0;"></div>
                             </div>
@@ -326,7 +326,7 @@
 
         <?php if( $erp_passageiro_section_4_show ) : ?>
 
-            <div class="erp-passageiro-section-4">
+            <div class="erp-passageiro-section-4 ov-h">
 
             	<div class="erp-passageiros-section-4-bg-img visible-xs visible-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 
@@ -338,7 +338,7 @@
 
                         <div class="row-height">
 
-	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1 p-t-40" style="z-index: 9;">
+	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1 p-t-40 l40-1" style="z-index: 9;">
 
 	                            <ul class="erp-passageiro-section-4-abas">
 
@@ -370,7 +370,7 @@
 	                        </div>
 	                        <!-- /.col-md-5 -->
 
-	                        <div class="col-md-5 col-md-height col-md-middle">
+	                        <div class="col-md-5 col-md-height col-md-middle r40-1">
 
 	                        	<div class="erp-passageiros-section-4-bg-img hidden-xs hidden-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: -999px; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 
@@ -437,11 +437,11 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 b40-1">
                             <h2 class="section-head"><?php echo $utils->nl2p( $erp_passageiro_section_5_title ); ?></h2>
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-md-5 l40-1">
                             <div class="prx-linha prx-linha-b">
                                 <div class="prx-linha prx-linha-r prx-linha-t prx-linha-radius-2 hidden-xs" style="position: absolute;top: 0;left: 100%;height: 160px;width: 60px;"></div>
                                 <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute; top: 0; right: 100%; width: 999px; margin-right: 30px;"></div>
@@ -486,7 +486,7 @@
                         </div>
                         <!-- /.col-md-6 -->
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 r40-1">
                             <div class="clearfix p-t-60"></div>
                             <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute;bottom: 0px;left: 100%;width: 999px;margin-left: 20px;height: 0;"></div>
                             <div class="box-list">
@@ -526,7 +526,7 @@
             <div class="erp-passageiro-section-6 p-b-60 p-t-50" style="background-image: url(<?php echo $erp_passageiro_section_6_bg; ?>);">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-10 col-md-offset-1 b40-1">
                             <h2 class="section-title"><?php echo $erp_passageiro_section_6_title; ?></h2>
                             <a href="<?php echo $erp_passageiro_section_6_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;">
                                 <?php echo $erp_passageiro_section_6_btn; ?>
@@ -549,17 +549,17 @@
         $erp_passageiro_section_7_items = get_post_meta( $post_id, 'erp_passageiro_section_7_item', true );
         ?>
         <?php if( $erp_passageiro_section_7_show ) : ?>
-            <div class="erp-passageiro-section-7">
+            <div class="erp-passageiro-section-7 ov-h">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12"><h2 class="section-title"><?php echo $erp_passageiro_section_7_title; ?></h2></div>
+                        <div class="col-md-12 b40-1"><h2 class="section-title"><?php echo $erp_passageiro_section_7_title; ?></h2></div>
                     </div>
-                    <div class="row p-t-20">
+                    <div class="row p-t-20 l40-1">
                         <div class="col-md-6">
                             <h3 class="subtitle"><?php echo $erp_passageiro_section_7_subtitle; ?></h3>
                             <img src="<?php echo $erp_passageiro_section_7_image; ?>" alt="<?php echo $erp_passageiro_section_7_subtitle; ?>">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 b40-1">
                             <?php foreach( $erp_passageiro_section_7_items as $item ) : ?>
                                 <div>
                                     <h4><?php echo $item['erp_passageiro_section_7_item_title']; ?></h4>
@@ -588,7 +588,7 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 b40-1">
                             <div class="erp-passageiro-section-8-text"><?php echo $utils->nl2p( $erp_passageiro_section_8_text ); ?></div>
                         </div>
                         <!-- /.col-md-12 -->

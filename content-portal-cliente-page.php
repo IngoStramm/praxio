@@ -92,7 +92,7 @@ $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner
             <div class="container">
                 <div class="row display-flex">
                     <?php foreach( $portal_cliente_section_1_itens as $item ) : ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3 b40-1">
                         <div class="portal-cliente-section-1-img"><img src="<?php echo $item['portal_cliente_section_1_img']; ?>" alt=""></div>
                         <div class="portal-cliente-content">
                             <?php if(strlen($item['portal_cliente_section_1_button_url']) > 0) : ?>

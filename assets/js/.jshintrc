@@ -21,6 +21,8 @@
 		"Backbone": false,
 		"jQuery": false,
 		"wp": false,
-		"google" : true
+		"google" : true,
+		"sr" : true,
+		"ScrollReveal" : true
 	}
 }
