@@ -157,7 +157,7 @@
 				<div class="container bi-tab-content" id="bi-tab-content-2">
 					<div class="row">
 						
-						<div class="col-md-6 l40-1">
+						<div class="col-md-6">
 							
 							<div class="bi-section-1-text-1"><?php echo $bi_section_1_text_1_option_2; ?></div>
 
@@ -166,7 +166,7 @@
 						<div class="clearfix m-b-20 visible-xs visible-sm"></div>
 						
 						<!-- /.col-md-6 -->
-						<div class="col-md-6 r40-1">
+						<div class="col-md-6">
 							
 							<div class="bi-section-1-text-2 prx-lista prx-lista-seta-1"><?php echo $utils->nl2p( $bi_section_1_text_2_option_2 ); ?></div>
 
