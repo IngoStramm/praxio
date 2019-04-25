@@ -15,17 +15,17 @@ global $tipo;
 	<div class="container">
 		<div class="row">
 			<div class="row-height">
-				<div class="col-md-6 col-md-height col-xs-bottom">
+				<div class="col-md-6 col-md-height col-md-bottom">
 					<div class="clearfix m-t-80 hidden-md hidden-lg"></div>
-					<div class="clearfix m-t-120 hidden-xs hidden-sm"></div>
+					<div class="clearfix m-t-240 hidden-xs hidden-sm"></div>
 					<h3 class="blog-line-1"><?php echo is_search() ? pll__( 'Pesquisa por:' ) : $blog_linha_1; ?></h3>
 					<h1 class="blog-line-2"><?php echo is_search() ? get_search_query() : $blog_linha_2; ?></h1>
 					<div class="clearfix m-t-40 hidden-md hidden-lg"></div>
-					<div class="clearfix m-t-80 hidden-xs hidden-sm"></div>
+					<div class="clearfix m-t-190 hidden-xs hidden-sm"></div>
 				</div>
 				<!-- /.col-md-6 -->
 
-				<div class="col-md-6 col-md-height col-xs-bottom">
+				<div class="col-md-6 col-md-height col-md-bottom">
 					<div class="clearfix m-t-120 hidden-xs hidden-sm"></div>
 					<div class="blog-header-searchform"><?php get_search_form(); ?></div>
 					<div class="clearfix m-t-80"></div>
