@@ -1,13 +1,150 @@
-.navbar-default .prx-main-menu {
+/* Customizações Navbar */
+.navbar-default.prx-main-menu {
   .navbar-main-navigation {
+    .box-vendas, .box-clientes {
+      color: #ffffff !important;
+    }
+    .navbar-nav > li > a {
+      color: inherit;
+      &.active,
+      &:hover,
+      &:focus,
+      &:hover:focus {
+        color: #ff1a3b;
+        background-color: transparent;
+        transition: background-color 0.5s ease;
+      }
+    }
+
     .navbar-nav > .active > a,
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus,
-    .navbar-nav > #menu-item-home.active > a,
-    .navbar-nav > #menu-item-home.active > a:hover,
-    .navbar-nav > #menu-item-home.active > a:focus {
+    .navbar-nav > .open > a,
+    .navbar-nav > .open > a:hover,
+    .navbar-nav > .open > a:focus {
       background-color: transparent;
-      color: #ff213f !important;
+      color: #ff1a3b;
+    }
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > .active > a:focus {
+      background-color: #ff1a3b;
+      color: #ffffff;
+    }
+    .navbar-nav > li {
+      .dropdown-menu {
+        left: 50% !important;
+        margin-left: -85px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border-color: #ffffff;
+        animation-duration: 0.5s;
+        -webkit-animation-duration: 0.5s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-name: slideIn;
+        animation-name: slideIn;
+
+        li > a {
+          width: 100%;
+          &.active,
+          &:hover,
+          &:focus,
+          &:hover:focus {
+            color: #ffffff;
+            background-color: #ff1a3b;
+            transition: background-color 0.5s ease;
+          }
+        }
+      }
+    }
+    .popover.bottom>.arrow {
+      border-bottom-color: transparent !important;
+      &:after {
+        border-bottom-color: #ff1a3b;
+      }
+    }
+    .popover {
+      width: 165px;
+      text-align: center;
+      background-color: rgba(255,255,255,0.8);
+      border: solid 2px #ff1a3b;
+      border-radius: 10px !important;
+
+      .popover-title {
+        display: none;
+      }
+      .popover-content {
+        .title  {
+          color:#ff1a3b;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .fone {
+          color: #929598;
+          font-weight: bold;
+          font-size: 16px;
+        }
+        .action, .subtitle {
+          color:#ff1a3b;
+          font-weight: bold;
+          a {
+            padding: 0;
+            color:#ff1a3b;
+            text-decoration: underline;
+          }
+        }
+        .popover-url a {
+          font-size: 12px;
+          color: #929598;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(3rem);
+    -webkit-opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #051a4f !important;
+  }
+  .navbar-default.prx-main-menu {
+    .navbar-main-navigation {
+      .navbar-nav > li {
+        .dropdown-menu {
+          margin-left: 0;
+        }
+      }
     }
   }
 }
