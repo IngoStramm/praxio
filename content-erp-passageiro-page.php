@@ -328,75 +328,86 @@
 
             <div class="erp-passageiro-section-4">
 
+            	<div class="erp-passageiros-section-4-bg-img visible-xs visible-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+
                 <div class="container">
 
                     <div class="row">
 
-                        <div class="erp-passageiro-section-4-bg p-t-40" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>);">
+                        <?php /* ?><div class="erp-passageiro-section-4-bg p-t-40" style="overflow: visible !important;"><?php */ ?>
 
-                        <div class="col-md-5 col-md-offset-1" style="z-index: 9;">
+                        <div class="row-height">
 
-                            <ul class="erp-passageiro-section-4-abas">
+	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1" style="z-index: 9;">
 
-                                <?php $i = 0; ?>
+	                            <ul class="erp-passageiro-section-4-abas">
 
-                                <?php foreach( $erp_passageiro_section_4_aba as $aba ) : ?>
+	                                <?php $i = 0; ?>
 
-                                    <li class="erp-passageiro-section-4-aba-item<?php echo $i == 0 ? ' active' : ''; ?>">
-                                        <a class="prx-btn erp-passageiro-section-4-aba-btn" data-toggle="pill" href="#erp-passageiro-section-4-aba-<?php echo $i + 1; ?>">
-                                            <?php echo $aba[ 'erp_passageiro_section_4_title_button' ]; ?>
+	                                <?php foreach( $erp_passageiro_section_4_aba as $aba ) : ?>
 
-                                            <figure class="erp-passageiro-section-4-tabs-figure">
-                                            <img id="erp_passageiro_section_4_tabs_icon_tab" src="<?php echo $aba[ 'erp_passageiro_section_4_icon_tab' ]; ?>" class="erp-passageiro-section-4-tabs-icon">
-                                            <img id="erp_passageiro_section_4_tabs_icon_tab_active" src="<?php echo $aba[ 'erp_passageiro_section_4_icon_tab_active' ]; ?>" class="erp-passageiro-section-4-tabs-icon">
-                                            </figure>
-                                        </a>
-                                    </li>
-                                    <!-- /.erp-passageiro-section-4-aba-btn -->
+	                                    <li class="erp-passageiro-section-4-aba-item<?php echo $i == 0 ? ' active' : ''; ?>">
+	                                        <a class="prx-btn erp-passageiro-section-4-aba-btn" data-toggle="pill" href="#erp-passageiro-section-4-aba-<?php echo $i + 1; ?>">
+	                                            <?php echo $aba[ 'erp_passageiro_section_4_title_button' ]; ?>
 
-                                    <?php $i++; ?>
+	                                            <figure class="erp-passageiro-section-4-tabs-figure">
+	                                            <img id="erp_passageiro_section_4_tabs_icon_tab" src="<?php echo $aba[ 'erp_passageiro_section_4_icon_tab' ]; ?>" class="erp-passageiro-section-4-tabs-icon">
+	                                            <img id="erp_passageiro_section_4_tabs_icon_tab_active" src="<?php echo $aba[ 'erp_passageiro_section_4_icon_tab_active' ]; ?>" class="erp-passageiro-section-4-tabs-icon">
+	                                            </figure>
+	                                        </a>
+	                                    </li>
+	                                    <!-- /.erp-passageiro-section-4-aba-btn -->
 
-                                <?php endforeach; ?>
+	                                    <?php $i++; ?>
 
-                            </ul>
-                            <!-- /.nav nav-pills -->
+	                                <?php endforeach; ?>
 
-                            <div class="clearfix p-b-40"></div>
+	                            </ul>
+	                            <!-- /.nav nav-pills -->
 
-                        </div>
-                        <!-- /.col-md-5 -->
+	                            <div class="clearfix p-b-40"></div>
 
-                        <div class="col-md-5">
+	                        </div>
+	                        <!-- /.col-md-5 -->
 
-                            <div class="tab-content erp-passageiro-section-4-tab-content" style="position: relative; z-index: 9;">
+	                        <div class="col-md-5 col-md-height col-md-middle">
 
-                                <?php $i = 0; ?>
+	                        	<div class="erp-passageiros-section-4-bg-img hidden-xs hidden-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: -40px; left: -999px; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 
-                                <?php foreach( $erp_passageiro_section_4_aba as $aba ) : ?>
+	                            <div class="tab-content erp-passageiro-section-4-tab-content" style="position: relative; z-index: 9;">
 
-                                    <div id="erp-passageiro-section-4-aba-<?php echo $i + 1; ?>" class="erp-passageiro-section-4-aba-content tab-pane fade in<?php echo $i == 0 ? ' active' : ''; ?>">
+	                                <?php $i = 0; ?>
 
-                                        <h3 class="erp-passageiro-section-4-aba-linha-1"><?php echo $aba[ 'erp_passageiro_section_4_linha_1' ]; ?></h3>
+	                                <?php foreach( $erp_passageiro_section_4_aba as $aba ) : ?>
 
-                                        <div class="cleafix m-b-4h0"></div>
+	                                    <div id="erp-passageiro-section-4-aba-<?php echo $i + 1; ?>" class="erp-passageiro-section-4-aba-content tab-pane fade in<?php echo $i == 0 ? ' active' : ''; ?>">
 
-                                        <div class="erp-passageiro-section-4-aba-linha-2 list-ul list-ul-arrow-1 list-ul-font-white"><?php echo $utils->nl2p( $aba[ 'erp_passageiro_section_4_linha_2' ] ); ?></div>
+	                                        <h3 class="erp-passageiro-section-4-aba-linha-1"><?php echo $aba[ 'erp_passageiro_section_4_linha_1' ]; ?></h3>
 
-                                    </div>
-                                    <!-- /.erp-passageiro-section-4-aba-content -->
+	                                        <div class="cleafix m-b-4h0"></div>
 
-                                    <?php $i++; ?>
+	                                        <div class="erp-passageiro-section-4-aba-linha-2 list-ul list-ul-arrow-1 list-ul-font-white"><?php echo $utils->nl2p( $aba[ 'erp_passageiro_section_4_linha_2' ] ); ?></div>
 
-                                <?php endforeach; ?>
+	                                    </div>
+	                                    <!-- /.erp-passageiro-section-4-aba-content -->
 
-                            </div>
-                            <!-- /.tab-content -->
+	                                    <?php $i++; ?>
 
-                            <div class="clearfix p-b-40"></div>
+	                                <?php endforeach; ?>
 
-                        </div>
-                        <!-- /.col-md-5 -->
-                    </div>
+	                            </div>
+	                            <!-- /.tab-content -->
+
+	                            <div class="clearfix p-b-40"></div>
+
+	                        </div>
+	                        <!-- /.col-md-5 -->
+                    	
+                    	<?php /* ?></div>
+                    	<!-- /.erp-passageiro-section-4-bg --><?php */ ?>
+
+                    	</div>
+                    	<!-- /.row-height -->
 
                     </div>
                     <!-- /.row -->
