@@ -338,7 +338,7 @@
 
                         <div class="row-height">
 
-	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1" style="z-index: 9;">
+	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1 p-t-40" style="z-index: 9;">
 
 	                            <ul class="erp-passageiro-section-4-abas">
 
@@ -372,9 +372,9 @@
 
 	                        <div class="col-md-5 col-md-height col-md-middle">
 
-	                        	<div class="erp-passageiros-section-4-bg-img hidden-xs hidden-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: -40px; left: -999px; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+	                        	<div class="erp-passageiros-section-4-bg-img hidden-xs hidden-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: -999px; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 
-	                            <div class="tab-content erp-passageiro-section-4-tab-content" style="position: relative; z-index: 9;">
+	                            <div class="tab-content erp-passageiro-section-4-tab-content p-t-40" style="position: relative; z-index: 9;">
 
 	                                <?php $i = 0; ?>
 
