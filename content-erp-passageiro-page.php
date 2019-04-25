@@ -326,7 +326,7 @@
 
         <?php if( $erp_passageiro_section_4_show ) : ?>
 
-            <div class="erp-passageiro-section-4 ov-h">
+            <div class="erp-passageiro-section-4">
 
             	<div class="erp-passageiros-section-4-bg-img visible-xs visible-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 
@@ -338,7 +338,7 @@
 
                         <div class="row-height">
 
-	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1 p-t-40 l40-1" style="z-index: 9;">
+	                        <div class="col-md-5 col-md-height col-md-middle col-md-offset-1 p-t-40 b40-1" style="z-index: 9;">
 
 	                            <ul class="erp-passageiro-section-4-abas">
 
@@ -370,7 +370,7 @@
 	                        </div>
 	                        <!-- /.col-md-5 -->
 
-	                        <div class="col-md-5 col-md-height col-md-middle r40-1">
+	                        <div class="col-md-5 col-md-height col-md-middle b40-1">
 
 	                        	<div class="erp-passageiros-section-4-bg-img hidden-xs hidden-sm" style="background-image: url(<?php echo $erp_passageiro_section_4_img; ?>); position: absolute; top: 0; left: -999px; right: 0; bottom: 0; background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
 

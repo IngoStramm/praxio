@@ -492,13 +492,13 @@
 
 	<?php if( $sobre_section_6_show ) : ?>
 
-		<div class="sobre-section-6 ov-h" style="background-image: url(<?php echo $sobre_section_6_img; ?>);">
+		<div class="sobre-section-6" style="background-image: url(<?php echo $sobre_section_6_img; ?>);">
 			
 			<div class="container">
 
 				<div class="row">
 
-					<div class="col-md-5 col-md-offset-1 l40-1" style="z-index: 9;">
+					<div class="col-md-5 col-md-offset-1 b40-1" style="z-index: 9;">
 
 						<div class="clearfix p-t-80"></div>
 
@@ -526,7 +526,7 @@
 					</div>
 					<!-- /.col-md-5 -->
 					
-					<div class="col-md-5 r40-1">
+					<div class="col-md-5 b40-1">
 
 						<div class="clearfix p-t-80"></div>
 

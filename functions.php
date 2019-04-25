@@ -239,8 +239,8 @@ function odin_enqueue_scripts() {
 		
 	} else {
 		// Grunt main file with Bootstrap, FitVids and others libs.
-		wp_enqueue_script( 'popover', $template_url . '/assets/js/menu-popover.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array( 'jquery', 'scrollreveal-script' ), null, true );
+		wp_enqueue_script( 'popover', $template_url . '/assets/js/menu-popover.js', array( 'jquery', 'odin-main-min' ), null, true );
 	
 	}
 
