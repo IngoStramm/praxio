@@ -33,7 +33,11 @@ jQuery( function( $ ) {
 		});
 	};
 
-	var normalize_elements = function( wrapper, element ) {
+	var normalize_elements = function( wrapper, element, minH ) {
+
+		if( !minH ) {
+			minH = 0;
+		}
 
 		$( '.' + wrapper ).each( function() {
 
@@ -45,6 +49,11 @@ jQuery( function( $ ) {
 				items.map( function() {
 					return $( this ).outerHeight();
 				}).get() );
+			if( maxHeight < minH ) {
+				maxHeight = minH;
+			}
+
+			console.log('maxHeight: ' + maxHeight);
 			items.css( 'min-height', maxHeight + 'px' );
 		});
 	};
@@ -72,14 +81,14 @@ jQuery( function( $ ) {
 
 		checkbox_toggle();
 		carousel_normalize();
-		normalize_elements( 'fix-height-wrapper', 'fix-height-item' );
+		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
 		
 	}); // $(document).ready
 
 	$( window ).resize( function() {
 
 		carousel_normalize();
-		normalize_elements( 'fix-height-wrapper', 'fix-height-item' );
+		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
 
 	});
 });
