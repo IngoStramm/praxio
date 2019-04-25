@@ -1,7 +1,10 @@
 /* Customizações Navbar */
 .navbar-default.prx-main-menu {
   .navbar-main-navigation {
-    .box-vendas, .box-clientes {
+    .navbar-nav > .box-vendas > a:hover,
+    .navbar-nav > .box-clientes > a:hover,
+    .navbar-nav > .box-vendas > a:focus,
+    .navbar-nav > .box-clientes > a:focus {
       color: #ffffff !important;
     }
     .navbar-nav > li > a {
