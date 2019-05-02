@@ -58,19 +58,27 @@ function rd_scripts() {
 
 	$utils = new Utils;
 
+	$rd_contact_id = laf_get_option( 'rd_contact_id_pt_BR' );
 	$rd_contact_script_url = laf_get_option( 'rd_contact_script_url_pt_BR' );
 	$rd_contact_ua = laf_get_option( 'rd_contact_ua_pt_BR' );
 
-	if( $rd_contact_script_url && $rd_contact_ua ) :
+	if( $rd_contact_id && $rd_contact_script_url && $rd_contact_ua ) :
 
-		// $utils->debug( $rd_contact_script_url );
-		// $utils->debug( $rd_contact_ua );
+		$rd_contact = array(
+			'id'		=> $rd_contact_id,
+			'url'		=> $rd_contact_script_url,
+			'ua'		=> $rd_contact_ua,
+		);
+
+		// $utils->debug( $rd_contact[ 'id' ] );
+		// $utils->debug( $rd_contact[ 'url' ] );
+		// $utils->debug( $rd_contact[ 'ua' ] );
 
 		wp_enqueue_script( 'rd-contact-include', $rd_contact_script_url, array(  ), null, true );
 
 		wp_register_script( 'rd-contact-script', get_stylesheet_directory_uri() . '/assets/js/rd-contact-script.js', array( 'rd-contact-include' ), null, true );
 
-		wp_localize_script( 'rd-contact-script', 'rd_contact_ua', $rd_contact_ua );
+		wp_localize_script( 'rd-contact-script', 'rd_contact', $rd_contact );
 
 		wp_enqueue_script( 'rd-contact-script' );
 
