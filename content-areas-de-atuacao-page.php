@@ -94,9 +94,14 @@
 
 			<?php foreach( $areas_de_atuacao_areas_area as $area ) : ?>
 
-				<?php //$utils->debug( $area ) ; ?>
-				
-				<div class="container ov-h">
+				<?php $slug = $utils->slugify( $area[ 'areas_de_atuacao_areas_title' ] ); ?>
+
+				<?php //$utils->debug( $slug ) ; ?>
+
+				<div class="container ov-h" id="segmento-<?php echo $slug; ?>">
+	
+					<div class="clearfix hidden-xs hidden-sm p-t-100"></div>
+
 					<div class="row">
 
 						<div class="col-md-12">
