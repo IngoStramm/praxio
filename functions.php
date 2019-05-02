@@ -245,7 +245,8 @@ function odin_enqueue_scripts() {
 	}
 
 	// Grunt watch livereload in the browser.
-	// wp_enqueue_script( 'odin-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
+	if( in_array( $_SERVER[ 'REMOTE_ADDR' ], array( '127.0.0.1', '::1' ) ) )
+		wp_enqueue_script( 'odin-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
 
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
