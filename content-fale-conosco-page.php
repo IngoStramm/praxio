@@ -15,7 +15,8 @@
 	$fale_conosco_banner_img = get_post_meta( $post_id, 'fale_conosco_banner_img', true );
 	$fale_conosco_banner_linha_1 = get_post_meta( $post_id, 'fale_conosco_banner_linha_1', true );
 	$fale_conosco_banner_linha_2 = get_post_meta( $post_id, 'fale_conosco_banner_linha_2', true );
-	$fale_conosco_banner_cf7 = get_post_meta( $post_id, 'fale_conosco_banner_cf7', true );
+	//$fale_conosco_banner_cf7 = get_post_meta( $post_id, 'fale_conosco_banner_cf7', true );
+	$rd_contact_id_pt_BR = laf_get_option( 'rd_contact_id_pt_BR' );
 ?>
 
 
@@ -42,7 +43,11 @@
 					<div class="clearfix m-b-20 visible-xs visible-sm"></div>
 
 					<div class="col-md-4 r40-1">
-						<div class="fale-conosco-form"><?php echo do_shortcode( $fale_conosco_banner_cf7 ); ?></div>
+						<div class="fale-conosco-form">
+							<?php if( $rd_contact_id_pt_BR ) : ?>
+								<div role="main" id="<?php echo $rd_contact_id_pt_BR; ?>"></div>
+							<?php endif; ?>
+						</div>
 					</div>
 					<!-- /.col-md-4 -->
 

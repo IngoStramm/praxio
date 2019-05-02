@@ -53,7 +53,6 @@ jQuery( function( $ ) {
 				maxHeight = minH;
 			}
 
-			console.log('maxHeight: ' + maxHeight);
 			items.css( 'min-height', maxHeight + 'px' );
 		});
 	};
@@ -93,18 +92,16 @@ jQuery( function( $ ) {
 	});
 });
 
-window.onscroll = function() {myFunction();};
+window.onscroll = function() {prx_fix_menu();};
 
 var main_menu = document.getElementById( 'main-navigation' );
 
 var fixed = main_menu.offsetTop;
 
-function myFunction() {
+function prx_fix_menu() {
 	if ( window.pageYOffset >= fixed ) {
-		console.log('1');
 		main_menu.classList.add( 'prx-fixed-menu' );
 	} else {
-		console.log('2');
 		main_menu.classList.remove( 'prx-fixed-menu' );
 	}
 }

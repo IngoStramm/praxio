@@ -44,12 +44,111 @@ function theme_enqueue_styles() {
 	wp_enqueue_script( 'jquery-masked-input-masks', get_stylesheet_directory_uri() . '/inc/laf/jquery-masked-input/masks.js', array('jquery'), null, true );
 	wp_enqueue_script( 'bootstrap-toggle-script', get_stylesheet_directory_uri() . '/assets/lib/bootstrap-toggle-master/js/bootstrap-toggle.min.js', array('jquery'), null, true );
 	wp_enqueue_script( 'scrollreveal-script', get_stylesheet_directory_uri() . '/assets/lib/scrollreveal/scrollreveal.min.js', array('jquery'), null, true );
+
 	// wp_enqueue_script( 'js-parallax', get_stylesheet_directory_uri() . '/inc/laf/parallax.js-1.4.2/parallax.min.js', array('jquery'), null, true );
 	// wp_enqueue_script( 'isotope-script', get_stylesheet_directory_uri() . '/inc/laf/isotope/isotope.pkgd.min.js', array('jquery'), '3.0.2', true );
 	// wp_enqueue_script( 'royalslider-script', get_stylesheet_directory_uri() . '/inc/laf/royalslider/jquery.royalslider.min.js', array('jquery'), '9.5.7', true );
 	// if(is_page( 'contato' ))
 	// 	wp_enqueue_script( 'googleapi-gmap', 'https://maps.googleapis.com/maps/api/js?key=' . google_api_key() . '&callback=initMap', array( 'jquery', 'odin-main-min'), null, true );
 }
+
+add_action( 'wp_enqueue_scripts', 'rd_scripts' );
+
+function rd_scripts() {
+
+	$utils = new Utils;
+
+	$rd_contact_script_url = laf_get_option( 'rd_contact_script_url_pt_BR' );
+	$rd_contact_ua = laf_get_option( 'rd_contact_ua_pt_BR' );
+
+	if( $rd_contact_script_url && $rd_contact_ua ) :
+
+		// $utils->debug( $rd_contact_script_url );
+		// $utils->debug( $rd_contact_ua );
+
+		wp_enqueue_script( 'rd-contact-include', $rd_contact_script_url, array(  ), null, true );
+
+		wp_register_script( 'rd-contact-script', get_stylesheet_directory_uri() . '/assets/js/rd-contact-script.js', array( 'rd-contact-include' ), null, true );
+
+		wp_localize_script( 'rd-contact-script', 'rd_contact_ua', $rd_contact_ua );
+
+		wp_enqueue_script( 'rd-contact-script' );
+
+	endif;
+
+}
+
+add_action( 'wp_head', 'prx_rd_form_style' );
+
+function prx_rd_form_style() {
+	$utils = new utils;
+	$rd_contact_id_pt_BR = laf_get_option( 'rd_contact_id_pt_BR' );
+	// $utils->debug( $rd_contact_id_pt_BR );
+
+	if( $rd_contact_id_pt_BR ) :
+		?>
+		<style>
+			.fale-conosco-form #conversion-<?php echo $rd_contact_id_pt_BR; ?> {
+				background-color: transparent !important;
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input, 
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form .select2-container,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form textarea {
+				margin: auto !important;
+				padding: 5px 20px !important;
+				width: 100% !important;
+				background-color: transparent !important;
+				border: solid 1px #fff !important;
+				color: #fff !important;
+				text-transform: uppercase !important;
+				font-family: 'Mukta', sans-serif !important;
+				font-size: 15px !important;
+				border-radius: 0 !important;
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option {
+				background-color: #23282d !important;
+				color: #fff !important;
+			}
+
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:active,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:hover,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:focus,
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:hover:focus {
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-webkit-input-placeholder {
+				/* WebKit, Blink, Edge */
+				color: #fff;
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input:-moz-placeholder {
+				/* Mozilla Firefox 4 to 18 */
+				color: #fff;
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-moz-placeholder {
+				/* Mozilla Firefox 19+ */
+				color: #fff;
+			}
+			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: #fff;
+			}
+			#form-container-<?php echo $rd_contact_id_pt_BR; ?> #conversion-<?php echo $rd_contact_id_pt_BR; ?> #conversion-form-<?php echo $rd_contact_id_pt_BR; ?> div.actions input.call_button {
+				width: 100%;
+				margin: auto !important;
+				padding: 5px 20px !important;
+				border: none !important;
+				background-color: #fff !important;
+				border-radius: 0 !important;
+				font-size: 15px !important;
+				text-transform: uppercase !important;
+				font-weight: 600 !important;
+			}
+		</style>
+		<?php
+	endif;
+}
+
 
 //attach our function to the wp_pagenavi filter
 // add_filter( 'wp_pagenavi', 'ik_pagination', 10, 2 );

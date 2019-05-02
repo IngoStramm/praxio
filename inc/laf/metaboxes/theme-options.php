@@ -466,6 +466,37 @@ class Laf_Admin {
 			'attributes' => array('placeholder' => 'http://'),
 		) );
 
+
+
+		$cmb->add_field( array(
+			'name' => __( 'Formulário de Contato do RD Station (português)', 'laf' ),
+			'id'   => 'titulo_rd_contact_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'ID do formulário (português)', 'laf' ),
+			'id'      => 'rd_contact_id_pt_BR',
+			'type'    => 'text',
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Url do script (português)', 'laf' ),
+			'id'      => 'rd_contact_script_url_pt_BR',
+			'type'    => 'text_url',
+			'attributes' 		=> array(
+				'placeholder' 	=> 'http://',
+				// 'required'		=> ''
+			)
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'UA (português)', 'laf' ),
+			'id'      => 'rd_contact_ua_pt_BR',
+			'type'    => 'text',
+		) );
+
+
 		// $cmb->add_field( array(
 		// 	'name' => __( 'Logo do Topo', 'laf' ),
 		// 	'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
