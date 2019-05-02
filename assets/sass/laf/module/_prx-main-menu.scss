@@ -56,15 +56,25 @@
 
 .navbar-default.prx-main-menu {
 	width: 750px;
-	position: absolute;
+	position: fixed;
 	top: 40px;
 	left: 50%;
-	@include translate( -50%, 0 );
 	z-index: 99999;
 	text-align: center;
 	font-size: 12px;
+	@include translate( -50%, 0 );
+	@include trans-all( 25/100 );
 	.navbar-nav .menu-item {
 		margin: 0 5px;
+	}
+	&.prx-fixed-menu {
+		margin: 0 auto !important;
+	    top: 32px;
+	    width: 100%;
+	    padding: 5px 1px;
+	    border: none;
+		background-color: $cinza-4;
+		@include radius( 0 );
 	}
 
 	.navbar-nav {

@@ -93,6 +93,22 @@ jQuery( function( $ ) {
 	});
 });
 
+window.onscroll = function() {myFunction();};
+
+var main_menu = document.getElementById( 'main-navigation' );
+
+var fixed = main_menu.offsetTop;
+
+function myFunction() {
+	if ( window.pageYOffset >= fixed ) {
+		console.log('1');
+		main_menu.classList.add( 'prx-fixed-menu' );
+	} else {
+		console.log('2');
+		main_menu.classList.remove( 'prx-fixed-menu' );
+	}
+}
+
 window.sr = ScrollReveal({ useDelay: 'once' });
 
 sr.reveal('.zb100-1', { 
