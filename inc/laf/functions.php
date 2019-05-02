@@ -107,6 +107,7 @@ function prx_rd_form_style() {
 				font-size: 15px !important;
 				border-radius: 0 !important;
 			}
+			
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option {
 				background-color: #23282d !important;
 				color: #fff !important;
@@ -117,22 +118,27 @@ function prx_rd_form_style() {
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:focus,
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form select option:hover:focus {
 			}
+
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-webkit-input-placeholder {
 				/* WebKit, Blink, Edge */
 				color: #fff;
 			}
+
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input:-moz-placeholder {
 				/* Mozilla Firefox 4 to 18 */
 				color: #fff;
 			}
+
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-moz-placeholder {
 				/* Mozilla Firefox 19+ */
 				color: #fff;
 			}
+
 			.fale-conosco-form #<?php echo $rd_contact_id_pt_BR; ?> form input::-ms-input-placeholder {
 				/* Internet Explorer 10-11 */
 				color: #fff;
 			}
+
 			#form-container-<?php echo $rd_contact_id_pt_BR; ?> #conversion-<?php echo $rd_contact_id_pt_BR; ?> #conversion-form-<?php echo $rd_contact_id_pt_BR; ?> div.actions input.call_button {
 				width: 100%;
 				margin: auto !important;
