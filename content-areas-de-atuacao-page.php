@@ -143,7 +143,13 @@
 
 										<div class="clearfix m-b-20"></div>
 
-										<a href="<?php echo $area[ 'areas_de_atuacao_areas_btn_url' ]; ?>" class="areas-de-atuacao-areas-area-btn prx-btn prx-btn-inline"><?php echo $area[ 'areas_de_atuacao_areas_btn_txt' ]; ?></a>
+										<?php foreach( $area[ 'areas_de_atuacao_areas_btn_url' ] as $k => $btn_url ) : ?>
+
+											<?php //$utils->debug( $k ); ?>
+
+											<a href="<?php echo $btn_url; ?>" class="areas-de-atuacao-areas-area-btn prx-btn prx-btn-inline"><?php echo $area[ 'areas_de_atuacao_areas_btn_txt' ][ $k ]; ?></a>
+
+										<?php endforeach; ?>
 										
 									</div>
 									<!-- /.col-md-8 col-md-offset-3 -->

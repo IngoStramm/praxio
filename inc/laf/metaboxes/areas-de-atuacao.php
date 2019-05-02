@@ -203,20 +203,22 @@ function areas_de_atuacao_page_register_metabox() {
 	) );
 
 	$cmb_area->add_group_field( $group_field_id, array(
-		'name'       => esc_html__( 'Texto do botão', 'cmb2' ),
+		'name'       => esc_html__( 'Texto dos botões', 'cmb2' ),
 		'id'         => $prefix . 'btn_txt',
 		'type'       => 'text',
 		'sanitization_cb' => 'prx_allow_html',
+		'repeatable'		=> true
 	) );
 
 	$cmb_area->add_group_field( $group_field_id, array(
-		'name' 				=> __( 'Url do botão', 'laf' ),
+		'name' 				=> __( 'Url dos botões', 'laf' ),
 		'id'   				=> $prefix . 'btn_url',
 		'type' 				=> 'text_url',
 		'attributes' 		=> array(
 			'placeholder' 	=> 'http://',
 			// 'required'		=> ''
-		)
+		),
+		'repeatable'		=> true
 	) );
 
 }
