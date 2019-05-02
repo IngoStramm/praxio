@@ -109,216 +109,216 @@ function myFunction() {
 	}
 }
 
-window.sr = ScrollReveal({ useDelay: 'once' });
+// window.sr = ScrollReveal({ useDelay: 'once' });
 
-sr.reveal('.zb100-1', { 
-  origin: 'bottom',
-  distance: '100px',
-  duration: 1500,
-  delay: 100,
-  opacity: 0,
-  scale: 0.5,
-  reset: true
-});
+// sr.reveal('.zb100-1', { 
+//   origin: 'bottom',
+//   distance: '100px',
+//   duration: 1500,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 0.5,
+//   reset: true
+// });
 
-sr.reveal('.zb50-1', { 
-  origin: 'bottom',
-  distance: '100px',
-  duration: 3000,
-  delay: 100,
-  opacity: 0,
-  scale: 0.5,
-  reset: true
-});
+// sr.reveal('.zb50-1', { 
+//   origin: 'bottom',
+//   distance: '100px',
+//   duration: 3000,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 0.5,
+//   reset: true
+// });
 
-sr.reveal('.zb50-2', { 
-  origin: 'bottom',
-  distance: '100px',
-  duration: 3000,
-  delay: 400,
-  opacity: 0,
-  scale: 0.5,
-  reset: true
-});
+// sr.reveal('.zb50-2', { 
+//   origin: 'bottom',
+//   distance: '100px',
+//   duration: 3000,
+//   delay: 400,
+//   opacity: 0,
+//   scale: 0.5,
+//   reset: true
+// });
 
-sr.reveal('.b20-1', { 
-  origin: 'bottom',
-  distance: '20px',
-  duration: 1500,
-  delay: 100,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b20-1', { 
+//   origin: 'bottom',
+//   distance: '20px',
+//   duration: 1500,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.b20-2', { 
-  origin: 'bottom',
-  distance: '20px',
-  duration: 1500,
-  delay: 200,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b20-2', { 
+//   origin: 'bottom',
+//   distance: '20px',
+//   duration: 1500,
+//   delay: 200,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.b20-3', { 
-  origin: 'bottom',
-  distance: '20px',
-  duration: 1500,
-  delay: 300,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b20-3', { 
+//   origin: 'bottom',
+//   distance: '20px',
+//   duration: 1500,
+//   delay: 300,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.b20-4', { 
-  origin: 'bottom',
-  distance: '20px',
-  duration: 1500,
-  delay: 400,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b20-4', { 
+//   origin: 'bottom',
+//   distance: '20px',
+//   duration: 1500,
+//   delay: 400,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.r30-1', { 
-  origin: 'right',
-  distance: '30px',
-  duration: 2000,
-  delay: 300,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.r30-1', { 
+//   origin: 'right',
+//   distance: '30px',
+//   duration: 2000,
+//   delay: 300,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.l30-1', { 
-  origin: 'left',
-  distance: '30px',
-  duration: 2000,
-  delay: 300,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.l30-1', { 
+//   origin: 'left',
+//   distance: '30px',
+//   duration: 2000,
+//   delay: 300,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.l400-1', { 
-  origin: 'left',
-  distance: '400px',
-  duration: 2000,
-  delay: 150,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.l400-1', { 
+//   origin: 'left',
+//   distance: '400px',
+//   duration: 2000,
+//   delay: 150,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.b40-1', { 
-  origin: 'bottom',
-  distance: '40px',
-  duration: 1500,
-  delay: 100,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b40-1', { 
+//   origin: 'bottom',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.b40-2', { 
-  origin: 'bottom',
-  distance: '40px',
-  duration: 1500,
-  delay: 300,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.b40-2', { 
+//   origin: 'bottom',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 300,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.t40-1', { 
-  origin: 'top',
-  distance: '40px',
-  duration: 1500,
-  delay: 500,
-  opacity: 0,
-  scale: 1,
-  useDelay: 'always',
-  reset: true
-});
+// sr.reveal('.t40-1', { 
+//   origin: 'top',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 500,
+//   opacity: 0,
+//   scale: 1,
+//   useDelay: 'always',
+//   reset: true
+// });
 
-sr.reveal('.t40-2', { 
-  origin: 'top',
-  distance: '40px',
-  duration: 1500,
-  delay: 800,
-  opacity: 0,
-  scale: 1,
-  useDelay: 'always',
-  reset: true
-});
+// sr.reveal('.t40-2', { 
+//   origin: 'top',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 800,
+//   opacity: 0,
+//   scale: 1,
+//   useDelay: 'always',
+//   reset: true
+// });
 
-sr.reveal('.t40-fone', { 
-  origin: 'top',
-  distance: '40px',
-  duration: 1500,
-  delay: 800,
-  opacity: 0,
-  scale: 1,
-  useDelay: 'always',
-  reset: true
-  // afterReveal: function(){}
-});
+// sr.reveal('.t40-fone', { 
+//   origin: 'top',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 800,
+//   opacity: 0,
+//   scale: 1,
+//   useDelay: 'always',
+//   reset: true
+//   // afterReveal: function(){}
+// });
 
-sr.reveal('.t40-3', { 
-  origin: 'top',
-  distance: '40px',
-  duration: 1500,
-  delay: 1100,
-  opacity: 0,
-  scale: 1,
-  useDelay: 'always',
-  reset: true
-});
+// sr.reveal('.t40-3', { 
+//   origin: 'top',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 1100,
+//   opacity: 0,
+//   scale: 1,
+//   useDelay: 'always',
+//   reset: true
+// });
 
-sr.reveal('.l40-1', { 
-  origin: 'left',
-  distance: '40px',
-  duration: 1500,
-  delay: 100,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.l40-1', { 
+//   origin: 'left',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.r40-1', { 
-  origin: 'right',
-  distance: '40px',
-  duration: 1500,
-  delay: 100,
-  opacity: 0,
-  scale: 1,
-  reset: true
-});
+// sr.reveal('.r40-1', { 
+//   origin: 'right',
+//   distance: '40px',
+//   duration: 1500,
+//   delay: 100,
+//   opacity: 0,
+//   scale: 1,
+//   reset: true
+// });
 
-sr.reveal('.s1-1', { 
-  origin: 'bottom',
-  distance: '0',
-  duration: 600,
-  delay: 600,
-  scale: 1.5,
-  reset: true
-});
+// sr.reveal('.s1-1', { 
+//   origin: 'bottom',
+//   distance: '0',
+//   duration: 600,
+//   delay: 600,
+//   scale: 1.5,
+//   reset: true
+// });
 
-sr.reveal('.s1-2', { 
-  origin: 'bottom',
-  distance: '0',
-  duration: 600,
-  delay: 1000,
-  scale: 1.5,
-  reset: true
-});
+// sr.reveal('.s1-2', { 
+//   origin: 'bottom',
+//   distance: '0',
+//   duration: 600,
+//   delay: 1000,
+//   scale: 1.5,
+//   reset: true
+// });
 
-sr.reveal('.s1-3', { 
-  origin: 'bottom',
-  distance: '0',
-  duration: 400,
-  delay: 1400,
-  scale: 1.5,
-  reset: true
-});
+// sr.reveal('.s1-3', { 
+//   origin: 'bottom',
+//   distance: '0',
+//   duration: 400,
+//   delay: 1400,
+//   scale: 1.5,
+//   reset: true
+// });
