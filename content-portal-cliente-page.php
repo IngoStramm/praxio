@@ -22,7 +22,7 @@ $portal_cliente_banner_btn_url = get_post_meta( $post_id, 'portal_cliente_banner
 $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner_btn_txt', true );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'portal-cliente' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'portal-cliente', 'conexao-praxio' ) ); ?>>
 
     <?php if( $portal_cliente_banner_show ) : ?>
         <div class="page-banner portal-cliente-banner" style="background-image: url(<?php echo $portal_cliente_banner_img; ?>);">
@@ -85,38 +85,62 @@ $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner
 
         <div class="portal-cliente-section-1">
 
-            <div class="clearfix m-t-50"></div>
+            <div class="clearfix m-t-80"></div>
 
             <div class="container">
-                <div class="row display-flex">
+
+                <div class="row conexao-praxio-items">
+
                     <?php foreach( $portal_cliente_section_1_itens as $item ) : ?>
-                    <div class="col-md-3 b40-1">
-                        <div class="portal-cliente-section-1-img"><img src="<?php echo $item['portal_cliente_section_1_img']; ?>" alt=""></div>
-                        <div class="portal-cliente-content">
-                            <?php if(strlen($item['portal_cliente_section_1_button_url']) > 0) : ?>
-                            <a href="<?php echo $item['portal_cliente_section_1_button_url']; ?>" target="<?php echo $item['portal_cliente_section_1_url_target']; ?>">
-                                <h3 class="section-title">
-                                    <?php echo $item['portal_cliente_section_1_item_title']; ?>
-                                </h3>
-                                <p><?php echo $item['portal_cliente_section_1_item_content']; ?></p>
-                            </a>
-                            <?php else : ?>
-                                <h3 class="section-title">
-                                    <?php echo $item['portal_cliente_section_1_item_title']; ?>
-                                </h3>
-                                <p><?php echo $item['portal_cliente_section_1_item_content']; ?></p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="m-b-50"></div>
-                    </div>
+
+	                    <div class="col-sm-6 col-md-4 col-lg-3 conexao-praxio-item">
+
+	                        <div class="conexao-praxio-item-img" style="background-image: url(<?php echo $item[ 'portal_cliente_section_1_img' ]; ?>);">
+
+	                        	<?php if( $item[ 'portal_cliente_section_1_item_content' ] ) : ?>
+
+                                	<div class="conexao-praxio-item-content"><?php echo $item[ 'portal_cliente_section_1_item_content' ]; ?></div>
+
+                                <?php endif; ?>
+
+	                        </div>
+	                        <!-- /,conexao-praxio-item-img -->
+
+	                        <div class="portal-cliente-content conexao-praxio-item-title-wrapper">
+
+	                            <?php if( strlen( $item[ 'portal_cliente_section_1_button_url' ] ) > 0 ) : ?>
+
+		                            <a href="<?php echo $item[ 'portal_cliente_section_1_button_url' ]; ?>" target="<?php echo $item[ 'portal_cliente_section_1_url_target' ]; ?>">
+
+	                            <?php endif; ?>
+
+	                                <h3 class="section-title conexao-praxio-item-title-text">
+	                                    <?php echo $item[ 'portal_cliente_section_1_item_title' ]; ?>
+	                                </h3>
+
+	                            <?php if( strlen( $item[ 'portal_cliente_section_1_button_url' ] ) > 0 ) : ?>
+		                            </a>
+	                            <?php endif; ?>
+
+
+	                        </div>
+	                        <!-- /.portal-cliente-content -->
+	                    
+	                        <div class="m-b-80"></div>
+	                    
+	                    </div>
+	                    <!-- /.col-sm-6 col-md-4 col-lg-3 -->
+
                     <?php endforeach; ?>
+
                 </div>
                 <!-- /.row -->
+
             </div>
             <!-- /.container -->
         </div>
         <!-- /.portal-cliente-section-1 -->
-
+    
     <?php endif; ?>
 
 </article>

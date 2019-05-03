@@ -1,0 +1,67 @@
+.conexao-praxio {
+	.conexao-praxio-items {
+		.conexao-praxio-item {
+			.conexao-praxio-item-img {
+				display: block;
+				position: relative;
+				width: 100%;
+				margin: auto;
+				height: 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+				@include bg-size( cover );
+				.conexao-praxio-item-content {
+					display: block;
+					position: absolute;
+					top: 20px;
+					left: 20px;
+					right: 20px;
+					bottom: 20px;
+					margin: auto;
+					padding: 10px 20px;
+					z-index: 1;
+					background-color: rgba(255, 255, 255, 0.9);
+					font-size: 22px;
+					color: $cinza-2;
+					@include opacity( 0 );
+					@include trans-all( 25/100 );
+					overflow: hidden;
+				}
+			}
+			&:active,
+			&:hover,
+			&:focus,
+			&:hover:focus {
+				.conexao-praxio-item-img {
+					.conexao-praxio-item-content {
+						@include opacity( 1 );
+					}
+				}
+			}
+			.conexao-praxio-item-title-wrapper {
+				display: flex;
+				width: 100%;
+				height: 80px;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				.conexao-praxio-item-title-text {
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.conexao-praxio {
+		.conexao-praxio-items {
+			.conexao-praxio-item {
+				.conexao-praxio-item-img {
+					height: 270px;
+				}
+			}
+		}
+	}
+
+}
