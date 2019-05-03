@@ -190,7 +190,7 @@
 		<!-- /.section-1 section -->
 	<?php endif; ?>
 
-	<div class="clearfix m-t-120"></div>
+	<div class="clearfix m-t-80"></div>
 
 	<?php
 		$show_section_2 = get_post_meta( $post_id, 'front_page_section_2_show', true );
@@ -206,7 +206,7 @@
 
 			<div class="block block-cinza" style="overflow: hidden;">
 
-				<div class="clearfix visible-xs visible-sm m-t-80"></div>
+				<div class="clearfix visible-xs visible-sm m-t-60"></div>
 				
 				<div class="container">
 					<div class="row">
