@@ -296,12 +296,12 @@
 
 							<div class="prx-tabs">
 							
-								<div class="tab-content">
+								<div class="tab-content tab-content-normalize-wrapper">
 
 									<?php $i = 0; ?>
 									<?php foreach( $front_page_section_2_tabs_slide as $tab ) : ?>
 
-										<div id="menu-<?php echo $i + 1; ?>" class="tab-pane fade in<?php echo $i == 0 ? ' active' : '' ?>">
+										<div id="menu-<?php echo $i + 1; ?>" class="tab-pane tab-pane-normalize-height fade in<?php echo $i == 0 ? ' active' : '' ?>">
 											<?php echo $utils->nl2p( $tab[ 'front_page_section_2_tabs_text_tab' ] ); ?>
 										</div>
 										<!-- ./tab-pane -->

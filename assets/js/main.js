@@ -81,6 +81,7 @@ jQuery( function( $ ) {
 		checkbox_toggle();
 		carousel_normalize();
 		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
+		normalize_elements( 'tab-content-normalize-wrapper', 'tab-pane-normalize-height' );
 		
 	}); // $(document).ready
 
@@ -88,6 +89,7 @@ jQuery( function( $ ) {
 
 		carousel_normalize();
 		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
+		normalize_elements( 'tab-content-normalize-wrapper', 'tab-pane-normalize-height' );
 
 	});
 });
