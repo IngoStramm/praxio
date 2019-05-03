@@ -285,6 +285,7 @@
 		$sobre_section_4_img = get_post_meta( $post_id, 'sobre_section_4_img', true );
 		$sobre_section_4_title = get_post_meta( $post_id, 'sobre_section_4_title', true );
 		$sobre_section_4_text = get_post_meta( $post_id, 'sobre_section_4_text', true );
+		$sobre_section_4_anos_show = get_post_meta( $post_id, 'sobre_section_4_anos_show', true );
 		$sobre_section_4_ano = get_post_meta( $post_id, 'sobre_section_4_ano', true );
 		$sobre_section_4_linha_1 = get_post_meta( $post_id, 'sobre_section_4_linha_1', true );
 		$sobre_section_4_linha_2 = get_post_meta( $post_id, 'sobre_section_4_linha_2', true );
@@ -315,41 +316,45 @@
 				</div>
 				<!-- /.row -->
 
-				<div class="clearfix m-b-40"></div>
+				<?php if( $sobre_section_4_anos_show ) : ?>
+					
+					<div class="clearfix m-b-40"></div>
 
-				<div class="row">
+					<div class="row">
 
-					<div class="col-md-12 b40-1">
-						
-						<div class="sobre-section-4-anos">
+						<div class="col-md-12 b40-1">
 							
-							<?php foreach ( $sobre_section_4_ano as $ano ) : ?>
+							<div class="sobre-section-4-anos">
+								
+								<?php foreach ( $sobre_section_4_ano as $ano ) : ?>
 
-								<?php //$utils->debug( $ano ); ?>
+									<?php //$utils->debug( $ano ); ?>
 
-								<ul class="sobre-section-4-anos-item">
-									
-									<li class="sobre-section-4-anos-item-1"><?php echo $ano[ 'sobre_section_4_ano' ]; ?></li>
+									<ul class="sobre-section-4-anos-item">
+										
+										<li class="sobre-section-4-anos-item-1"><?php echo $ano[ 'sobre_section_4_ano' ]; ?></li>
 
-									<li class="sobre-section-4-anos-item-2">R$ <?php echo $ano[ 'sobre_section_4_real' ]; ?> <?php pll_e( 'Mi' ); ?></li>
+										<li class="sobre-section-4-anos-item-2">R$ <?php echo $ano[ 'sobre_section_4_real' ]; ?> <?php pll_e( 'Mi' ); ?></li>
 
-									<li class="sobre-section-4-anos-item-3"><?php echo $ano[ 'sobre_section_4_funcionarios' ]; ?> <?php pll_e( 'Funcionários' ); ?></li>
+										<li class="sobre-section-4-anos-item-3"><?php echo $ano[ 'sobre_section_4_funcionarios' ]; ?> <?php pll_e( 'Funcionários' ); ?></li>
 
-									<li class="sobre-section-4-anos-item-4"><?php echo $ano[ 'sobre_section_4_contratos' ]; ?> <?php pll_e( 'Contratos' ); ?></li>
+										<li class="sobre-section-4-anos-item-4"><?php echo $ano[ 'sobre_section_4_contratos' ]; ?> <?php pll_e( 'Contratos' ); ?></li>
 
-								</ul>
-								<!-- /.sobre-section-4-anos-item -->
+									</ul>
+									<!-- /.sobre-section-4-anos-item -->
 
-							<?php endforeach; ?>
+								<?php endforeach; ?>
+
+							</div>
+							<!-- /.sobre-section-4-anos -->
 
 						</div>
-						<!-- /.sobre-section-4-anos -->
+						<!-- /.col-md-12 -->
 
 					</div>
-					<!-- /.col-md-12 -->
+					<!-- /.row -->
 
-				</div>
-				<!-- /.row -->
+				<?php endif; ?>
 
 				<div class="clearfix m-b-40 hidden-xs"></div>
 

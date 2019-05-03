@@ -65,13 +65,6 @@ function portal_cliente_page_register_metabox() {
     $cmb_banner->add_field( array(
         'name'       => esc_html__( 'Texto', 'cmb2' ),
         'id'         => $prefix . 'text',
-        'type'       => 'text',
-        'sanitization_cb' => 'prx_allow_html',
-    ));
-
-    $cmb_banner->add_field( array(
-        'name'       => esc_html__( 'Conteúdo', 'cmb2' ),
-        'id'         => $prefix . 'content',
         'type'       => 'textarea',
         'sanitization_cb' => 'prx_allow_html',
     ));

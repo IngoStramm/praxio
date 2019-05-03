@@ -18,7 +18,6 @@ $portal_cliente_banner_linha_1 = get_post_meta( $post_id, 'portal_cliente_banner
 $portal_cliente_banner_linha_2 = get_post_meta( $post_id, 'portal_cliente_banner_linha_2', true );
 $portal_cliente_banner_linha_3 = get_post_meta( $post_id, 'portal_cliente_banner_linha_3', true );
 $portal_cliente_banner_text = get_post_meta( $post_id, 'portal_cliente_banner_text', true );
-$portal_cliente_banner_ul_list = get_post_meta( $post_id, 'portal_cliente_banner_content', true );
 $portal_cliente_banner_btn_url = get_post_meta( $post_id, 'portal_cliente_banner_btn_url', true );
 $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner_btn_txt', true );
 ?>
@@ -45,12 +44,17 @@ $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner
 
                     <div class="col-lg-4 col-md-4 text-center">
                         <div class="p-b-60"></div>
+
+						<div class="prx-linha prx-linha-l prx-linha-b prx-linha-radius-4 hidden-xs" style="position: absolute; top: -10px; right: 100%; width: 40px;"></div>
+						<!-- /.prx-linha -->
+
                         <div class="portal-cliente-banner-text"><?php echo $utils->nl2p( $portal_cliente_banner_text ); ?></div>
 
-                        <div class="portal-cliente-banner-ul-list list-ul list-ul-arrow-2 list-ul-font-white m-t-30 p-b-5"><?php echo $utils->nl2p( $portal_cliente_banner_ul_list ); ?></div>
+                        <div class="clearfix m-t-80"></div>
 
                         <a href="<?php echo $portal_cliente_banner_btn_url; ?>" class="portal-cliente-banner-btn prx-btn prx-btn-inline" style="position: relative;">
                             <?php echo $portal_cliente_banner_btn_txt ?>
+							<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
                         </a>
 
                     </div>
@@ -58,12 +62,6 @@ $portal_cliente_banner_btn_txt = get_post_meta( $post_id, 'portal_cliente_banner
 
                     <div class="clearfix m-b-60"></div>
 
-                    <div class="col-md-5 col-md-offset-2">
-                        <div class="prx-linha prx-linha-b">
-                            <div class="prx-linha prx-linha-l prx-linha-t prx-linha-radius-1 hidden-xs" style="position: absolute; top: 0; right: 100%; height: 65px; width: 60px;"></div>
-                            <div class="prx-linha prx-linha-t hidden-xs hidden-sm" style="position: absolute;bottom: -2px;left: 100%;width: 420px;margin-left: 50px;height: 0;"></div>
-                        </div>
-                    </div>
                 </div>
                 <!-- /.row -->
                 <div class="m-b-40"></div>

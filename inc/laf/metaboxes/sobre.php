@@ -301,6 +301,12 @@ function sobre_page_register_metabox() {
 		'type'       => 'title',
 	) );
 
+	$cmb_section_4->add_field( array(
+		'name' => esc_html__( 'Exibir Anos?', 'cmb2' ),
+		'id'   => $prefix . 'anos_show',
+		'type' => 'checkbox',
+	) );
+
 	$group_field_id = $cmb_section_4->add_field( array(
 		'id'          => $prefix . 'ano',
 		'type'        => 'group',
