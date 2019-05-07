@@ -1,14 +1,16 @@
 .prx-btn {
 	display: block;
 	margin: auto;
-	padding: 5px 20px;
+	padding: 7px 20px;
 	background-color: transparent;
 	border: solid 1px $branco;
 	color: $branco;
 	text-transform: uppercase;
 	font-size: 15px;
+	font-weight: 600;
 	text-align: center;
 	text-decoration: none;
+	@include radius( 25px );
 	@include trans-all(25/100);
 	&:active,
 	&:hover,

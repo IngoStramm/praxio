@@ -41,10 +41,12 @@
 		padding: 10px 20px;
 		background-color: transparent;
 		font-size: 18px;
+		font-weight: 600;
 		text-transform: uppercase;
 		text-align: center;
 		border: $branco solid 1px;
 		@include trans-all(25/100);
+		@include radius( 25px );
 		&:active,
 		&:hover,
 		&:focus,
