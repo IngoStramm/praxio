@@ -115,7 +115,6 @@
       list-style: none;
       .erp-logistica-section-3-aba-item {
         &.active {border:none;}
-        border: solid 1px rgba(146, 148, 151, 255);
         display: block;
         margin: 0 0 20px;
         &:last-child {
@@ -125,6 +124,7 @@
           padding: 10px 20px;
           font-size: 18px;
           color: rgba(146, 148, 151, 255);
+ 			border: solid 1px rgba(146, 148, 151, 255);
           &.active,
           &:hover,
           &:focus,
