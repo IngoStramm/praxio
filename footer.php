@@ -67,7 +67,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 				<div class="col-md-6 l40-1">
 					<?php if( $txt_btn_1 && $url_btn_1 ) : ?>
-						<a href="<?php echo $url_btn_1; ?>" class="footer-btn footer-btn-reverse" target="_blank">
+						<a href="<?php echo $url_btn_1; ?>" class="footer-btn footer-btn-reverse" target="_self">
 							<?php echo $txt_btn_1; ?>
 						</a>
 					<?php endif; ?>
@@ -78,7 +78,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 
 				<div class="col-md-6 r40-1">
 					<?php if( $txt_btn_2 && $url_btn_2 ) : ?>
-						<a href="<?php echo $url_btn_2; ?>" class="footer-btn" target="_blank">
+						<a href="<?php echo $url_btn_2; ?>" class="footer-btn" target="_self">
 							<?php echo $txt_btn_2; ?>
 						</a>
 					<?php endif; ?>
