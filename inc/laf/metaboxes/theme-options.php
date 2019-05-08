@@ -371,8 +371,9 @@ class Laf_Admin {
 		$cmb->add_field( array(
 			'name' => __( 'Url do botão #2 (português)', 'laf' ),
 			'id'   => 'url_btn_2_pt_BR',
-			'type' => 'text_url',
+			'type' => 'text',
 			'attributes' => array('placeholder' => 'http://'),
+			
 		) );
 
 		$cmb->add_field( array(

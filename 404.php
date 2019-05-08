@@ -5,13 +5,16 @@
  * @package Odin
  * @since 2.2.0
  */
+header( 'HTTP/1.1 301 Moved Permanently' );
+header( 'Location: '.get_bloginfo( 'url' ));
+exit();
 
 get_header(); ?>
 
 
 	<main id="content" class="<?php //echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
-		<?php include_once( 'inc/laf/parts/blog-header.php'); ?>
+		<?php include_once( 'inc/laf/parts/blog-header.php' ); ?>
 
 		<div class="container">
 			<div class="row">
