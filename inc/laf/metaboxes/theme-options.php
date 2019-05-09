@@ -373,7 +373,7 @@ class Laf_Admin {
 			'id'   => 'url_btn_2_pt_BR',
 			'type' => 'text',
 			'attributes' => array('placeholder' => 'http://'),
-			
+
 		) );
 
 		$cmb->add_field( array(
@@ -470,20 +470,14 @@ class Laf_Admin {
 
 
 		$cmb->add_field( array(
-			'name' => __( 'Formulário de Contato do RD Station (português)', 'laf' ),
-			'id'   => 'titulo_rd_contact_pt_BR',
+			'name' => __( 'Formulários RD Station (português)', 'laf' ),
+			'id'   => 'titulo_rd_forms_pt_BR',
 			'type' => 'title',
 		) );
 		
 		$cmb->add_field( array(
-			'name'    => __( 'ID do formulário (português)', 'laf' ),
-			'id'      => 'rd_contact_id_pt_BR',
-			'type'    => 'text',
-		) );
-
-		$cmb->add_field( array(
 			'name'    => __( 'Url do script (português)', 'laf' ),
-			'id'      => 'rd_contact_script_url_pt_BR',
+			'id'      => 'rd_forms_script_url_pt_BR',
 			'type'    => 'text_url',
 			'attributes' 		=> array(
 				'placeholder' 	=> 'http://',
@@ -493,8 +487,28 @@ class Laf_Admin {
 
 		$cmb->add_field( array(
 			'name'    => __( 'UA (português)', 'laf' ),
-			'id'      => 'rd_contact_ua_pt_BR',
+			'id'      => 'rd_forms_ua_pt_BR',
 			'type'    => 'text',
+		) );
+
+
+		$cmb->add_field( array(
+			'name'    => __( 'ID do formulário de contato (português)', 'laf' ),
+			'id'      => 'rd_contact_id_pt_BR',
+			'type'    => 'text',
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'ID do formulário de treinamento (português)', 'laf' ),
+			'id'      => 'rd_train_id_pt_BR',
+			'type'    => 'text',
+		) );
+
+
+		$cmb->add_field( array(
+			'name'    => __( 'Texto do formulário de treinamento (português)', 'laf' ),
+			'id'      => 'rd_train_text_pt_BR',
+			'type'    => 'textarea',
 		) );
 
 

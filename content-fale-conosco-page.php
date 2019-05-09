@@ -43,7 +43,7 @@
 					<div class="clearfix m-b-20 visible-xs visible-sm"></div>
 
 					<div class="col-md-4 r40-1">
-						<div class="fale-conosco-form">
+						<div class="fale-conosco-form rd-form">
 							<?php if( $rd_contact_id_pt_BR ) : ?>
 								<div role="main" id="<?php echo $rd_contact_id_pt_BR; ?>"></div>
 							<?php endif; ?>

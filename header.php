@@ -27,6 +27,8 @@
 		</div>
 	</a>
 
+	<?php do_action( 'prx_modal', $modal_id ); ?>
+
 	<header id="header" role="banner">
 		<div class="container">
 

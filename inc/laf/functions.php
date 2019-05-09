@@ -58,27 +58,30 @@ function rd_scripts() {
 
 	$utils = new Utils;
 
+	$rd_forms_script_url = laf_get_option( 'rd_forms_script_url_pt_BR' );
+	$rd_forms_ua = laf_get_option( 'rd_forms_ua_pt_BR' );
+
 	$rd_contact_id = laf_get_option( 'rd_contact_id_pt_BR' );
-	$rd_contact_script_url = laf_get_option( 'rd_contact_script_url_pt_BR' );
-	$rd_contact_ua = laf_get_option( 'rd_contact_ua_pt_BR' );
+	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
 
-	if( $rd_contact_id && $rd_contact_script_url && $rd_contact_ua ) :
+	if( $rd_forms_script_url && $rd_forms_ua ) :
 
-		$rd_contact = array(
-			'id'		=> $rd_contact_id,
-			'url'		=> $rd_contact_script_url,
-			'ua'		=> $rd_contact_ua,
+		$rd = array(
+			'url'		=> $rd_forms_script_url,
+			'ua'		=> $rd_forms_ua,
+			'contact_id'		=> $rd_contact_id,
+			'train_id'		=> $rd_train_id,
 		);
 
-		// $utils->debug( $rd_contact[ 'id' ] );
-		// $utils->debug( $rd_contact[ 'url' ] );
-		// $utils->debug( $rd_contact[ 'ua' ] );
+		// $utils->debug( $rd[ 'id' ] );
+		// $utils->debug( $rd[ 'url' ] );
+		// $utils->debug( $rd[ 'ua' ] );
 
-		wp_enqueue_script( 'rd-contact-include', $rd_contact_script_url, array(  ), null, true );
+		wp_enqueue_script( 'rd-contact-include', $rd_forms_script_url, array(  ), null, true );
 
 		wp_register_script( 'rd-contact-script', get_stylesheet_directory_uri() . '/assets/js/rd-contact-script.js', array( 'rd-contact-include' ), null, true );
 
-		wp_localize_script( 'rd-contact-script', 'rd_contact', $rd_contact );
+		wp_localize_script( 'rd-contact-script', 'rd', $rd );
 
 		wp_enqueue_script( 'rd-contact-script' );
 
@@ -91,6 +94,7 @@ add_action( 'wp_head', 'prx_rd_form_style' );
 function prx_rd_form_style() {
 	$utils = new utils;
 	$rd_contact_id_pt_BR = laf_get_option( 'rd_contact_id_pt_BR' );
+	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
 	// $utils->debug( $rd_contact_id_pt_BR );
 
 	if( $rd_contact_id_pt_BR ) :
@@ -153,6 +157,74 @@ function prx_rd_form_style() {
 				padding: 5px 20px !important;
 				border: none !important;
 				background-color: #fff !important;
+				border-radius: 0 !important;
+				font-size: 15px !important;
+				text-transform: uppercase !important;
+				font-weight: 600 !important;
+			}
+		</style>
+		<?php
+	endif;
+	if( $rd_train_id ) :
+		?>
+		<style>
+			.rd-form #conversion-<?php echo $rd_train_id; ?> {
+				background-color: transparent !important;
+			}
+			.rd-form #<?php echo $rd_train_id; ?> form input, 
+			.rd-form #<?php echo $rd_train_id; ?> form select,
+			.rd-form #<?php echo $rd_train_id; ?> form select option,
+			.rd-form #<?php echo $rd_train_id; ?> form .select2-container,
+			.rd-form #<?php echo $rd_train_id; ?> form textarea {
+				margin: auto !important;
+				padding: 5px 20px !important;
+				width: 100% !important;
+				background-color: transparent !important;
+				border: solid 1px #fff !important;
+				color: #fff !important;
+				text-transform: uppercase !important;
+				font-family: 'Mukta', sans-serif !important;
+				font-size: 15px !important;
+				border-radius: 0 !important;
+			}
+			
+			.rd-form #<?php echo $rd_train_id; ?> form select option {
+				background-color: #23282d !important;
+				color: #fff !important;
+			}
+
+			.rd-form #<?php echo $rd_train_id; ?> form select option:active,
+			.rd-form #<?php echo $rd_train_id; ?> form select option:hover,
+			.rd-form #<?php echo $rd_train_id; ?> form select option:focus,
+			.rd-form #<?php echo $rd_train_id; ?> form select option:hover:focus {
+			}
+
+			.rd-form #<?php echo $rd_train_id; ?> form input::-webkit-input-placeholder {
+				/* WebKit, Blink, Edge */
+				color: #fff;
+			}
+
+			.rd-form #<?php echo $rd_train_id; ?> form input:-moz-placeholder {
+				/* Mozilla Firefox 4 to 18 */
+				color: #fff;
+			}
+
+			.rd-form #<?php echo $rd_train_id; ?> form input::-moz-placeholder {
+				/* Mozilla Firefox 19+ */
+				color: #fff;
+			}
+
+			.rd-form #<?php echo $rd_train_id; ?> form input::-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: #fff;
+			}
+
+			#form-container-<?php echo $rd_train_id; ?> #conversion-<?php echo $rd_train_id; ?> #conversion-form-<?php echo $rd_train_id; ?> div.actions input.call_button {
+				width: 100%;
+				margin: auto !important;
+				padding: 5px 20px !important;
+				border: none !important;
+				/*background-color: #fff !important;*/
 				border-radius: 0 !important;
 				font-size: 15px !important;
 				text-transform: uppercase !important;
@@ -357,6 +429,9 @@ add_action( 'init', function() {
 	pll_register_string( 'prx', 'Mi' );
 	pll_register_string( 'prx', 'Funcionários' );
 	pll_register_string( 'prx', 'Contratos' );
+	pll_register_string( 'prx', 'Inscreva-se' );
+	pll_register_string( 'prx', 'Quero conhecer' );
+	pll_register_string( 'prx', 'Agendar Demonstração' );
 });
 
 function prx_return_0_to_100() {
@@ -365,4 +440,35 @@ function prx_return_0_to_100() {
 		$return[] = $i;
 	}
 	return $return;
+}
+
+add_action( 'prx_modal', 'prx_modal_treinamento' );
+
+function prx_modal_treinamento( $modal_id ) {
+	$modal_id = 'prx-modal-treinamento';
+	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
+	?>
+	<div id="<?php echo $modal_id ?>" class="prx-modal modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fa fa-times-circle"></i>
+					</button>
+					<h4 class="modal-title"><?php pll_e( 'Inscreva-se', 'prx' ); ?></h4>
+				</div>
+				<div class="modal-body">
+					<div class="rd-form">
+						<?php if( $rd_train_id ) : ?>
+							<div role="main" id="<?php echo $rd_train_id; ?>"></div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<?php
 }
