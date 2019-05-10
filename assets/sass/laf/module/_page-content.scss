@@ -1,0 +1,26 @@
+.page-content {
+	font-size: 22px;
+	color: $cinza-2;
+	line-height: 34px;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	a {
+		color: $verm-1;
+		@include trans-all( 25/100 );
+		@include c-hover( $verm-1 );
+	}
+	ul,
+	ol {
+		margin-bottom: 20px;
+	}
+}
