@@ -18,6 +18,10 @@
 		position: relative;
 		overflow: hidden;
 		@include radius( 0, 0, 25px, 25px );
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
 		.prx-thumb-img {
 			display: block;
 			width: 100%;

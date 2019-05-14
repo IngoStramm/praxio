@@ -30,15 +30,15 @@
 
 		<?php if( get_the_post_thumbnail_url() ) : ?>
 
-			<div class="prx-thumb <?php echo is_single() ? ' prx-thumb-single' : ''; ?>">
-				<?php if( !is_single() ) : ?>
-					<a href="<?php echo the_permalink(  ) ?>">
-				<?php endif; ?>
-				<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' ); ?>" alt="<?php the_title() ?>" class="img-responsive center-block prx-thumb-img">
-				<?php if( !is_single() ) : ?>
-					</a>
-				<?php endif; ?>
-			</div>
+			<?php if( !is_single() ) : ?>
+				<a href="<?php echo the_permalink(  ) ?>">
+			<?php endif; ?>
+				<div class="prx-thumb <?php echo is_single() ? ' prx-thumb-single' : ''; ?>" style="background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' ); ?>);">
+					<?php /* ?><img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' ); ?>" alt="<?php the_title() ?>" class="img-responsive center-block prx-thumb-img"><?php */ ?>
+				</div>
+			<?php if( !is_single() ) : ?>
+				</a>
+			<?php endif; ?>
 
 		<?php endif; ?>
 
