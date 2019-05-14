@@ -30,7 +30,7 @@ $url_youtube = laf_get_option( 'url_youtube' );
 	</div><!-- #wrapper -->
 
 
-	<footer class="footer ov-h" role="contentinfo" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.jpg;">
+	<footer class="footer ov-h" role="contentinfo" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bg.jpg);">
 		<div class="container">
 			
 			<div class="row">
