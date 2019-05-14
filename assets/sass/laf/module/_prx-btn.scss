@@ -21,6 +21,18 @@
 		background-color: $branco;
 		color: $verde-1;
 	}
+	&.prx-btn-reverse {
+		color: $verde-1;
+		border-color: $verde-1;
+		&:active,
+		&:hover,
+		&:focus,
+		&:hover:focus {
+			background-color: $verde-1;
+			color: $branco;
+			border-color: $branco;
+		}
+	}
 	&.prx-btn-inline {
 		display: inline;
 	}

@@ -10,9 +10,9 @@
 ?>
 
 <?php
-	global $post_count;
+	global $post_count, $tipo;
 	$utils = new utils;
-	//$utils->debug( $post_count );
+	// $utils->debug( $tipo );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( array( 'prx-post', 'b40-1' ) ); ?>>
@@ -66,6 +66,13 @@
 			<?php the_content(); ?>
 		</div>
 		<!-- /.prx-post-content -->
+
+		<?php if( $tipo ==  'curso' ) : ?>
+
+			<div class="clearfix m-t-40"></div>
+
+			<a href="#" class="prx-btn prx-btn-reverse prx-btn-inline" data-toggle="modal" data-target="#prx-modal-treinamento"><span class="p-l-80 p-r-80"><?php pll_e( 'Matricule-se', 'prx' ); ?></span></a>
+		<?php endif; ?>
 
 	<?php endif; ?>
 

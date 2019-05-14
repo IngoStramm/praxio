@@ -18,6 +18,7 @@
 	// $utils->debug( $tipo );
 ?>
 
+<?php /* ?>
 <?php if( $rd_train_id && $curr_lang == 'pt_BR' && $tipo == 'curso' ) : ?>
 	<dic class="clearfix m-t-80 visible-xs visible-sm"></dic>
 	<div class="col-md-3 widget-area">
@@ -32,6 +33,7 @@
 	</div>
 	<!-- /.col-md-3 widget-area -->
 <?php endif; ?>
+<?php */ ?>
 
 <aside id="sidebar" class="<?php echo odin_classes_page_sidebar_aside(); ?> prx-sidebar" role="complementary">
 	<?php

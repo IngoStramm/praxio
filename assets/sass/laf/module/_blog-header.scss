@@ -6,11 +6,13 @@
 		font-size: 30px;
 		font-weight: 600;
 		color: $branco;
+		word-break: break-word;
 	}
 	.blog-line-2 {
 		font-size: 122px;
 		font-weight: 600;
 		color: $branco;
+		word-break: break-word;
 		@include text-stroke( $branco, 2 );
 	}
 }
@@ -38,6 +40,18 @@
 			border-color: $branco !important;
 			background-color: transparent !important;
 			@include radius( 0 );
+		}
+	}
+}
+
+
+@media (min-width: 768px) {
+	.blog-header {
+		.blog-line-1 {
+			word-break: initial;
+		}
+		.blog-line-2 {
+			word-break: initial;
 		}
 	}
 }
