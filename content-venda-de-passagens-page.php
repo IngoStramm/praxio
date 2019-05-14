@@ -23,6 +23,8 @@
 	$venda_de_passagens_banner_btn_txt = get_post_meta( $post_id, 'venda_de_passagens_banner_btn_txt', true );
 ?>
 
+<?php $solucoes_form_id = get_post_meta( $post_id, 'solucoes_form_id', true ); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'venda-de-passagens' ); ?>>
 
 	<?php if( $venda_de_passagens_banner_show ) : ?>
@@ -64,11 +66,15 @@
 
 						<div class="clearfix m-t-80"></div>
 
-						<a href="<?php echo $venda_de_passagens_banner_btn_url; ?>" class="venda-de-passagens-banner-btn prx-btn prx-btn-inline" style="position: relative;">
+						<?php if( $solucoes_form_id ) : ?>
+
+							<a href="#<?php //echo $venda_de_passagens_banner_btn_url; ?>" class="venda-de-passagens-banner-btn prx-btn prx-btn-inline" style="position: relative;" data-toggle="modal" data-target="#prx-modal-solucoes">
 							
-							<?php echo $venda_de_passagens_banner_btn_txt ?>
-							<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
-						</a>
+								<?php echo $venda_de_passagens_banner_btn_txt ?>
+								<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
+							</a>
+
+						<?php endif; ?>
 
 					</div>
 					<!-- /.col-lg-4 -->
@@ -233,7 +239,11 @@
 
 						<div class="clearfix m-b-20"></div>
 
-						<a href="<?php echo $venda_de_passagens_cta_text_url; ?>" class="prx-btn prx-btn-inline venda-de-passagens-cta-btn"><?php echo $venda_de_passagens_cta_btn_txt; ?></a>
+						<?php if( $solucoes_form_id ) : ?>
+
+							<a href="#<?php //echo $venda_de_passagens_cta_text_url; ?>" class="prx-btn prx-btn-inline venda-de-passagens-cta-btn" data-toggle="modal" data-target="#prx-modal-solucoes"><?php echo $venda_de_passagens_cta_btn_txt; ?></a>
+
+						<?php endif; ?>
 
 					</div>
 					<!-- /.col-md-8 -->

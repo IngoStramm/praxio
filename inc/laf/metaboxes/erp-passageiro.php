@@ -72,15 +72,15 @@ function erp_passageiro_page_register_metabox() {
 		'sanitization_cb' => 'prx_allow_html',
 	) );
 
-	$cmb_banner->add_field( array(
-		'name' 				=> __( 'Url do botão', 'laf' ),
-		'id'   				=> $prefix . 'btn_url',
-		'type' 				=> 'text_url',
-		'attributes' 		=> array(
-			'placeholder' 	=> 'http://',
-			// 'required'		=> ''
-		)
-	) );
+	// $cmb_banner->add_field( array(
+	// 	'name' 				=> __( 'Url do botão', 'laf' ),
+	// 	'id'   				=> $prefix . 'btn_url',
+	// 	'type' 				=> 'text_url',
+	// 	'attributes' 		=> array(
+	// 		'placeholder' 	=> 'http://',
+	// 		// 'required'		=> ''
+	// 	)
+	// ) );
 
     /**
      * SECTION 1
@@ -526,15 +526,15 @@ function erp_passageiro_page_register_metabox() {
         'sanitization_cb' => 'prx_allow_html',
     ) );
 
-    $cmb_section_6->add_field( array(
-        'name'       => esc_html__( 'Link do Botão', 'cmb2' ),
-        'id'         => $prefix . 'button_url',
-        'type'       => 'text',
-        'attributes' 		=> array(
-            'placeholder' 	=> 'http://',
-        ),
-        'sanitization_cb' => 'prx_allow_html',
-    ) );
+    // $cmb_section_6->add_field( array(
+    //     'name'       => esc_html__( 'Link do Botão', 'cmb2' ),
+    //     'id'         => $prefix . 'button_url',
+    //     'type'       => 'text',
+    //     'attributes' 		=> array(
+    //         'placeholder' 	=> 'http://',
+    //     ),
+    //     'sanitization_cb' => 'prx_allow_html',
+    // ) );
 
     $cmb_section_6->add_field( array(
         'name' 				=> __( 'Plano de Fundo', 'laf' ),

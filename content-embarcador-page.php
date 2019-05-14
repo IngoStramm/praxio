@@ -22,6 +22,8 @@ $embarcador_banner_btn_url = get_post_meta( $post_id, 'embarcador_banner_btn_url
 $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt', true );
 ?>
 
+<?php $solucoes_form_id = get_post_meta( $post_id, 'solucoes_form_id', true ); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'embarcador' ); ?>>
     <?php if( $embarcador_banner_show ) : ?>
         <div class="page-banner embarcador-banner" style="background-image: url(<?php echo $embarcador_banner_img; ?>);">
@@ -60,10 +62,14 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
 
                         <div class="clearfix m-t-80"></div>
 
-                        <a href="<?php echo $embarcador_banner_btn_url; ?>" class="embarcador-banner-btn prx-btn prx-btn-inline" style="position: relative;">
-                            <?php echo $embarcador_banner_btn_txt ?>
-                            <div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
-                        </a>
+                        <?php if( $solucoes_form_id ) : ?>
+
+	                        <a href="#<?php //echo $embarcador_banner_btn_url; ?>" class="embarcador-banner-btn prx-btn prx-btn-inline" style="position: relative;"data-toggle="modal" data-target="#prx-modal-solucoes">
+	                            <?php echo $embarcador_banner_btn_txt ?>
+	                            <div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
+	                        </a>
+
+                        <?php endif; ?>
 
                     </div>
                     <!-- /.col-lg-4 -->
@@ -272,9 +278,15 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 b40-1">
                         <h2 class="section-title"><?php echo $embarcador_section_4_title; ?></h2>
-                        <a href="<?php echo $embarcador_section_4_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;">
-                            <?php echo $embarcador_section_4_btn; ?>
-                        </a>
+
+                        <?php if( $solucoes_form_id ) : ?>
+                        	
+	                        <a href="#<?php //echo $embarcador_section_4_url; ?>" class="erp-logistica-btn prx-btn prx-btn-inline" style="position: relative;" data-toggle="modal" data-target="#prx-modal-solucoes">
+	                            <?php echo $embarcador_section_4_btn; ?>
+	                        </a>
+
+                        <?php endif; ?>
+
                     </div>
                 </div>
             </div>

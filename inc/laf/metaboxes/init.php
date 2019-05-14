@@ -105,3 +105,4 @@ require_once 'venda-de-passagens.php';
 require_once 'ponto-virtual.php';
 require_once 'embarcador.php';
 require_once 'portal-cliente.php';
+require_once 'solucoes.php';

@@ -81,15 +81,15 @@ function ponto_virtual_page_register_metabox() {
         'sanitization_cb' => 'prx_allow_html',
     ) );
 
-    $cmb_banner->add_field( array(
-        'name' 				=> __( 'Url do botão', 'laf' ),
-        'id'   				=> $prefix . 'btn_url',
-        'type' 				=> 'text_url',
-        'attributes' 		=> array(
-            'placeholder' 	=> 'http://',
-            // 'required'		=> ''
-        )
-    ) );
+    // $cmb_banner->add_field( array(
+    //     'name' 				=> __( 'Url do botão', 'laf' ),
+    //     'id'   				=> $prefix . 'btn_url',
+    //     'type' 				=> 'text_url',
+    //     'attributes' 		=> array(
+    //         'placeholder' 	=> 'http://',
+    //         // 'required'		=> ''
+    //     )
+    // ) );
 
     /**
      * SESSION 1

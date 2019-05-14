@@ -73,15 +73,15 @@ function bi_page_register_metabox() {
 		'sanitization_cb' => 'prx_allow_html',
 	) );
 
-	$cmb_banner->add_field( array(
-		'name' 				=> __( 'Url do botão', 'laf' ),
-		'id'   				=> $prefix . 'btn_url',
-		'type' 				=> 'text_url',
-		'attributes' 		=> array(
-			'placeholder' 	=> 'http://',
-			// 'required'		=> ''
-		)
-	) );
+	// $cmb_banner->add_field( array(
+	// 	'name' 				=> __( 'Url do botão', 'laf' ),
+	// 	'id'   				=> $prefix . 'btn_url',
+	// 	'type' 				=> 'text_url',
+	// 	'attributes' 		=> array(
+	// 		'placeholder' 	=> 'http://',
+	// 		// 'required'		=> ''
+	// 	)
+	// ) );
 
 	$prefix = 'bi_section_1_';
 
@@ -308,15 +308,15 @@ function bi_page_register_metabox() {
 		'sanitization_cb' => 'prx_allow_html',
 	) );
 
-	$cmb_cta->add_field( array(
-		'name' 				=> __( 'Url do botão', 'laf' ),
-		'id'   				=> $prefix . 'btn_url',
-		'type' 				=> 'text_url',
-		'attributes' 		=> array(
-			'placeholder' 	=> 'http://',
-			// 'required'		=> ''
-		)
-	) );
+	// $cmb_cta->add_field( array(
+	// 	'name' 				=> __( 'Url do botão', 'laf' ),
+	// 	'id'   				=> $prefix . 'btn_url',
+	// 	'type' 				=> 'text_url',
+	// 	'attributes' 		=> array(
+	// 		'placeholder' 	=> 'http://',
+	// 		// 'required'		=> ''
+	// 	)
+	// ) );
 
 	$prefix = 'bi_section_4_';
 
