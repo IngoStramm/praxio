@@ -326,6 +326,39 @@ class Laf_Admin {
 
 
 		$cmb->add_field( array(
+			'name' => __( 'Praxio em Revista (português)', 'laf' ),
+			'id'   => 'titulo_revista_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Praxio em Revista Linha 1 (português)', 'laf' ),
+			'id'      => 'revista_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Praxio em Revista Linha 2 (português)', 'laf' ),
+			'id'      => 'revista_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Praxio em Revista', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'revista_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+
+		$cmb->add_field( array(
 			'name' => __( 'Rodapé (português)', 'laf' ),
 			'id'   => 'titulo_footer_pt_BR',
 			'type' => 'title',

@@ -36,6 +36,10 @@ get_header(); ?>
 				$tipo = 'evento';
 				break;
 			
+			case 'praxio-em-revista':
+				$tipo = 'revista';
+				break;
+			
 			default:
 				$tipo = 'blog';
 				break;

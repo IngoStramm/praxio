@@ -15,10 +15,10 @@
 	$curr_lang = pll_current_language( 'locale' );
 	$rd_train_id = laf_get_option( 'rd_train_id_' . $curr_lang );
 	$rd_train_text = laf_get_option( 'rd_train_text_' . $curr_lang );
-	// $utils->debug( $rd_train_id );
+	// $utils->debug( $tipo );
 ?>
 
-<?php if( $rd_train_id && $curr_lang == 'pt_BR' ) : ?>
+<?php if( $rd_train_id && $curr_lang == 'pt_BR' && $tipo == 'curso' ) : ?>
 	<dic class="clearfix m-t-80 visible-xs visible-sm"></dic>
 	<div class="col-md-3 widget-area">
 		<div class="rd-form m-b-40">
@@ -32,7 +32,8 @@
 	</div>
 	<!-- /.col-md-3 widget-area -->
 <?php endif; ?>
-<aside id="sidebar" class="<?php echo odin_classes_page_sidebar_aside(); ?>" role="complementary">
+
+<aside id="sidebar" class="<?php echo odin_classes_page_sidebar_aside(); ?> prx-sidebar" role="complementary">
 	<?php
 		if ( ! dynamic_sidebar( $tipo . '-widget' ) ) :
 			dynamic_sidebar( 'main-sidebar' );

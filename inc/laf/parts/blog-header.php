@@ -1,5 +1,5 @@
 <?php 
-global $tipo;
+	global $tipo;
 	$utils = new Utils;
 	$curr_lang = pll_current_language( 'locale' );
 	$blog_title = laf_get_option( $tipo . '_title_' . $curr_lang );
