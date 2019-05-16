@@ -537,12 +537,18 @@ class Laf_Admin {
 			'type'    => 'text',
 		) );
 
-
 		$cmb->add_field( array(
-			'name'    => __( 'Texto do formulário de treinamento (português)', 'laf' ),
-			'id'      => 'rd_train_text_pt_BR',
-			'type'    => 'textarea',
+			'name'    => __( 'ID do formulário do Blog (português)', 'laf' ),
+			'id'      => 'rd_blog_id_pt_BR',
+			'type'    => 'text',
 		) );
+
+
+		// $cmb->add_field( array(
+		// 	'name'    => __( 'Texto do formulário de treinamento (português)', 'laf' ),
+		// 	'id'      => 'rd_train_text_pt_BR',
+		// 	'type'    => 'textarea',
+		// ) );
 
 
 		// $cmb->add_field( array(
