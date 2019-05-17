@@ -543,6 +543,12 @@ class Laf_Admin {
 			'type'    => 'text',
 		) );
 
+		$cmb->add_field( array(
+			'name'    => __( 'ID do formulário de Newsletter (português)', 'laf' ),
+			'id'      => 'rd_newsletter_id_pt_BR',
+			'type'    => 'text',
+		) );
+
 
 		// $cmb->add_field( array(
 		// 	'name'    => __( 'Texto do formulário de treinamento (português)', 'laf' ),

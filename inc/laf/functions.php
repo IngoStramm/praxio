@@ -66,6 +66,7 @@ function rd_scripts() {
 	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
 	$rd_blog_id = laf_get_option( 'rd_blog_id_pt_BR' );
 	$solucoes_form_id = get_post_meta( $post_id, 'solucoes_form_id', true );
+	$rd_newsletter_id = laf_get_option( 'rd_newsletter_id_pt_BR' );
 
 	if( $rd_forms_script_url && $rd_forms_ua ) :
 
@@ -76,6 +77,7 @@ function rd_scripts() {
 			'train_id'					=> $rd_train_id,
 			'solucoes_form_id'			=> $solucoes_form_id,
 			'rd_blog_id'				=> $rd_blog_id,
+			'rd_newsletter_id'				=> $rd_newsletter_id,
 		);
 
 		// $utils->debug( $rd[ 'id' ] );
@@ -104,6 +106,7 @@ function prx_rd_form_style() {
 	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
 	$solucoes_form_id = get_post_meta( $post_id, 'solucoes_form_id', true );
 	$rd_blog_id = laf_get_option( 'rd_blog_id_pt_BR' );
+	$rd_newsletter_id = laf_get_option( 'rd_newsletter_id_pt_BR' );
 	if( $rd_contact_id_pt_BR )
 		$styles_array[] = $rd_contact_id_pt_BR;
 
@@ -115,6 +118,9 @@ function prx_rd_form_style() {
 
 	if( $rd_blog_id )
 		$styles_array[] = $rd_blog_id;
+
+	if( $rd_newsletter_id )
+		$styles_array[] = $rd_newsletter_id;
 
 	foreach( $styles_array as $style ) :
 		// $utils->debug( $style );
@@ -410,6 +416,7 @@ add_action( 'init', function() {
 	pll_register_string( 'prx', 'Inscreva-se' );
 	pll_register_string( 'prx', 'Quero conhecer' );
 	pll_register_string( 'prx', 'Agendar Demonstração' );
+	pll_register_string( 'prx', 'Newsletter' );
 });
 
 function prx_return_0_to_100() {
@@ -464,73 +471,4 @@ function prx_add_modal( $modal_id ) {
 		</div>
 	<?php
 	endforeach;
-}
-
-// add_action( 'prx_modal', 'prx_modal_treinamento' );
-
-function prx_modal_treinamento( $modal_id ) {
-	$modal_id = 'prx-modal-treinamento';
-	$rd_train_id = laf_get_option( 'rd_train_id_pt_BR' );
-	?>
-	<div id="<?php echo $modal_id ?>" class="prx-modal modal fade" role="dialog">
-		<div class="modal-dialog">
-
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title"><?php pll_e( 'Inscreva-se', 'prx' ); ?></h4>
-				</div>
-				<div class="modal-body">
-					<div class="rd-form">
-						<?php if( $rd_train_id ) : ?>
-							<div role="main" id="<?php echo $rd_train_id; ?>"></div>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<?php
-}
-
-// add_action( 'prx_modal', 'prx_modal_solucoes' );
-
-function prx_modal_solucoes( $modal_id ) {
-	$utils = new Utils;
-	$post_id = get_the_ID();
-
-	if( !$post_id )
-		return;
-
-	$modal_id = 'prx-modal-solucoes';
-	$solucoes_form_id = get_post_meta( $post_id, 'solucoes_form_id', true );
-
-	?>
-	<div id="<?php echo $modal_id ?>" class="prx-modal modal fade" role="dialog">
-		<div class="modal-dialog">
-
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">
-						<i class="fa fa-times-circle"></i>
-					</button>
-					<h4 class="modal-title"><?php pll_e( 'Inscreva-se', 'prx' ); ?></h4>
-				</div>
-				<div class="modal-body">
-					<div class="rd-form">
-						<?php if( $solucoes_form_id ) : ?>
-							<div role="main" id="<?php echo $solucoes_form_id; ?>"></div>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<?php
 }

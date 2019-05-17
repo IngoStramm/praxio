@@ -15,30 +15,41 @@
 	$curr_lang = pll_current_language( 'locale' );
 	$rd_train_id = laf_get_option( 'rd_train_id_' . $curr_lang );
 	$rd_train_text = laf_get_option( 'rd_train_text_' . $curr_lang );
-	// $utils->debug( $tipo );
+	$rd_newsletter_id = laf_get_option( 'rd_newsletter_id_pt_BR' );
+	// $utils->debug( $rd_newsletter_id );
 ?>
 
-<?php /* ?>
-<?php if( $rd_train_id && $curr_lang == 'pt_BR' && $tipo == 'curso' ) : ?>
-	<dic class="clearfix m-t-80 visible-xs visible-sm"></dic>
-	<div class="col-md-3 widget-area">
-		<div class="rd-form m-b-40">
-			<h3 class="rd-form-title"><?php pll_e( 'Agendar Demonstração', 'prx' ); ?></h3>
-			<div class="rd-form-text">
-				<?php echo $utils->nl2p( $rd_train_text ); ?>
-			</div>
-			<!-- /.rd-form-text -->
-			<a href="#" class="prx-btn rd-form-btn-toggle" data-toggle="modal" data-target="#prx-modal-treinamento"><?php pll_e( 'Quero conhecer', 'prx' ); ?></a>
-		</div>
-	</div>
-	<!-- /.col-md-3 widget-area -->
-<?php endif; ?>
-<?php */ ?>
+<aside id="sidebar" class="col-md-3 widget-area prx-sidebar" role="complementary">
 
-<aside id="sidebar" class="<?php echo odin_classes_page_sidebar_aside(); ?> prx-sidebar" role="complementary">
-	<?php
-		if ( ! dynamic_sidebar( $tipo . '-widget' ) ) :
-			dynamic_sidebar( 'main-sidebar' );
-		endif;
-	?>
+	<?php if( $rd_newsletter_id && $curr_lang == 'pt_BR' && $tipo == 'revista' ) : ?>
+
+		<dic class="clearfix m-t-80 visible-xs visible-sm"></dic>
+
+			<div class="widget-area m-b-40">
+
+				<div class="rd-form">
+
+					<h3 class="rd-form-title"><?php pll_e( 'Newsletter', 'prx' ); ?></h3>
+				
+				</div>
+				<!-- /.rd-form -->
+
+				<div role="main" id="<?php echo $rd_newsletter_id; ?>"></div>
+
+			</div>
+			<!-- /.widget-area -->
+
+	<?php endif; ?>
+
+	<div class="hidden-xs hidden-print">
+
+		<?php
+			if ( ! dynamic_sidebar( $tipo . '-widget' ) ) :
+				dynamic_sidebar( 'main-sidebar' );
+			endif;
+		?>
+		
+	</div>
+	<!-- /.col-md-3 hidden-xs hidden-print widget-area prx-sidebar -->
+
 </aside><!-- #sidebar -->
