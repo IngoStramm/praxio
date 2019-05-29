@@ -1,0 +1,117 @@
+.extra-section-1 {
+	.extra-section-1-title {
+		display: block;
+		margin: auto;
+		color: $verm-2;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 26px;
+	}
+	.extra-section-1-title-featured {
+		display: block;
+		margin: auto;
+		font-weight: 600;
+		font-size: 102px;
+		line-height: 110px;
+		color: $cinza-1;
+		@include text-stroke( $cinza-1, 2 );
+	}
+	.extra-section-1-logos {
+		display: flex;
+		margin: auto;
+		padding: 0;
+		list-style: none;
+		align-content: stretch;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		.extra-section-1-logos-item {
+			position: relative;
+			overflow: hidden;
+			flex-basis: 50%;
+			margin: 0 0 20px;
+			padding: 0 40px;
+			.extra-section-1-logos-item-img {
+				display: block;
+				margin: auto;
+				position: relative;
+				width: 100%;
+				height: 120px;
+				background-repeat: no-repeat;
+				background-position: center;
+				@include bg-size( contain );
+			}
+		}
+	}
+	.extra-section-1-logos-collapse-btn {
+		display: block;
+		width: 100%;
+		position: relative;
+		margin: 0 auto 10px;
+		padding-left: 0;
+		padding-right: 0;
+		color: $verm-2;
+		font-size: 14px;
+		font-weight: 400;
+		border: none;
+		border-bottom: solid $verm-2 1px;
+		text-transform: uppercase;
+		cursor: pointer;
+		@include radius( 0 );
+		.fa {
+			position: absolute;
+			font-size: 1.35em;
+			top: 50%;
+			right: 20px;
+			margin-left: -5px;
+			@include translate( 0, -50% );
+		}
+		.fa-angle-down {
+			display: none;
+		}
+		.fa-angle-up {
+			display: inline-block;
+		}
+		&.collapsed {
+			color: $cinza-2;
+			.fa-angle-down {
+				display: inline-block;
+			}
+			.fa-angle-up {
+				display: none;
+			}
+		}
+		&:active,
+		&:hover,
+		&:focus,
+		&:hover:focus,
+		&:active:focus {
+			color: $verm-2;
+			background: none;
+			outline: none;
+			@include box-shadow( 0, 0, 0, 0, transparent );
+		}
+	}
+	.extra-section-1-logos-collapse-content {
+		margin: auto;
+		padding: 0;
+		list-style: none;
+		color: $cinza-2;
+		.extra-section-1-logos-collapse-content-item {
+			text-align: center;
+			
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+
+	.extra-section-1 {
+		.extra-section-1-logos {
+			.extra-section-1-logos-item {
+				margin: 0;
+				flex-basis: 20%;
+			}
+		}
+	}
+
+}
