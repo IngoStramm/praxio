@@ -653,6 +653,8 @@
 
 	<div class="clearfix m-b-80"></div>
 
+	<?php get_template_part( 'inc/laf/parts/clientes', 'section' ); ?>
+
 	<?php
 		$show_section_5 = get_post_meta( $post_id, 'front_page_section_5_show', true );
 		$front_page_section_5_title = get_post_meta( $post_id, 'front_page_section_5_title', true );
