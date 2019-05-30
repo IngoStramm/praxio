@@ -1,0 +1,69 @@
+.extra-section-2 {
+	display: block;
+	margin: auto;
+	padding: 160px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	@include radius( 0, 0, 175px, 0 );
+	@include bg-size( cover );
+	color: $branco;
+	.extra-section-2-link-show-youtube-modal {
+		display: block;
+		cursor: pointer;
+		.extra-section-2-youtube-figure {
+			@include opacity( 1 );
+			@include trans-all( 25/100 );			
+		}
+		.extra-section-2-btn-show-youtube-icon-play {
+			@include opacity( 72/100 );
+			@include trans-all( 25/100 );			
+		}
+		&:active,
+		&:focus,
+		&:hover,
+		&:focus:hover {
+			.extra-section-2-btn-show-youtube-icon-play {
+				@include opacity( 1 );
+			}
+			.extra-section-2-youtube-figure {
+				@include opacity( 75/100 );
+			}
+		}
+	}
+	.extra-section-2-youtube-figure {
+		position: relative;
+		display: block;
+		margin: auto;
+		width: 100%;
+		.extra-section-2-youtube-img {
+			display: block;
+			margin: auto;
+			width: 100%;
+			height: auto;
+			@include box-shadow( -15px, 15px, 20px, 20px, rgba( 0, 0, 0, 0.2 ) );
+			@include radius( 0, 0, 75px, 0 );
+		}
+		.extra-section-2-btn-show-youtube-icon-play {
+			display: block;
+			max-width: 100%;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include translate( -50%, -50% );
+			z-index: 9;
+		}
+	}
+	.extra-section-2-title {
+		display: block;
+		font-weight: 600;
+		font-size: 38px;
+		line-height: 42px;
+		strong {
+			color: $verm-2;
+		}
+	}
+	.extra-section-2-text {
+		font-size: 18px;
+	}
+}

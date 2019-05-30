@@ -523,6 +523,65 @@
 	<?php endif; ?>
 
 	<?php
+		$show_extra_section_2 = get_post_meta( $post_id, 'front_page_extra_section_2_show', true );
+		$front_page_extra_section_2_title = get_post_meta( $post_id, 'front_page_extra_section_2_title', true );
+		$front_page_extra_section_2_text = get_post_meta( $post_id, 'front_page_extra_section_2_text', true );
+		$front_page_extra_section_2_bg = get_post_meta( $post_id, 'front_page_extra_section_2_bg', true );
+		$front_page_extra_section_2_thumb = get_post_meta( $post_id, 'front_page_extra_section_2_thumb', true );
+	?>
+	
+	<?php if( $show_extra_section_2 ) : ?>
+
+		<div class="extra-section-2" style="background-image: url(<?php echo $front_page_extra_section_2_bg; ?>);">
+
+			<div class="container">
+
+				<div class="row">
+					
+					<div class="col-md-6">						
+
+						<a href="#" class="extra-section-2-link-show-youtube-modal" data-toggle="modal" data-target="#youtube-modal-home">
+							
+							<figure class="extra-section-2-youtube-figure">
+
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/play-btn.png" class="extra-section-2-btn-show-youtube-icon-play" />
+								
+								<img src="<?php echo $front_page_extra_section_2_thumb; ?>" class="extra-section-2-youtube-img">
+
+							</figure>
+							<!-- /.extra-section-2-youtube-figure -->
+						</a>
+
+					</div>
+					<!-- /.col-md-6 -->
+
+					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
+
+					<div class="col-md-6">
+						
+						<h1 class="extra-section-2-title"><?php echo $utils->nl2p( $front_page_extra_section_2_title ); ?></h1>
+
+						<div class="clearfix m-b-10"></div>
+						
+						<div class="extra-section-2-text"><?php echo $utils->nl2p( $front_page_extra_section_2_text ); ?></div>
+
+					</div>
+					<!-- /.col-md-6 -->
+
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- /.container -->
+			
+		</div>
+		<!-- /.extra-section-2 -->
+
+		<div class="clearfix m-b-80"></div>
+
+	<?php endif; ?>
+
+	<?php
 		$show_section_4 = get_post_meta( $post_id, 'front_page_section_4_show', true );
 		$front_page_section_4_title = get_post_meta( $post_id, 'front_page_section_4_title', true );
 		$front_page_section_4_text_1_linha_2 = get_post_meta( $post_id, 'front_page_section_4_text_1_linha_2', true );

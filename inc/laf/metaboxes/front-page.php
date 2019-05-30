@@ -473,7 +473,8 @@ function front_page_register_metabox() {
 	) );
 
 	$cmb_extra_section_2->add_field( array(
-		'name'       => esc_html__( 'Vídeo do Youtube', 'cmb2' ),
+		'name'       => esc_html__( 'ID do vídeo do Youtube', 'cmb2' ),
+		'desc'		=> __( 'Apenas o ID do vídeo, não o link inteiro.', 'cmb2 '),
 		'id'         => $prefix . 'youtube',
 		'type'       => 'text',
 		// 'sanitization_cb' => 'prx_allow_html',

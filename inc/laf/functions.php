@@ -472,3 +472,44 @@ function prx_add_modal( $modal_id ) {
 	<?php
 	endforeach;
 }
+
+add_action( 'prx_modal', 'youtube_home_add_modal' );
+
+function youtube_home_add_modal( $modal_id ) {
+	$utils = new Utils;
+	$post_id = get_the_ID();
+	$modal_arr = [];
+
+	$front_page_extra_section_2_youtube = get_post_meta( $post_id, 'front_page_extra_section_2_youtube', true );
+
+	if( $front_page_extra_section_2_youtube ) :
+
+	?>
+		<div id="youtube-modal-home" class="prx-modal modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<i class="fa fa-times-circle"></i>
+						</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<div class="rd-form">
+							<div class="embed-responsive embed-responsive-16by9">
+
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $front_page_extra_section_2_youtube; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<?php
+	endif;
+}
