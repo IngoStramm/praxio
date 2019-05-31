@@ -359,6 +359,107 @@ class Laf_Admin {
 
 
 		$cmb->add_field( array(
+			'name' => __( 'Editorial (português)', 'laf' ),
+			'id'   => 'titulo_editorial_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Editorial Linha 1 (português)', 'laf' ),
+			'id'      => 'editorial_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Editorial Linha 2 (português)', 'laf' ),
+			'id'      => 'editorial_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Editorial', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'editorial_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+
+
+
+		$cmb->add_field( array(
+			'name' => __( 'Enquete (português)', 'laf' ),
+			'id'   => 'titulo_enquete_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'Enquete Linha 1 (português)', 'laf' ),
+			'id'      => 'enquete_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Enquete Linha 2 (português)', 'laf' ),
+			'id'      => 'enquete_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do Enquete', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'enquete_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+
+		$cmb->add_field( array(
+			'name' => __( 'eSocial Urgente (português)', 'laf' ),
+			'id'   => 'titulo_esocial_pt_BR',
+			'type' => 'title',
+		) );
+		
+		$cmb->add_field( array(
+			'name'    => __( 'eSocial Urgente Linha 1 (português)', 'laf' ),
+			'id'      => 'esocial_linha_1_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'eSocial Urgente Linha 2 (português)', 'laf' ),
+			'id'      => 'esocial_linha_2_pt_BR',
+			'type'    => 'text'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Imagem do eSocial Urgente', 'laf' ),
+			'desc' => __( 'Faça o upload de uma imagem ou digite uma URL.', 'laf' ),
+			'id'   => 'esocial_image_pt_BR',
+			'type' => 'file',
+			'text'				=> array(
+				'add_upload_file_text' => __('Adicionar arquivo', 'laf') // Change upload button text. Default: "Add or Upload File"
+			),
+			'attributes' => array('placeholder' => 'http://'),
+		) );
+
+
+
+
+
+		$cmb->add_field( array(
 			'name' => __( 'Rodapé (português)', 'laf' ),
 			'id'   => 'titulo_footer_pt_BR',
 			'type' => 'title',

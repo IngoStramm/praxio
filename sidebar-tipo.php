@@ -16,7 +16,7 @@
 	$rd_train_id = laf_get_option( 'rd_train_id_' . $curr_lang );
 	$rd_train_text = laf_get_option( 'rd_train_text_' . $curr_lang );
 	$rd_newsletter_id = laf_get_option( 'rd_newsletter_id_pt_BR' );
-	// $utils->debug( $rd_newsletter_id );
+	// $utils->debug( $tipo );
 ?>
 
 <aside id="sidebar" class="col-md-3 widget-area prx-sidebar" role="complementary">

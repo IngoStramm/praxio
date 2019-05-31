@@ -293,6 +293,42 @@ function footer_widgets_init() {
 	
 	register_sidebar(
 		array(
+			'name' => __( 'Widget Editorial', 'odin' ),
+			'id' => 'editorial-widget',
+			'description' => __( 'Área de Widget do Praxio em Revista', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => __( 'Widget Enquete', 'odin' ),
+			'id' => 'enquete-widget',
+			'description' => __( 'Área de Widget do Praxio em Revista', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => __( 'Widget eSocial Urgente', 'odin' ),
+			'id' => 'esocial-widget',
+			'description' => __( 'Área de Widget do Praxio em Revista', 'odin' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	
+	register_sidebar(
+		array(
 			'name' => __( 'Widget Area #1 do Rodapé', 'odin' ),
 			'id' => 'footer-widget-1',
 			'description' => __( 'Área de Widget #1 do Rodapé', 'odin' ),

@@ -40,6 +40,18 @@ get_header(); ?>
 				$tipo = 'revista';
 				break;
 			
+			case 'editorial':
+				$tipo = 'editorial';
+				break;
+			
+			case 'enquete':
+				$tipo = 'enquete';
+				break;
+			
+			case 'esocial-urgente':
+				$tipo = 'esocial';
+				break;
+			
 			default:
 				$tipo = 'blog';
 				break;
