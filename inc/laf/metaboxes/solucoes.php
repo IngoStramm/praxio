@@ -39,7 +39,8 @@ function laf_show_if_solucoes() {
 			'venda-de-passagens-page.php',
 			'ponto-virtual-page.php',
 			'bi-page.php',
-			'embarcador-page.php'
+			'embarcador-page.php',
+			'gestao-de-pneus-page.php'
 		);
 		
 		if(in_array($template_file, $templates))

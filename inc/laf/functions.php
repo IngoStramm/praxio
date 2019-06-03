@@ -549,3 +549,44 @@ function youtube_home_add_modal( $modal_id ) {
 	<?php
 	endif;
 }
+
+function prx_gestao_de_pneus_etapas( $titulo, $selected_arr, $checked_arr ) {
+	?>
+	<div class="prx-gestao-de-pneus-etapas selected-<?php echo count( $selected_arr ) - 1; ?>">
+		
+		<h2 class="prx-gestao-de-pneus-etapas-title"><?php echo $titulo; ?></h2>
+
+		<div class="row">
+
+			<?php $labels_arr = array(
+				pll__( 'Cronograma', 'prx' ),
+				pll__( 'Aferição', 'prx' ),
+				pll__( 'Análise', 'prx' ),
+				pll__( 'Finalização', 'prx' ),
+			); ?>
+
+			<?php for( $i = 0; $i < 4; $i++ ) { ?>
+			
+				<div class="col-xs-3 prx-gestao-de-pneus-etapas-etapa <?php echo in_array( $i, $selected_arr ) ? 'selected' : ''; ?>">
+					
+					<div class="prx-gestao-de-pneus-etapas-circle <?php echo in_array( $i, $selected_arr ) ? 'selected' : ''; ?> <?php echo in_array( $i, $checked_arr ) ? 'checked' : ''; ?>">
+						<span class="prx-gestao-de-pneus-etapas-number"><?php echo $i + 1; ?></span>
+						<i class="prx-gestao-de-pneus-etapas-icon fa fa-check"></i>
+
+					</div>
+
+					<div class="prx-gestao-de-pneus-etapas-label <?php echo in_array( $i, $selected_arr ) ? 'selected' : ''; ?>"><?php echo $labels_arr[ $i ]; ?></div>
+					
+				</div>
+				<!-- /.col-xs-3 -->
+
+			<?php } ?>			
+
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.prx-gestao-de-pneus-etapas -->
+	<?php
+
+}

@@ -1,0 +1,143 @@
+.prx-gestao-de-pneus-etapas {
+	display: block;
+	margin: auto;
+	padding: 80px 0;
+	text-align: center;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 120px;
+		left: 12%;
+		right: 12%;
+		border-bottom: 2px solid $verm-2;
+		z-index: 1;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 120px;
+		left: 12%;
+		right: 12%;
+		z-index: 2;
+		border-bottom: 2px solid $cinza-2;
+	}
+	.prx-gestao-de-pneus-etapas-title {
+		color: $verm-2;
+		font-weight: 600;
+		font-size: 38px;
+		margin: 0 auto 40px;
+	}
+	.prx-gestao-de-pneus-etapas-etapa {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		.prx-gestao-de-pneus-etapas-circle {
+			display: flex;
+			position: relative;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto 5px;
+			border: solid $cinza-2 2px;
+			color: $cinza-2;
+			@include radius( 50% );
+			align-items: center;
+			justify-content: center;
+			background-color: $branco;
+			z-index: 9;
+			.prx-gestao-de-pneus-etapas-number {
+				display: block;
+				position: relative;
+				font-size: 22px;
+				line-height: 20px;
+				font-weight: 600;
+				z-index: 9;
+			}
+			.prx-gestao-de-pneus-etapas-icon {
+				display: none;
+				font-size: 26px;
+			}
+			&.selected {
+				color: $verm-2;
+				border-color: $verm-2;
+				&:before,
+				&:after {
+					border-color: $verm-2;
+				}
+				.prx-gestao-de-pneus-etapas-number {
+
+				}
+				.prx-gestao-de-pneus-etapas-icon {
+
+				}
+			}
+			&.checked {
+				background-color: $verm-2;
+				color: $branco;
+				.prx-gestao-de-pneus-etapas-number {
+					display: none;
+				}
+				.prx-gestao-de-pneus-etapas-icon {
+					display: block;
+				}
+			}
+		}
+		.prx-gestao-de-pneus-etapas-label {
+			display: block;
+			font-size: 9px;
+			text-transform: uppercase;
+			font-weight: 600;
+			color: $cinza-2;
+			white-space: nowrap;
+			&.selected {
+				color: $verm-2;
+			}
+		}
+		&:first-child {
+			.prx-gestao-de-pneus-etapas-circle {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		&:last-child {
+			.prx-gestao-de-pneus-etapas-circle {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	&.selected-1 {
+		&:after {
+			left: 38%;
+		}
+	}
+	&.selected-2 {
+		&:after {
+			left: 63%;
+		}
+	}
+	&.selected-3 {
+		&:after {
+			left: 88%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.prx-gestao-de-pneus-etapas {
+		&:before,
+		&:after {
+			bottom: 125px;
+		}
+		.prx-gestao-de-pneus-etapas-etapa {
+			.prx-gestao-de-pneus-etapas-label {
+				font-size: 12px;
+			}
+		}
+	}
+
+}

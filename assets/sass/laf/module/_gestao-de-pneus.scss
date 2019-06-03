@@ -1,0 +1,179 @@
+.gestao-de-pneus {
+	.gestao-de-pneus-etapa-cinza {
+		background-color: $cinza-1;
+	}
+	.gestao-de-pneus-banner {
+		.gestao-de-pneus-banner-line-1 {
+			font-size: 98px;
+			@include text-stroke( $cinza-2, 2 );
+			font-weight: 600;
+		}
+		.gestao-de-pneus-banner-line-2 {
+			color: $branco;
+			font-size: 60px;
+			font-weight: 600;
+		}
+		.gestao-de-pneus-banner-text {
+			color: $branco;
+			font-size: 22px;
+			strong {
+				font-size: 26px;
+				font-weight: 600;
+			}
+		}
+	}
+	.gestao-de-pneus-etapa {
+		.gestao-de-pneus-etapa-text {
+			font-size: 19px;
+			color: $cinza-2;
+			h4 {
+				font-size: 22px;
+			}
+			h5 {
+				text-transform: uppercase;
+				color: $verm-2;
+				font-size: 19px;
+				font-weight: 600;
+			}
+		}
+		.gestao-de-pneus-etapa-img {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+	}
+	.gestao-de-pneus-section-3-text-strong {
+		font-weight: 600;
+		font-size: 21px !important;
+	}
+	.gestao-de-pneus-etapa-cinza-box-titulo {
+		display: block;
+		margin: 0 auto 20px;
+		color: $verm-2;
+		font-weight: 600;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.gestao-de-pneus-etapa-cinza-box-texto {
+		color: $cinza-2;
+		font-size: 16px;
+	}
+	.gestao-de-pneus-section-3 {
+		.gestao-de-pneus-section-3-figure {
+			display: block;
+			position: relative;
+			.gestao-de-pneus-section-3-img {
+				position: relative;
+				z-index: 9;
+			}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 20px;
+				left: 100px;
+				width: 100%;
+				height: 85%;
+				background: $verm-2;
+				@include radius( 75px, 75px, 0, 0 );
+				z-index: 1;
+			}
+		}
+	}
+	.gestao-de-pneus-section-5 {
+		.gestao-de-pneus-section-5-title {
+			font-size: 56px;
+			font-weight: 600;
+			@include text-stroke( $cinza-1, 2 );
+		}
+	}
+	.gestao-de-pneus-section-6 {
+		.gestao-de-pneus-section-6-title {
+			color: $verm-2;
+			font-size: 40px;
+			font-weight: 600;
+		}
+	}
+	.gestao-de-pneus-section-7 {
+		.gestao-de-pneus-section-7-title {
+			font-size: 55px;
+			font-weight: 600;
+			@include text-stroke( $cinza-1, 2 );
+		}
+		.gestao-de-pneus-section-7-list-title {
+			font-size: 17px;
+			font-weight: 600;
+			color: $verm-2;
+			text-transform: uppercase;
+		}
+		.gestao-de-pneus-section-7-list-items {
+			color: $cinza-2;
+			font-size: 13px;
+			li {
+				&:before {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.gestao-de-pneus-section-8 {
+		.gestao-de-pneus-section-8-title {
+			text-align: center;
+			font-size: 52px;
+			font-weight: 600;
+			color: $verm-2;
+		}
+		.gestao-de-pneus-section-8-text {
+			font-size: 18px;
+			color: $cinza-2;
+		}
+	}
+	.gestao-de-pneus-section-8-block-cinza {
+		background-color: $cinza-1;
+	}
+	.gestao-de-pneus-section-8-items {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+		text-align: center;
+		.gestao-de-pneus-section-8-items-item {
+			flex: 1 0 50%;
+			.gestao-de-pneus-section-8-items-item-figure {
+				.gestao-de-pneus-section-8-items-item-img {
+					display: block;
+					margin: 0 auto 20px;
+					max-width: 100%;
+				}
+			}
+			.gestao-de-pneus-section-8-items-item-title {
+				display: block;
+				margin: 0 auto 20px;
+				color: $verm-2;
+				font-weight: 600;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+			.gestao-de-pneus-section-8-items-item-text {
+				color: $cinza-2;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.gestao-de-pneus {
+		.gestao-de-pneus-section-8-items {
+			.gestao-de-pneus-section-8-items-item {
+				flex: 1 0 18%;
+			}
+		}
+	}
+
+}
