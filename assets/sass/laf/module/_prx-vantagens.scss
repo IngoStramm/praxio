@@ -1,0 +1,54 @@
+.prx-vantagens {
+	.prx-vantagens-titulo {
+		text-transform: uppercase;
+		letter-spacing: 14px;
+		color: #ff213f;
+		font-size: 26px;
+		padding-bottom: 10px;
+	}
+	.prx-vantagens-carousel {
+		.prx-vantagens-carousel-item {
+
+		}
+		.prx-vantagens-carousel-item-img {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+		.prx-vantagens-carousel-item-txt {
+			font-size: 22px;
+			line-height: 26px;
+			@include radius( 0, 0, 0, 75px );			
+		}
+	}
+	.prx-vantagens-lista {
+		margin-left: 28px;
+		border-bottom: 2px solid #ff213f;
+		border-left: 2px solid #ff213f;
+		@include radius( 0, 0, 0, 75px );			
+		.prx-vantagens-lista-item {
+			margin-left: -22px;
+			.prx-vantagens-lista-icon {
+				float:left;
+				background: #fff;
+				padding: 20px 0;
+				img {
+					width: 42px;
+				}
+			}
+			.prx-vantagens-lista-item-content {
+				display: table;
+				padding: 20px 0 20px 30px;
+				.prx-vantagens-lista-item-content-titulo {
+					font-size: 24px;
+					color: $verm-2;
+				}
+				.prx-vantagens-lista-item-content-txt {
+					padding-top: 10px;
+					font-size: 16px;
+					color: $cinza-2;
+				}
+			}
+		}
+	}
+}

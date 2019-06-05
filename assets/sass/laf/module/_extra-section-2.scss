@@ -65,5 +65,16 @@
 	}
 	.extra-section-2-text {
 		font-size: 18px;
+		&.extra-section-2-text {
+			font-size: 22px;
+		}
+	}
+	&.extra-section-2-bg-cinza {
+		background-color: $cinza-1;
+		.extra-section-2-text {
+			&.extra-section-2-text-big {
+				color: $cinza-2;
+			}
+		}
 	}
 }

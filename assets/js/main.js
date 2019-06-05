@@ -82,6 +82,7 @@ jQuery( function( $ ) {
 		carousel_normalize();
 		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
 		normalize_elements( 'tab-content-normalize-wrapper', 'tab-pane-normalize-height' );
+		normalize_elements( 'prx-vantagens-carousel', 'prx-vantagens-carousel-item-txt' );
 		
 	}); // $(document).ready
 
@@ -90,6 +91,7 @@ jQuery( function( $ ) {
 		carousel_normalize();
 		normalize_elements( 'fix-height-wrapper', 'fix-height-item', 380 );
 		normalize_elements( 'tab-content-normalize-wrapper', 'tab-pane-normalize-height' );
+		normalize_elements( 'prx-vantagens-carousel', 'prx-vantagens-carousel-item-txt' );
 
 	});
 });

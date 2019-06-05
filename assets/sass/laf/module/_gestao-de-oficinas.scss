@@ -1,0 +1,75 @@
+.gestao-de-oficinas {
+	.gestao-de-oficinas-section-1 {
+		.gestao-de-oficinas-section-1-text {
+			font-size: 22px;
+			line-height: 26px;
+			color: $cinza-2;
+			strong {
+				font-weight: 600;
+			}
+		}
+		.gestao-de-oficinas-section-1-figure {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			.gestao-de-oficinas-section-1-img {
+				position: relative;
+				display: block;
+				width: 100%;
+				margin: auto;
+				@include radius( 75px, 0, 0, 0 );
+				z-index: 0;
+			}
+			.gestao-de-oficinas-section-1-caption {
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				padding: 0 40px 40px;
+				text-align: center;
+				font-size: 19px;
+				line-height: 23px;
+				color: $branco;
+				z-index: 1;
+			}
+		}
+	}
+	.gestao-de-oficinas-section-4 {
+		.section-title {
+			color: $verm-2;
+			font-size: 42px;
+			font-weight: bold;
+			padding: 30px 0;
+		}
+		.subtitle {
+			color: $cinza-2;
+			font-size: 30px;
+			font-weight: 600;
+			padding-bottom: 20px;
+		}
+		img {
+			width: 100%;
+			@include radius( 0, 0, 60px, 0 );
+			margin-bottom: 50px;
+		}
+		h4 {
+			color: $verm-2;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		p {
+			color: $cinza-2;
+			font-size: 16px;
+		}
+	}
+	.gestao-de-oficinas-section-5 {
+		.gestao-de-oficinas-section-5-title {
+			font-size: 38px;
+			line-height: 42px;
+			font-weight: 600;
+			color: $verde-1;
+			text-align: center;
+		}
+	}
+}

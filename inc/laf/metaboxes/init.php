@@ -84,6 +84,7 @@ function hide_editor() {
             'embarcador-page.php',
             'portal-cliente-page.php',
             'gestao-de-pneus-page.php',
+            'gestao-de-oficinas-page.php'
         );
 
         if( (int)in_array($template_file, $templates) || (int)$post_id == (int)$frontpage_id || (int)$post_id == (int)$pll_id ){ // the filename of the page template
@@ -108,4 +109,5 @@ require_once 'embarcador.php';
 require_once 'portal-cliente.php';
 require_once 'solucoes.php';
 require_once 'gestao-de-pneus.php';
+require_once 'gestao-de-oficinas.php';
 require_once 'clientes-section.php';

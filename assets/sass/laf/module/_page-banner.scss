@@ -33,4 +33,23 @@
 			color: $verde-1;			
 		}
 	}
+	.page-banner-title-stroke {
+		font-size: 100px;
+		line-height: 110px;
+		font-weight: 600;
+		color: $branco;
+		@include text-stroke( $branco, 1 );
+	}
+	.page-banner-title-1 {
+		font-size: 60px;
+		line-height: 62px;
+		font-weight: 600;		
+		color: $branco;
+	}
+	.page-banner-text-bigger {
+		font-size: 28px;
+		line-height: 34px;
+		font-weight: 600;
+		color: $branco;
+	}
 }

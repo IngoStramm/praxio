@@ -77,7 +77,8 @@ function laf_show_if_clientes_section( $cmb ) {
 			'erp-passageiro-page.php',
 			'erp-logistica-page.php',
 			'venda-de-passagens-page.php',
-			'gestao-de-pneus-page.php'
+			'gestao-de-pneus-page.php',
+			'gestao-de-oficinas-page.php'
 		);
 		
 		if(in_array($template_file, $templates) || laf_show_if_front_page( $cmb ))
