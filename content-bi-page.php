@@ -471,4 +471,7 @@
 
 
 	<?php endif; ?>
+
+	<?php get_template_part( 'inc/laf/parts/integracoes', 'section' ); ?>
+	
 </article><!-- #post-## -->

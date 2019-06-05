@@ -110,4 +110,5 @@ require_once 'portal-cliente.php';
 require_once 'solucoes.php';
 require_once 'gestao-de-pneus.php';
 require_once 'gestao-de-oficinas.php';
+require_once 'integracoes-section.php';
 require_once 'clientes-section.php';

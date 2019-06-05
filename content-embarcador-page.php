@@ -325,4 +325,6 @@ $embarcador_banner_btn_txt = get_post_meta( $post_id, 'embarcador_banner_btn_txt
 
     <?php endif; ?>
 
+    <?php get_template_part( 'inc/laf/parts/integracoes', 'section' ); ?>
+
 </article>
