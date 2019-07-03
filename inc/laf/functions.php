@@ -453,6 +453,16 @@ add_action( 'init', function() {
 	pll_register_string( 'prx', 'Quero conhecer' );
 	pll_register_string( 'prx', 'Agendar Demonstração' );
 	pll_register_string( 'prx', 'Newsletter' );
+	pll_register_string( 'prx', 'Cronograma de verificação' );
+	pll_register_string( 'prx', 'Aferição' );
+	pll_register_string( 'prx', 'Cronograma' );
+	pll_register_string( 'prx', 'Análise' );
+	pll_register_string( 'prx', 'Movimentação' );
+	pll_register_string( 'prx', 'Calibragem' );
+	pll_register_string( 'prx', 'Inspeção' );
+	pll_register_string( 'prx', 'Finalização' );
+	pll_register_string( 'prx', 'Leitura dos dados' );
+	pll_register_string( 'prx', 'Finalização dos serviços' );
 });
 
 function prx_return_0_to_100() {

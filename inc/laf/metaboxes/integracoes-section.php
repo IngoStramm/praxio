@@ -121,7 +121,7 @@ function laf_show_if_integracoes_section( $cmb ) {
 			'gestao-de-oficinas-page.php'
 		);
 		
-		if(in_array($template_file, $templates) || laf_show_if_front_page( $cmb ))
+		if(in_array($template_file, $templates))
 			return true;
 		else
 			return false;
