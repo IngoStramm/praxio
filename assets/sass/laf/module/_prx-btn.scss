@@ -33,6 +33,19 @@
 			border-color: $branco;
 		}
 	}
+	&.prx-btn-verm {
+		&.prx-btn-reverse {
+			color: $verm-2;
+			border-color: $verm-2;
+			&:active,
+			&:hover,
+			&:focus,
+			&:hover:focus {
+				background-color: $verm-2;
+				color: $branco;
+			}
+		}
+	}
 	&.prx-btn-inline {
 		display: inline;
 	}

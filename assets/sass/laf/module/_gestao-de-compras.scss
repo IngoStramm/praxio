@@ -1,0 +1,136 @@
+.gestao-de-compras {
+	.gestao-de-compras-secao-1 {
+		color: $cinza-2;
+		.gestao-de-compras-secao-1-titulo {
+			margin-bottom: 20px;
+			font-weight: 600;
+			font-size: 20px;
+		}
+		.gestao-de-compras-secao-1-texto {
+			font-size: 17px;
+		}
+	}
+	.gestao-de-compras-secao-2 {
+		position: relative;
+		.gestao-de-compras-secao-2-bg {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			background-position: center top;
+			background-repeat: no-repeat;
+			@include bg-size( contain );
+		}
+		.gestao-de-compras-secao-2-title {
+			font-size: 76px;
+			line-height: 86px;
+			font-weight: 600;
+			@include text-stroke( $cinza-1, 2 );
+		}
+		.gestao-de-compras-text {
+			font-size: 30px;
+			text-align: center;
+			color: $verm-2;
+			font-weight: 600;
+		}
+		.prx-lista {
+			color: $cinza-2;
+			font-size: 22px;
+			font-weight: 600;
+		}
+	}
+	.gestao-de-compras-secao-3 {
+		background-color: $cinza-3;
+		ul {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			list-style: none;
+		}
+	}
+	.gestao-de-compras-secao-4 {
+		.gestao-de-compras-secao-4-title {
+			text-align: center;
+			color: $verm-2;
+			font-size: 46px;
+			line-height: 48px;
+			font-weight: 600;
+		}
+		.gestao-de-compras-secao-4-text-1 {
+			font-size: 27px;
+			line-height: 32px;
+			font-weight: 600;
+			color: $cinza-2;
+		}
+		.gestao-de-compras-secao-4-text-2 {
+			color: $verm-2;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.gestao-de-compras-link-show-youtube-modal {
+			display: block;
+			.gestao-de-compras-youtube-figure {
+				display: block;
+				margin: auto;
+				position: relative;
+				overflow: hidden;
+				@include radius( 0, 0, 75px, 0 );
+				.gestao-de-compras-btn-show-youtube-icon-play {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					z-index: 2;
+					@include translate( -50%, -50% );
+				}
+				.gestao-de-compras-youtube-img {
+					position: relative;
+					display: block;
+					margin: auto;
+					width: 100%;
+					z-index: 1;
+				}
+			}
+		}
+	}
+	.gestao-de-compras-secao-5 {
+		background-color: $cinza-3;
+		.gestao-de-compras-secao-5-title {
+			font-size: 58px;
+			line-height: 62px;
+			text-align: center;
+			font-weight: 600;
+			color: $verm-2;
+			.gestao-de-compras-secao-5-text-stroke {
+				@include text-stroke( $cinza-2, 1 );
+			}
+		}
+		.gestao-de-compras-secao-5-text {
+			text-align: center;
+			font-size: 26px;
+			line-height: 32px;
+			font-weight: 600;
+			color: $cinza-2;
+		}
+		.prx-btn {
+			margin: auto;
+		}
+	}
+}
+
+@media( min-width: 1200px ) {
+
+	.gestao-de-compras {
+		.gestao-de-compras-secao-2 {
+			.gestao-de-compras-secao-2-bg {
+				left: 66.67%;
+			}
+		}
+	}	
+}

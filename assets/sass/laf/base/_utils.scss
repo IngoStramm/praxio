@@ -91,3 +91,11 @@
 .w-100p-i {
 	width: 100% !important;
 }
+
+.text-stroke-1 {
+	@include text-stroke( $branco, 1 );
+}
+
+.text-stroke-2 {
+	@include text-stroke( $branco, 2 );
+}

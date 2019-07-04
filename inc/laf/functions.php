@@ -601,6 +601,47 @@ function youtube_gestao_de_oficinas_add_modal( $modal_id ) {
 	endif;
 }
 
+add_action( 'prx_modal', 'youtube_gestao_de_compras_add_modal' );
+
+function youtube_gestao_de_compras_add_modal( $modal_id ) {
+	$utils = new Utils;
+	$post_id = get_the_ID();
+	$modal_arr = [];
+
+	$gestao_de_compras_secao_4_youtube = get_post_meta( $post_id, 'gestao_de_compras_secao_4_youtube', true );
+
+	if( $gestao_de_compras_secao_4_youtube ) :
+
+	?>
+		<div id="youtube-modal-gestao-de-compras" class="prx-modal modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<i class="fa fa-times-circle"></i>
+						</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<div class="rd-form">
+							<div class="embed-responsive embed-responsive-16by9">
+
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $gestao_de_compras_secao_4_youtube; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<?php
+	endif;
+}
+
 function prx_gestao_de_pneus_etapas( $titulo, $selected_arr, $checked_arr ) {
 	?>
 	<div class="prx-gestao-de-pneus-etapas selected-<?php echo count( $selected_arr ) - 1; ?>">
