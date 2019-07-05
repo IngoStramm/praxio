@@ -429,7 +429,7 @@
 		$gestao_de_compras_secao_5_title_bold = get_post_meta( $post_id, 'gestao_de_compras_secao_5_title_bold', true );
 		$gestao_de_compras_secao_5_text = get_post_meta( $post_id, 'gestao_de_compras_secao_5_text', true );
 		$gestao_de_compras_secao_5_img = get_post_meta( $post_id, 'gestao_de_compras_secao_5_img', true );
-		$gestao_de_compras_secao_5_url = get_post_meta( $post_id, 'gestao_de_compras_secao_5_url', true );
+		$gestao_de_compras_secao_5_btn_url = get_post_meta( $post_id, 'gestao_de_compras_secao_5_btn_url', true );
 		$gestao_de_compras_secao_5_btn_txt = get_post_meta( $post_id, 'gestao_de_compras_secao_5_btn_txt', true );
 	?>
 
@@ -460,7 +460,7 @@
 						<div class="clearfix m-b-60"></div>
 
 						<div class="text-center">
-							<a href="<?php echo $gestao_de_compras_secao_5_url; ?>" class="prx-btn prx-btn-reverse prx-btn-verm prx-btn-inline"><?php echo $gestao_de_compras_secao_5_btn_txt; ?></a>
+							<a href="<?php echo $gestao_de_compras_secao_5_btn_url; ?>" class="prx-btn prx-btn-reverse prx-btn-verm prx-btn-inline"><?php echo $gestao_de_compras_secao_5_btn_txt; ?></a>
 						</div>
 
 					</div>
