@@ -17,18 +17,18 @@
 			
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-5">
 
 					<h2 class="clientes-section-title"><?php echo $clientes_section_title; ?></h2>
 					
 				</div>
-				<!-- /.col-md-6 -->
+				<!-- /.col-md-5 -->
 
 				<?php if( $clientes_section_logos ) : ?>
 
 					<div class="clearfix m-b-40 visible-xs visible-sm"></div>
 				
-					<div class="col-md-6">
+					<div class="col-md-7">
 
 						<div class="row" style="position: relative;">
 
@@ -46,14 +46,14 @@
 
 								<?php if( $src ) : ?>
 							
-									<div class="col-md-3 col-xs-6">
+									<div class="col-md-4 col-xs-6">
 										
-										<img class="clientes-section-title img-responsive center-block m-b-40" src="<?php echo $src; ?>">
+										<div class="clientes-section-img" style="background-image: url(<?php echo $src; ?>);"></div>
 
 									</div>
-									<!-- /.col-md-3 -->
+									<!-- /.col-md-4 -->
 
-									<?php if( $logo_count % 4 == 3 && $logo_count < $total_logos - 1 ) : ?>
+									<?php if( $logo_count % 3 == 2 && $logo_count < $total_logos - 1 ) : ?>
 
 										<div class="clearfix hidden-xs hidden-sm m-b-40"></div>
 
@@ -83,7 +83,7 @@
 						<!-- /.row -->
 						
 					</div>
-					<!-- /.col-md-6 -->
+					<!-- /.col-md-7 -->
 
 				<?php endif; ?>
 				
