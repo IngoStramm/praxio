@@ -83,6 +83,7 @@ function hide_editor() {
             'venda-de-passagens-page.php',
             'embarcador-page.php',
             'portal-cliente-page.php',
+            'ebooks-e-materiais-page.php',
             'gestao-de-pneus-page.php',
             'gestao-de-oficinas-page.php',
             'gestao-de-compras-page.php',
@@ -108,6 +109,7 @@ require_once 'venda-de-passagens.php';
 require_once 'ponto-virtual.php';
 require_once 'embarcador.php';
 require_once 'portal-cliente.php';
+require_once 'ebooks-e-materiais.php';
 require_once 'solucoes.php';
 require_once 'gestao-de-pneus.php';
 require_once 'gestao-de-oficinas.php';
