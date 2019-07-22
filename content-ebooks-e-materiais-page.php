@@ -12,10 +12,10 @@ $ebooks_e_materiais_banner_btn_url = get_post_meta( $post_id, 'ebooks_e_materiai
 $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiais_banner_btn_txt', true );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'portal-cliente', 'conexao-praxio' ) ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'ebooks-e-materiais', 'conexao-praxio' ) ); ?>>
 
     <?php if( $ebooks_e_materiais_banner_show ) : ?>
-        <div class="page-banner portal-cliente-banner" style="background-image: url(<?php echo $ebooks_e_materiais_banner_img; ?>);">
+        <div class="page-banner ebooks-e-materiais-banner" style="background-image: url(<?php echo $ebooks_e_materiais_banner_img; ?>);">
 
             <div class="container">
                 <div class="row">
@@ -24,8 +24,8 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 
                     <div class="col-lg-6 col-md-6">
 
-                        <h3 class="portal-cliente-banner-line-2"><?php echo wp_kses_decode_entities( $ebooks_e_materiais_banner_linha_1 ); ?></h3>
-                        <h1 class="portal-cliente-banner-line-1"><?php echo wp_kses_decode_entities( $ebooks_e_materiais_banner_linha_2 ); ?></h1>
+                        <h3 class="ebooks-e-materiais-banner-line-2"><?php echo wp_kses_decode_entities( $ebooks_e_materiais_banner_linha_1 ); ?></h3>
+                        <h1 class="ebooks-e-materiais-banner-line-1"><?php echo wp_kses_decode_entities( $ebooks_e_materiais_banner_linha_2 ); ?></h1>
 
                     </div>
                     <!-- /.col-lg-4 -->
@@ -40,7 +40,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 
 							<?php if( $ebooks_e_materiais_banner_text ) : ?>
 
-		                        <div class="portal-cliente-banner-text"><?php echo $utils->nl2p( $ebooks_e_materiais_banner_text ); ?></div>
+		                        <div class="ebooks-e-materiais-banner-text"><?php echo $utils->nl2p( $ebooks_e_materiais_banner_text ); ?></div>
 
 		                        <div class="clearfix m-t-80"></div>
 
@@ -48,7 +48,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 							
 							<?php if( $ebooks_e_materiais_banner_btn_txt ) : ?>
 
-		                        <a href="<?php echo $ebooks_e_materiais_banner_btn_url; ?>" class="portal-cliente-banner-btn prx-btn prx-btn-inline" style="position: relative;">
+		                        <a href="<?php echo $ebooks_e_materiais_banner_btn_url; ?>" class="ebooks-e-materiais-banner-btn prx-btn prx-btn-inline" style="position: relative;">
 		                            <?php echo $ebooks_e_materiais_banner_btn_txt ?>
 									<div class="prx-linha prx-linha-b hidden-xs" style="position: absolute; left: 100%; margin-left: 20px; bottom: 20px; width: 80px;"></div>
 		                        </a>
@@ -83,7 +83,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 
     <?php if( $ebooks_e_materiais_section_1_show ) : ?>
 
-        <div class="portal-cliente-section-1">
+        <div class="ebooks-e-materiais-section-1">
 
             <div class="clearfix m-t-80"></div>
 
@@ -106,7 +106,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 	                        </div>
 	                        <!-- /,conexao-praxio-item-img -->
 
-	                        <div class="portal-cliente-content conexao-praxio-item-title-wrapper">
+	                        <div class="ebooks-e-materiais-content conexao-praxio-item-title-wrapper">
 
 	                            <?php if( strlen( $item[ 'ebooks_e_materiais_section_1_button_url' ] ) > 0 ) : ?>
 
@@ -124,7 +124,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
 
 
 	                        </div>
-	                        <!-- /.portal-cliente-content -->
+	                        <!-- /.ebooks-e-materiais-content -->
 	                    
 	                        <div class="m-b-80"></div>
 	                    
@@ -139,7 +139,7 @@ $ebooks_e_materiais_banner_btn_txt = get_post_meta( $post_id, 'ebooks_e_materiai
             </div>
             <!-- /.container -->
         </div>
-        <!-- /.portal-cliente-section-1 -->
+        <!-- /.ebooks-e-materiais-section-1 -->
     
     <?php endif; ?>
 
